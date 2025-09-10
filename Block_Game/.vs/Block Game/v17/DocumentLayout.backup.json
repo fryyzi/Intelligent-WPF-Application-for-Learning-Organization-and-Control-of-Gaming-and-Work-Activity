@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\programing\\Project\\Block Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Code.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Code.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Window_Block_Game.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Window_Block_Game.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\UnBlock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\UnBlock.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Steam_Block.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Steam_Block.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Main_Manu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Main_Manu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Model database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Model database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\License.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\License.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Choice_Window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\Choice_Window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\BLockGame.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLockGame\\BLockGame\\BLockGame.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Code.txt",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Code.txt",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Code.txt",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Code.txt",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Code.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-30T20:44:07.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window_Block_Game.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Window_Block_Game.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Window_Block_Game.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Window_Block_Game.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Window_Block_Game.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:41:08.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnBlock.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\UnBlock.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\UnBlock.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\UnBlock.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\UnBlock.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:41:05.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Steam_Block.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Steam_Block.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Steam_Block.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Steam_Block.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Steam_Block.xaml.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:40:55.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model database.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Model database.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Model database.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Model database.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Model database.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:40:47.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "License.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\License.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\License.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\License.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\License.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:40:33.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Choice_Window.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Choice_Window.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Choice_Window.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Choice_Window.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Choice_Window.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:40:23.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BLockGame.csproj",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\BLockGame.csproj",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\BLockGame.csproj",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\BLockGame.csproj",
+              "RelativeToolTip": "BLockGame\\BLockGame\\BLockGame.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-11T18:40:20.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Register.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Register.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Register.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Register.xaml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:40:11.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main_Manu.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Main_Manu.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\Main_Manu.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\Main_Manu.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\Main_Manu.xaml.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:39:56.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BLockGame\\BLockGame\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Block Game\\BLockGame\\BLockGame\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BLockGame\\BLockGame\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:39:43.019Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

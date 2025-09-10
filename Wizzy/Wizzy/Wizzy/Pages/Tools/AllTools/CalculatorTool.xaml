@@ -1,0 +1,60 @@
+﻿<Window x:Class="Wizzy.Pages.Tools.AllTools.CalculatorTool"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.Tools.AllTools"
+        mc:Ignorable="d"
+        Title="CalculatorTool" Height="134" Width="483">
+    <Grid>
+        <TextBox
+            x:Name="FirstNumberTextBox"
+           VerticalAlignment="Top"
+           Margin="10,9,321,0"
+           Height="30"/>
+        <ComboBox 
+            x:Name="OperationComboBox"
+            HorizontalAlignment="Left" 
+            Margin="184,8,0,0" 
+            VerticalAlignment="Top" 
+            SelectedIndex="0"
+            
+            Width="38" 
+            Height="30">
+            <ComboBoxItem Content="+" FontSize="16"/>
+            <ComboBoxItem Content="-" FontSize="16"/>
+            <ComboBoxItem Content="*" FontSize="16"/>
+            <ComboBoxItem Content="\" FontSize="16"/>
+        </ComboBox>
+        <TextBox 
+            x:Name="SecondNumberTextBox"
+            HorizontalAlignment="Left" 
+            Margin="242,10,0,0" 
+            VerticalAlignment="Top" 
+            Height="29" 
+            Width="152"/>
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            Margin="399,12,0,0" 
+            TextWrapping="Wrap" 
+            Text="=" 
+            VerticalAlignment="Top" 
+            FontSize="16" Height="26"/>
+        <Label 
+            x:Name="ResultLabel"
+            Content="0"
+               HorizontalAlignment="Left" 
+               Margin="417,7,0,0" 
+               VerticalAlignment="Top" 
+               FontSize="16" Height="28"/>
+        <Button 
+            Content="Обрахувати" 
+            HorizontalAlignment="Left" 
+            Margin="10,49,0,0" 
+            VerticalAlignment="Top" 
+            Width="459" 
+            Height="35"
+            Click="Result_Click"
+            />
+    </Grid>
+</Window>

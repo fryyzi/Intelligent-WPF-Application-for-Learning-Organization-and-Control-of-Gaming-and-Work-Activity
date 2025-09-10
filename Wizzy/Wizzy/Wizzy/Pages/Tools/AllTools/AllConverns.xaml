@@ -1,0 +1,65 @@
+﻿<Window x:Class="Wizzy.Pages.Tools.AllTools.AllConverns"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.Tools.AllTools"
+        mc:Ignorable="d"
+        Title="AllConverns" Height="450" Width="810">
+    <Grid>
+        <StackPanel Margin="0,0,604,0" Background="#2D2D30">
+
+            <Button
+                x:Name="LeghtButton"
+                Content="Довжина"
+                Margin="10,5"
+                FontSize="20" Click="LeghtButton_Click"
+                />
+            <Button
+                x:Name="MassButton"
+                Content="Маса"
+                Margin="10,5"
+                FontSize="20" Click="MassButton_Click"
+                />
+            <Button
+                x:Name="TimeButton"
+                Content="Час"
+                Margin="10,5"
+                FontSize="20"
+                />
+            <Button
+                x:Name="TemperaturButton"
+                Content="Температура"
+                Margin="10,5"
+                FontSize="20"
+                />
+            <Button
+                x:Name="AreaButton"
+                Content="Площа"
+                Margin="10,5"
+                FontSize="20"
+                />
+            <Button
+                x:Name="VolumeButton"
+                Content="Об’єм"
+                Margin="10,5"
+                FontSize="20"
+                />
+            <Button
+                x:Name="EnergyButton"
+                Content="Енергія"
+                Margin="10,5"
+                FontSize="20"
+                />
+            <Button
+                x:Name="PowerButton"
+                Content="Потужність"
+                Margin="10,5"
+                FontSize="20"
+                />
+        </StackPanel>
+        <Grid Margin="196,0,0,0">
+            <ContentControl x:Name="ConvernsContent" Margin="0,2,0,0"/>
+        </Grid>
+    </Grid>
+</Window>

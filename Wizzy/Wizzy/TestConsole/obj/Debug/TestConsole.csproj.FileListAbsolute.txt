@@ -1,0 +1,13 @@
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.exe.config
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.exe
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.pdb
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.csproj.AssemblyReference.cache
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.exe
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.pdb
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.exe.config
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestCons.AA59A120.Up2Date

@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="Wizzy.Pages.Tools.AllTools.Converns.Legth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.Tools.AllTools.Converns"
+        mc:Ignorable="d"
+            Width="597" d:DesignHeight="450" Background="AliceBlue">
+    <Grid Margin="0,0,0,-34">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="377*"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+        <Label 
+            Content="Вести значення"
+            FontSize="40"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="151,0,0,0"/>
+        <Grid Margin="0,63,0,0" Height="38" VerticalAlignment="Top" HorizontalAlignment="Left" Width="597" Grid.ColumnSpan="2">
+            <TextBox
+                x:Name="NumberTexBox"
+                VerticalAlignment="Top"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Width="370"
+                Height="30"/>
+            <ComboBox
+                x:Name="LeghtComboBox"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Width="127" 
+                Margin="0,0,95,0" 
+                Height="30"
+            />
+            <Button
+                x:Name="ConvertButton"
+                Content="Конвертувати"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Width="90"
+                Height="32" Click="ConvertButton_Click"/>
+        </Grid>
+        <StackPanel Margin="0,106,189,242">
+            <TextBlock
+                x:Name="KilometersTextBlock"
+                HorizontalAlignment="Left"
+                FontSize="15"
+                Text="Null:" 
+                Width="140"
+            />
+            <TextBlock
+                x:Name="CentimetersTextBlock"
+                HorizontalAlignment="Left"
+                Width="160"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="MillimetersTextBlock"
+                HorizontalAlignment="Left"
+                Width="160"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="DecitemersTextBLock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="NanometersTextBLock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15" Height="26"
+                />
+        </StackPanel>
+        <StackPanel Margin="212,106,0,242" Grid.ColumnSpan="2">
+            <TextBlock
+                x:Name="MilesTextBLock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="YardsTextBlock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="FeetTextBlock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
+            <TextBlock
+                x:Name="InchesTextBlock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
+        </StackPanel>
+    </Grid>
+</UserControl>
