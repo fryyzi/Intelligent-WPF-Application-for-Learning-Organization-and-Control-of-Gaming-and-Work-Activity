@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj": {}
+    "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj": {}
   },
   "projects": {
-    "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj": {
+    "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj",
+        "projectUniqueName": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj",
         "projectName": "TestWPF",
-        "projectPath": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj",
+        "projectPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\TestWPF.csproj",
         "packagesPath": "C:\\Users\\liter\\.nuget\\packages\\",
-        "outputPath": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\TestWPF\\obj\\",
+        "outputPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace Wizzy.Pages.Tools.AllTools.Converns
 {
     public class ConvertLeght
     {
-        public int Unit { get; set; }
-        public int Meters { get; set; }
-        public int Millimeters { get; set; }
-        public int Kilometers  { get; set; }
-        public int Centimeters { get; set; }
-        public int Decimeters { get; set; }
-        public int Micrometers { get; set; }
-        public int Nanometers { get; set; }
-        public int Miles { get; set; }
-        public int Yards { get; set; }
-        public int Feet { get; set; }
-        public int Inches { get; set; }
+        public double Unit { get; set; }
+        public double Meters { get; set; }
+        public double Millimeters { get; set; }
+        public double Kilometers  { get; set; }
+        public double Centimeters { get; set; }
+        public double Decimeters { get; set; }
+        public double Micrometers { get; set; }
+        public double Nanometers { get; set; }
+        public double Miles { get; set; }
+        public double Yards { get; set; }
+        public double Feet { get; set; }
+        public double Inches { get; set; }
 
 
 
@@ -44,7 +37,17 @@ namespace Wizzy.Pages.Tools.AllTools.Converns
                     Inches = (int)(Meters * 39.3701);
                     break;
                 case 1:
-                    
+                    Millimeters = Meters;
+
+                    Centimeters = Millimeters / 10.0;
+                    Meters = Millimeters / 1000.0;
+                    Kilometers = Millimeters / 1000000.0;
+                    Micrometers = Millimeters * 1000.0;
+                    Nanometers = Millimeters * 1000000.0;
+                    Inches = Millimeters * 0.03937;
+                    Feet = Millimeters * 0.003281;
+                    Yards = Millimeters * 0.001094;
+                    Miles = Millimeters * 0.000000621371;
                     break;
                 case 2:
                     

@@ -64,7 +64,7 @@ namespace Wizzy.Pages.Tools.AllTools.Converns
                 convertLeght.ConvertMethod();
                 
             }
-            NumberConvertCode = convertLeght.Kilometers.ToString();;
+            NumberConvertCode = convertLeght.Kilometers.ToString();
             if(NumberConvertCode.ToString() != "0")
             {
                 KilometersTextBlock.Text = $"Километрів: {NumberConvertCode.ToString()}";

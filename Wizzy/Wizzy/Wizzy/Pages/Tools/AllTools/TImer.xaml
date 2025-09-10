@@ -43,11 +43,24 @@
                     Grid.Column="2" 
                     Width="40"/>
             </Grid>
-            <Button
+            <StackPanel>
+                <Button
                 Content="Start"
                 Click="StartButtont_Click"
                 Margin="10"
                 />
+                <Button
+                    Content="Resume"
+                    Click="ResumeButtont_Click"
+                    Margin="10"
+                    />
+                <Button
+                     Content="Stop"
+                    Click="StopButtont_Click"
+                    Margin="10"
+                    />
+            </StackPanel>
+            
         </StackPanel>
     </Grid>
 </Window>

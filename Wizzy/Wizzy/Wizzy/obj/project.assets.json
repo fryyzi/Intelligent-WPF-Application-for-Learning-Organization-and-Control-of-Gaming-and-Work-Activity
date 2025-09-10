@@ -493,11 +493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\Wizzy\\Wizzy.csproj",
+      "projectUniqueName": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Wizzy.csproj",
       "projectName": "Wizzy",
-      "projectPath": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\Wizzy\\Wizzy.csproj",
+      "projectPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Wizzy.csproj",
       "packagesPath": "C:\\Users\\liter\\.nuget\\packages\\",
-      "outputPath": "F:\\programing\\C# Programs\\Wizzy\\Wizzy\\Wizzy\\obj\\",
+      "outputPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
