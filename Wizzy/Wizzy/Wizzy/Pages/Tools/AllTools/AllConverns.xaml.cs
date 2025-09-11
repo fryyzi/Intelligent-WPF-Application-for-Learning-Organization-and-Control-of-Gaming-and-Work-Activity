@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Wizzy.Pages.Tools.AllTools.Converns;  
 
+
 namespace Wizzy.Pages.Tools.AllTools
 {
     /// <summary>
@@ -25,7 +26,7 @@ namespace Wizzy.Pages.Tools.AllTools
 
         private void MassButton_Click(object sender, RoutedEventArgs e)
         {
-            ConvernsContent.Content = new Mass(); 
+            ConvernsContent.Content = new Converns.Mass.Mass();
         }
     }
 }

@@ -67,8 +67,6 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\AddT
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\ToDoList.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\AllConverns.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\CalculatorTool.g.cs
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Legth.g.cs
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\TImer.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\Calculator.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\ToolsContent.g.cs
@@ -81,8 +79,6 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\AddT
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\ToDoList.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\AllConverns.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\CalculatorTool.baml
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Legth.baml
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\TImer.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\Calculator.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\ToolsContent.baml
@@ -98,3 +94,7 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\refint\Wizzy.dl
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Wizzy.pdb
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Wizzy.genruntimeconfig.cache
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\ref\Wizzy.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Leght\Legth.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Leght\Legth.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass\Mass.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass\Mass.baml
