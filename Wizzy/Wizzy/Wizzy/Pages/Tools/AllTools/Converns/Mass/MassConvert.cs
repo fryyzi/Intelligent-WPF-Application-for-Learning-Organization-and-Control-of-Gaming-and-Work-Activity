@@ -27,8 +27,6 @@ namespace Wizzy.Pages.Tools.AllTools.Converns.Mass
                     Grams = Kilograms * 1000;
                     Milligrams = Kilograms * 1000000;
                     Tons = Kilograms / 1000;
-                    //MessageBox.Show(Kilograms.ToString());
-                    //MessageBox.Show(Grams.ToString());
                     break;
                 case 1:
                     Kilograms = Grams / 1000;

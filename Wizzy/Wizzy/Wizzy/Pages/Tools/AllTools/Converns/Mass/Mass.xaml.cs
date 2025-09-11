@@ -20,6 +20,7 @@ namespace Wizzy.Pages.Tools.AllTools.Converns.Mass
     /// </summary>
     public partial class Mass : UserControl
     {
+        MassConvert mass = new MassConvert();
         public Mass()
         {
             InitializeComponent();
@@ -34,17 +35,49 @@ namespace Wizzy.Pages.Tools.AllTools.Converns.Mass
             MassComboBox.SelectedIndex = 0;
         }
 
-        public void Audit(string Number)
+        public void Audit()
         {
+            mass.MassConvertMethod();
 
             var itemMethod = MassComboBox.SelectedItem as string;
             {
                  var indexMethod = Array.IndexOf(MassComboBox.ItemsSource.Cast<string>().ToArray(), itemMethod);
             }
-
-            if (Number != "0")
+ 
+            if (mass.Grams.ToString() != "0")
             {
-                
+                GramsTextBlock.Text = $"Грамів: {mass.Grams.ToString()}";
+            }
+            else
+            {
+                GramsTextBlock.Text = $" ";
+            }
+            if (mass.Milligrams.ToString() != "0")
+            {
+                MiligramsTextBlock.Text = $"Міліграмів: {mass.Milligrams.ToString()}";
+            }
+            else
+            {
+                MiligramsTextBlock.Text = $" ";
+            }
+
+            if (mass.Kilograms.ToString() != "0")
+            {
+                KilogramsTextBlock.Text = $"Килограмів: {mass.Kilograms.ToString()}";
+            }
+
+            else
+            {
+                KilogramsTextBlock.Text = $" ";
+            }
+
+            if (mass.Tons.ToString() != "0")
+            {
+                TonyTextBlock.Text = $"Тон: {mass.Tons.ToString()}";
+            }
+            else
+            {
+                TonyTextBlock.Text = $" ";
             }
         }
 
@@ -61,62 +94,32 @@ namespace Wizzy.Pages.Tools.AllTools.Converns.Mass
             var item = MassComboBox.SelectedItem as string;
             {
                 var index = Array.IndexOf(MassComboBox.ItemsSource.Cast<string>().ToArray(), item);
-                MessageBox.Show(index.ToString());
+                //MessageBox.Show(index.ToString());
                 if (!int.TryParse(NumberCode, out int number))
                 {
                     MessageBox.Show("Не вірне значення!");
                     return; 
                 }
-                MassConvert mass = new MassConvert();
-                mass.Unit = index;
                 
+                mass.Unit = index;
 
                 switch (index)
                 {
                     case 0:
-                        KilogramsCode = NumberCode.ToString();
                         mass.Kilograms = number;
-                        //MessageBox.Show(NumberCode);
-                        mass.MassConvertMethod();
-
-                        if (mass.Tons.ToString() != "0")
-                        {
-                            TonyTextBlock.Text = mass.Tons.ToString();
-                        }
-                        else
-                        {
-                            
-                        }
-
-                            GramsTextBlock.Text = mass.Grams.ToString();
-                        MiligramsTextBlock.Text = mass.Milligrams.ToString();
-                        TonyTextBlock.Text = mass.Tons.ToString();
-
-
+                        Audit();
                         break;
                     case 1:
-                        GramsCode = NumberCode.ToString();
-                        mass.Grams = int.Parse(GramsCode);
-
-                        MiligramsTextBlock.Text = mass.Milligrams.ToString();
-                        TonyTextBlock.Text = mass.Tons.ToString();
-                        KilogramsTextBlock.Text = mass.Kilograms.ToString();
+                        mass.Grams = number;
+                        Audit();
                         break;
                     case 2:
-                        MilligramsCode = NumberCode.ToString();
-                        mass.Milligrams = int.Parse(MilligramsCode);
-
-                        GramsTextBlock.Text = mass.Grams.ToString();
-                        TonyTextBlock.Text = mass.Tons.ToString();
-                        KilogramsTextBlock.Text = mass.Kilograms.ToString();
+                        mass.Milligrams = number;
+                        Audit();
                         break;
                     case 3:
-                        TonsCode = NumberCode.ToString();
-                        mass.Tons = int.Parse(TonsCode);
-
-                        KilogramsTextBlock.Text = mass.Kilograms.ToString();
-                        GramsTextBlock.Text = mass.Grams.ToString();
-                        MiligramsTextBlock.Text = mass.Milligrams.ToString();
+                        mass.Tons = number;
+                        Audit();
                         break;
                     default:
                         break;
