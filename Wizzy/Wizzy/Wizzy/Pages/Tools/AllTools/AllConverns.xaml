@@ -25,7 +25,7 @@
                 x:Name="TimeButton"
                 Content="Час"
                 Margin="10,5"
-                FontSize="20"
+                FontSize="20" Click="TimeButton_Click"
                 />
             <Button
                 x:Name="TemperaturButton"

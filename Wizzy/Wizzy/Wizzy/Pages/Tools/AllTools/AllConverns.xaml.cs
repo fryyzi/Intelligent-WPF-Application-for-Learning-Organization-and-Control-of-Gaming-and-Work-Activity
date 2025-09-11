@@ -28,5 +28,10 @@ namespace Wizzy.Pages.Tools.AllTools
         {
             ConvernsContent.Content = new Converns.Mass.Mass();
         }
+
+        private void TimeButton_Click(object sender, RoutedEventArgs e)
+        {
+            ConvernsContent.Content = new Converns.Time.TimeWindow();   
+        }
     }
 }

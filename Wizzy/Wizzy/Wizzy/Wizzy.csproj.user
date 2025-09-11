@@ -23,6 +23,9 @@
     <Compile Update="Pages\Tools\AllTools\Converns\Mass\Mass.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Tools\AllTools\TImer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

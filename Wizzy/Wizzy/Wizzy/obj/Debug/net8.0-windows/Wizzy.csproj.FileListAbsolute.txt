@@ -98,3 +98,5 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\All
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Leght\Legth.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass\Mass.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass\Mass.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Time\TimeWindow.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Time\TimeWindow.baml
