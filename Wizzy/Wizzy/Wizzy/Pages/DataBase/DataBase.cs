@@ -64,5 +64,27 @@ namespace Wizzy.Pages.DataBase
             }
             return dociuments;
         }
+        public void UpdateToDo(string newTitle, string newText)
+        {
+            NoConnect();
+
+            var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMAainText);
+
+            var update = Builders<BsonDocument>.Update
+                .Set("ToDoListName", newTitle)
+                .Set("Text", newText);
+            _collection.UpdateOne(filter, update);
+
+            MessageBox.Show("Нагадування оновлено!");
+        }
+
+        public void DeleteToDo()
+        {
+            NoConnect();
+            var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMAainText);
+            _collection.DeleteOne(filter);
+            MessageBox.Show("Нагадування видалено!");
+            
+        }
     }
 }

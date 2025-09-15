@@ -109,3 +109,5 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\MongoDB.Driver.
 F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\SharpCompress.dll
 F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\Snappier.dll
 F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\ZstdSharp.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\EditToDoList.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\EditToDoList.baml

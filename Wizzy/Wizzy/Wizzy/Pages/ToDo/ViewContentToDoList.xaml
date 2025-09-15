@@ -5,22 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wizzy.Pages.ToDo"
         mc:Ignorable="d"
-        Title="ViewContentToDoList" Height="450" Width="800">
-    <Grid Margin="0,0,0,-38">
+        Title="ViewContentToDoList" Height="466" Width="800">
+    <Grid Margin="0,0,0,-6">
         <Label
             Content="Wizzy"
-            FontSize="20" Height="39" VerticalAlignment="Top" Margin="0,0,729,0"
+            FontSize="20" Height="39" VerticalAlignment="Top" Margin="0,0,722,0"
             />
         <TextBlock
             x:Name="TitleToDoListTextBlock"
             Text="Вміст нотатки"
             FontSize="25" Height="39" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.406" Margin="165,0,10,0"
             />
-        <TextBox
+        <TextBlock
             x:Name="ContentToDoListTextBox"
             FontSize="20" Height="350" VerticalAlignment="Top" Margin="0,39,0,0"
             TextWrapping="Wrap"
-            AcceptsReturn="True"
             />
+        <Button 
+            x:Name="EditToDoListButton"
+            Content="Змінити" 
+            FontSize="20"
+            HorizontalAlignment="Left" 
+            Margin="666,394,0,0" 
+            VerticalAlignment="Top" 
+            Height="36" 
+            Width="124" Click="EditToDoListButton_Click"/>
+
     </Grid>
 </Window>

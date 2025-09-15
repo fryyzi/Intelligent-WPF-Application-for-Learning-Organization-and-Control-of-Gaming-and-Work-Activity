@@ -40,5 +40,11 @@ namespace Wizzy.Pages.ToDo
                 }
             }
         }
+
+        private void EditToDoListButton_Click(object sender, RoutedEventArgs e)
+        {
+            ToDo.EditToDoList editToDoList = new ToDo.EditToDoList();
+            editToDoList.Show();
+        }
     }
 }
