@@ -1,0 +1,26 @@
+﻿<Window x:Class="Wizzy.Pages.ToDo.ViewContentToDoList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.ToDo"
+        mc:Ignorable="d"
+        Title="ViewContentToDoList" Height="450" Width="800">
+    <Grid Margin="0,0,0,-38">
+        <TextBox
+            Text="Wizzy"
+            FontSize="20" Height="29" VerticalAlignment="Top" Margin="0,0,729,0"
+            />
+        <TextBlock
+            x:Name="TitleToDoListTextBlock"
+            Text="Вміст нотатки"
+            FontSize="25" Height="39" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.406" Margin="165,0,10,0"
+            />
+        <TextBox
+            x:Name="ContentToDoListTextBox"
+            FontSize="20" Height="350" VerticalAlignment="Top" Margin="0,39,0,0"
+            TextWrapping="Wrap"
+            AcceptsReturn="True"
+            />
+    </Grid>
+</Window>

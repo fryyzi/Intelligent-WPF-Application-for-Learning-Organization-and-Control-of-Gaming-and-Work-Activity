@@ -38,35 +38,61 @@
     HorizontalAlignment="Right"
     Width="90" Click="ConvertTimeButton_Click" Margin="0,0,0,6"/>
         </Grid>
-        <StackPanel Margin="0,106,189,242">
+        <StackPanel Margin="0,106,95,242">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="SecundeTextBlock"
+                    HorizontalAlignment="Left"
+                    FontSize="15"
+                    Text="Null:" 
+                    Width="140"
+                />
+                <TextBlock
+                     x:Name="MinuteTextBlock"
+                    HorizontalAlignment="Right"
+                    Width="160"
+                    Text="Null:"
+                    FontSize="15"
+                />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="HourTextBlock"
+                    Width="140"
+                    Text="Null:"
+                    FontSize="15"
+                />
+                <TextBlock
+                    x:Name="DayTextBlock"
+                     HorizontalAlignment="Left"
+                    Width="160"
+                    Text="Null:"
+                    FontSize="15"
+                />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="WeekTextBlock"
+                    HorizontalAlignment="Left"
+                    Width="140"
+                    Text="Null:"
+                    FontSize="15"
+                />
+                <TextBlock
+                    x:Name="MonthTextBlock"
+                    HorizontalAlignment="Left"
+                    Width="160"
+                    Text="Null:"
+                    FontSize="15"
+                />
+            </StackPanel>
             <TextBlock
-    x:Name="TonyTextBlock"
-    HorizontalAlignment="Left"
-    FontSize="15"
-    Text="Null:" 
-    Width="140"
-/>
-            <TextBlock
-    x:Name="KilogramsTextBlock"
-    HorizontalAlignment="Left"
-    Width="160"
-    Text="Null:"
-    FontSize="15"
-    />
-            <TextBlock
-    x:Name="GramsTextBlock"
-    HorizontalAlignment="Left"
-    Width="160"
-    Text="Null:"
-    FontSize="15"
-    />
-            <TextBlock
-        x:Name="MiligramsTextBlock"
-        HorizontalAlignment="Left"
-        Width="160"
-        Text="Null:"
-        FontSize="15"
-    />
+                x:Name="YearTextBlock"
+                HorizontalAlignment="Left"
+                Width="140"
+                Text="Null:"
+                FontSize="15"
+                />
         </StackPanel>
     </Grid>
 </UserControl>

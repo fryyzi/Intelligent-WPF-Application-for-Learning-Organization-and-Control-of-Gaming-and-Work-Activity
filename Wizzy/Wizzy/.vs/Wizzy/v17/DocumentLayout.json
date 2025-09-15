@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\allconverns.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\allconverns.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\viewcontenttodolist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\viewcontenttodolist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\allconverns.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\allconverns.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\viewcontenttodolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\viewcontenttodolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\addtodo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\addtodo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\todolist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\todolist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\todolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\todolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\time\\timewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\time\\timewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\time\\timeconverts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\time\\timeconverts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\time\\timewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,8 +51,12 @@
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\mass\\mass.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\time\\timeconverts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\time\\timeconverts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\allconverns.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\allconverns.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\allconverns.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\allconverns.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\mass\\mass.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\leght\\legth.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\leght\\legth.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\leght\\convertleght.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\converns\\leght\\convertleght.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\converns\\leght\\legth.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -66,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 328,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,19 +103,119 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ViewContentToDoList.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T18:56:37.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewContentToDoList.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs*",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvyAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:57:44.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddToDo.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs*",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:53:52.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddToDo.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T18:54:34.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDoList.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ToDoList.xaml.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ToDoList.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ToDoList.xaml.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\ToDoList.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:54:04.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ToDoList.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ToDoList.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ToDoList.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ToDoList.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\ToDoList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T18:54:37.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SchedulePage.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\SchedulePage.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\SchedulePage.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\SchedulePage.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\SchedulePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T18:57:29.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TimeConverts.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:40:41.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TimeWindow.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml.cs",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwEgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T11:15:25.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "TimeWindow.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeWindow.xaml",
@@ -99,20 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TimeConverts.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Time\\TimeConverts.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T11:11:41.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Mass.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml",
@@ -124,32 +239,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Mass.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml.cs",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Mass\\Mass.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAlwB0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwFUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T08:50:11.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "AllConverns.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml*",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml*",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-09T07:01:33.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
+              "Title": "AllConverns.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:06:09.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "TImer.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml.cs",
@@ -157,24 +285,12 @@
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAgwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:18:53.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AllConverns.xaml.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs*",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T09:06:09.832Z",
+              "WhenOpened": "2025-09-10T20:18:53.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Legth.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml.cs",
@@ -182,64 +298,76 @@
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T18:45:47.764Z"
+              "WhenOpened": "2025-09-07T18:45:47.764Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ConvertLeght.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\ConvertLeght.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\ConvertLeght.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\ConvertLeght.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\ConvertLeght.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T08:53:27.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "TImer.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\TImer.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-10T20:19:29.596Z"
+              "WhenOpened": "2025-09-10T20:19:29.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Legth.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Converns\\Leght\\Legth.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-09T07:40:10.1Z"
+              "WhenOpened": "2025-09-09T07:40:10.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
               "RelativeToolTip": "Wizzy\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAApwCwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAIA7wCwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T07:01:28.269Z"
+              "WhenOpened": "2025-09-09T07:01:28.269Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
               "RelativeToolTip": "Wizzy\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-07T22:31:13.909Z"
+              "WhenOpened": "2025-09-07T22:31:13.909Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 328,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataBase.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs*",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\DataBase.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwC8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T18:53:58.95Z",
+              "EditorCaption": ""
             }
           ]
         },

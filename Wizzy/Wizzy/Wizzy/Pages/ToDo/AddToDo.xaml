@@ -12,7 +12,7 @@
         <TextBox x:Name="NewMainToDoListTextBox" HorizontalAlignment="Left" Margin="83,80,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Width="373" Height="35"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,137,0,0" TextWrapping="Wrap" Text="Нагадування" FontSize="20 " VerticalAlignment="Top"/>
         <TextBox x:Name="NewToDoTextBox" HorizontalAlignment="Center" Margin="0,164,0,0" TextWrapping="Wrap" FontSize="20" VerticalAlignment="Top" Width="464" Height="199"/>
-        <Button Content="Добавити" FontSize="20" HorizontalAlignment="Left" Margin="318,368,0,0" VerticalAlignment="Top" Height="46" Width="156" Click="AddButtonNewToDoListClick" />
+        <Button x:Name="AddToDoList" Content="Добавити" FontSize="20" HorizontalAlignment="Left" Margin="318,368,0,0" VerticalAlignment="Top" Height="46" Width="156" Click="AddButtonNewToDoListClick" />
 
     </Grid>
 </Window>

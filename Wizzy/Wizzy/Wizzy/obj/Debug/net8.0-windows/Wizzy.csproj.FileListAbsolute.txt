@@ -100,3 +100,12 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\All
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Mass\Mass.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Time\TimeWindow.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Converns\Time\TimeWindow.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\ViewContentToDoList.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\ToDo\ViewContentToDoList.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\DnsClient.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\MongoDB.Driver.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\SharpCompress.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\Snappier.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\ZstdSharp.dll

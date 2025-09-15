@@ -33,8 +33,8 @@ namespace Wizzy.Pages
 
             textBlock.MouseLeftButtonDown += (s, e) =>
             {
-                //var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
-                //addToDoWindow.Show();
+                var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
+                addToDoWindow.Show();
             };
 
             Text.Children.Add(new Border

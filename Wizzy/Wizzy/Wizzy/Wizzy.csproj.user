@@ -11,6 +11,9 @@
     <Compile Update="Pages\ToDo\ToDoList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ToDo\ViewContentToDoList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Tools\AllTools\AllConverns.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
