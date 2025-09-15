@@ -1,35 +1,44 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using MongoDB.Bson;
-using MongoDB.Driver;
 using Wizzy.Pages.DataBase;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Wizzy.Pages.ToDo
 {
-    /// <summary>
-    /// Логика взаимодействия для ViewContentToDoList.xaml
-    /// </summary>
     public partial class ViewContentToDoList : Window
     {
-         Wizzy.Pages.DataBase.DataBase database = new Wizzy.Pages.DataBase.DataBase();
+        Wizzy.Pages.DataBase.DataBase database = new Wizzy.Pages.DataBase.DataBase();
+        string Title = String.Empty;
+        string TextDoTo = String.Empty;
+        string Maintext = DataBase.DataBase.TitleMAainText;
+
         public ViewContentToDoList()
         {
             InitializeComponent();
-
-            //TitleToDoListTextBlock.Text = DataBase.DataBase.ToDoListName;
-            //ContentToDoListTextBox.Text = DataBase.DataBase.Text;
             database.Connect();
 
             var Content = database.ViewContentToDoList();
 
-            foreach(var item in Content) 
+            foreach (var item in Content) 
             {
-                TitleToDoListTextBlock.Text = item.GetValue("ToDoListName").AsString;
-                ContentToDoListTextBox.Text = item.GetValue("Text").AsString;
+                Title = item.GetValue("ToDoListName").AsString;
+                TextDoTo = item.GetValue("Text").AsString;
 
+                if (string.IsNullOrEmpty(Title) || string.IsNullOrEmpty(TextDoTo))
+                {
+                    this.Close();
+                }
+
+                if(Maintext == TextDoTo)
+                {
+                    TitleToDoListTextBlock.Text = Title;
+                    ContentToDoListTextBox.Text = TextDoTo;
+                }
             }
-        }  
+        }
     }
 }

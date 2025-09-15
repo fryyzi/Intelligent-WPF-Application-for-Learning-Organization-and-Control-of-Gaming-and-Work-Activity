@@ -14,7 +14,11 @@ namespace Wizzy.Pages.DataBase
     {
         public static string Text = "Not Text";
         public static string ToDoListName = "No Name ToDoList";
-        
+
+        public static string TitleMAainText;
+
+        public static int Id = 0;
+
         private IMongoCollection<BsonDocument> _collection;
 
 
@@ -33,11 +37,13 @@ namespace Wizzy.Pages.DataBase
         public void AddToDoList(string newToDoText, string newMainToDoListName)
         {
             NoConnect();
+            ViewContentToDoList();
 
             var AddToDoList = new BsonDocument
             {
                 { "ToDoListName", newMainToDoListName },
-                { "Text", newToDoText }
+                { "Text", newToDoText },
+                { "Id", Id += 1 }
             };
             _collection.InsertOne(AddToDoList);
             MessageBox.Show("Нагадування додано!");
@@ -48,6 +54,15 @@ namespace Wizzy.Pages.DataBase
             NoConnect();
 
             var dociuments = _collection.Find(new BsonDocument()).ToList();
+
+            foreach (var item in dociuments)
+            {
+                Id = item.GetValue("Id").AsInt32;
+                if (Id == 0)
+                    Id = 1;
+
+            }
+
             return dociuments;
         }
     }

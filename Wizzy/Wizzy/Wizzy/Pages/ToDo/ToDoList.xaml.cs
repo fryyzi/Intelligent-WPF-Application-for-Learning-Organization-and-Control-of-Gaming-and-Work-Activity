@@ -9,9 +9,6 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Wizzy.Pages.DataBase;
 
 namespace Wizzy.Pages
 {
@@ -23,30 +20,44 @@ namespace Wizzy.Pages
         public ToDoList()
         {
             InitializeComponent();
-            TextBlock textBlock = new TextBlock
-            {
-                Text = DataBase.DataBase.ToDoListName,
-                FontSize = 16,
-                Margin = new Thickness(10),
-                Cursor = Cursors.Hand
-            };
+            Wizzy.Pages.DataBase.DataBase database = new Wizzy.Pages.DataBase.DataBase();
+            database.Connect();
 
-            textBlock.MouseLeftButtonDown += (s, e) =>
-            {
-                var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
-                addToDoWindow.Show();
-            };
 
-            Text.Children.Add(new Border
+
+            var Content = database.ViewContentToDoList();
+
+            foreach(var item in Content)
             {
-                Background = Brushes.LightGray,
-                BorderBrush = Brushes.Black,
-                BorderThickness = new Thickness(1),
-                CornerRadius = new CornerRadius(5),
-                Margin = new Thickness(0),
-                VerticalAlignment = VerticalAlignment.Top,
-                Child = textBlock
-            });
+                var TextMain = item.GetValue("Text").AsString;
+
+                TextBlock textBlock = new TextBlock
+                {
+                    Text = TextMain,
+                    FontSize = 16,
+                    Margin = new Thickness(10),
+                    Cursor = Cursors.Hand
+                };
+
+                textBlock.MouseLeftButtonDown += (s, e) =>
+                {
+                    DataBase.DataBase.TitleMAainText = TextMain;
+                    var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
+                    addToDoWindow.Show();
+                };
+
+                Text.Children.Add(new Border
+                {
+                    Background = Brushes.LightGray,
+                    BorderBrush = Brushes.Black,
+                    BorderThickness = new Thickness(1),
+                    CornerRadius = new CornerRadius(5),
+                    Margin = new Thickness(10),
+                    VerticalAlignment = VerticalAlignment.Top,
+                    Child = textBlock
+                });
+
+            }
         }
     }
 }
