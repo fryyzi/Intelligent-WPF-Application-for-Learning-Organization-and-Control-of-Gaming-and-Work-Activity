@@ -28,32 +28,16 @@ namespace Wizzy.Pages.ToDo
         {
             newToDoText = NewToDoTextBox.Text.Trim();
             newMainToDoListName = NewMainToDoListTextBox.Text.Trim();
-            try
+            if (string.IsNullOrEmpty(newToDoText) || string.IsNullOrEmpty(newMainToDoListName))
             {
-                DataBase.DataBase.Text = newToDoText;
-                DataBase.DataBase.ToDoListName = newMainToDoListName;
+                MessageBox.Show("Будь ласка, заповніть всі поля.");
+                return;
+            }
+            DataBase.DataBase.Text = newToDoText;
+            DataBase.DataBase.ToDoListName = newMainToDoListName;
 
-                dataBase.AddToDoList(newToDoText, newMainToDoListName);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            finally
-            {
-                if (string.IsNullOrEmpty(newToDoText))
-                {
-                    MessageBox.Show("Будь ласка введіть Нагадування", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-                if (string.IsNullOrEmpty(newMainToDoListName))
-                {
-                    MessageBox.Show("Будь ласка введіть Назву Списку", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-                else
-                {
-                    this.Close();
-                }
-            }
+            dataBase.AddToDoList(newToDoText, newMainToDoListName);
         }
+        
     }
 }

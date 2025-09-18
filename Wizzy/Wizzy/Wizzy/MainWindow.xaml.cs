@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Diagnostics;
 
 using Wizzy.Pages;
+using Wizzy.Pages.HomeWork;
 using Wizzy.Pages.tools;
 using Wizzy.Pages.Tools.AllTools.Converns;
 
@@ -48,6 +49,17 @@ namespace Wizzy
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void AddHomeWork(object sender, RoutedEventArgs e)
+        {
+            Pages.HomeWork.AddWork addWork = new Pages.HomeWork.AddWork();
+            addWork.Show();
+        }
+
+        private void ViewHomeWork(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new HomeWork();
         }
     }
 }

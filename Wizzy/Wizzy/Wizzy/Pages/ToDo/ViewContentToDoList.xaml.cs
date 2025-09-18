@@ -33,7 +33,7 @@ namespace Wizzy.Pages.ToDo
                     this.Close();
                 }
 
-                if(Maintext == TextDoTo)
+                if(Maintext == Title)
                 {
                     TitleToDoListTextBlock.Text = Title;
                     ContentToDoListTextBox.Text = TextDoTo;

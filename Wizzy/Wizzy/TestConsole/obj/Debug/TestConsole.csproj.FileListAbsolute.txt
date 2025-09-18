@@ -11,3 +11,44 @@ F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tas
 F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\programing\C# Programs\Wizzy\Wizzy\TestConsole\obj\Debug\TestCons.AA59A120.Up2Date
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.exe.config
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.exe
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\TestConsole.pdb
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\DnsClient.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Win32.Registry.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\MongoDB.Bson.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\MongoDB.Driver.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\SharpCompress.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Snappier.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Buffers.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Memory.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Numerics.Vectors.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Security.AccessControl.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Security.Principal.Windows.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Text.Encoding.CodePages.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\ZstdSharp.dll
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\DnsClient.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Microsoft.Win32.Registry.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\MongoDB.Bson.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\MongoDB.Driver.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\Snappier.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Buffers.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Memory.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Numerics.Vectors.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Security.AccessControl.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Security.Principal.Windows.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Text.Encoding.CodePages.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.csproj.AssemblyReference.cache
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.exe.config
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestCons.AA59A120.Up2Date
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.exe
+F:\programing\Project\Wizzy\Wizzy\TestConsole\obj\Debug\TestConsole.pdb

@@ -1,30 +1,29 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
 using System.ComponentModel.Design;
+using System.Security.Authentication;
 using System.Timers;
 
 class Program
 {
-    static Timer timer;
 
     static void Main()
     {
-        bool a = true;
-        int MiliSecond = 0;
-        int Second = 0;
 
-        while (a)
-        {
-            Console.Write($"{Second}.{MiliSecond}");
-            Console.Clear();
-            MiliSecond++;
-            if (MiliSecond == 1000)
+        var client = new MongoClient("mongodb://localhost:27017/");
+        var database = client.GetDatabase("Wizzy");
+        var _collection = database.GetCollection<BsonDocument>("ToDoLists");
+
+        var AddToDoList = new BsonDocument
             {
-                Second++;
-                MiliSecond = 0;
-            }
+                { "ToDoListName", "qweqwe" },
+                { "Text", "eqweqw" },
+            };
+        _collection.InsertOne(AddToDoList);
+        Console.WriteLine("Нагадування додано!");
 
 
-        }
     }
 
     

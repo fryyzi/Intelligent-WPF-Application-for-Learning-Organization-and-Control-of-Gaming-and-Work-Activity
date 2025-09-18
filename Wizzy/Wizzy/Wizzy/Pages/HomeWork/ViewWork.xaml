@@ -1,0 +1,32 @@
+﻿<Window x:Class="Wizzy.Pages.HomeWork.ViewWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.HomeWork"
+        mc:Ignorable="d"
+        Title="ViewWork" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock
+            x:Name="TitleHomeWorkTextBlock"
+            Text="Вміст завдання"
+            FontSize="25" Height="39" 
+            VerticalAlignment="Top" 
+            TextAlignment="Center"
+            RenderTransformOrigin="0.506,1.406" 
+            Margin="10,0,0,0"
+            Grid.Row="0"
+            />
+        <TextBlock
+            x:Name="DescriptionHomeWorkTextBox"
+            Text="Опис"
+            FontSize="20" 
+            Margin="0,39,0,0"
+    />
+    </Grid>
+</Window>

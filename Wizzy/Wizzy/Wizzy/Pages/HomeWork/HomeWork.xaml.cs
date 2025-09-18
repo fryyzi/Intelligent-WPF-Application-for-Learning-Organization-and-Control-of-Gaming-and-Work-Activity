@@ -9,27 +9,29 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace Wizzy.Pages
+namespace Wizzy.Pages.HomeWork
 {
     /// <summary>
-    /// Логика взаимодействия для ToDoList.xaml
+    /// Interaction logic for HomeWork.xaml
     /// </summary>
-    public partial class ToDoList : UserControl
+    public partial class HomeWork : UserControl
     {
-        public ToDoList()
+        public HomeWork()
         {
+            Wizzy.Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
             InitializeComponent();
-            Wizzy.Pages.DataBase.DataBase database = new Wizzy.Pages.DataBase.DataBase();
-            database.Connect();
 
+            dataBase.Connect();
 
+            var Content = dataBase.ViewHomeWork();
 
-            var Content = database.ViewContentToDoList();
-
-            foreach(var item in Content)
+            foreach( var item in Content)
             {
-                var TextMain = item.GetValue("ToDoListName").AsString;
+                var TextMain = item.GetValue("Назва").AsString;
+
 
                 TextBlock textBlock = new TextBlock
                 {
@@ -41,12 +43,12 @@ namespace Wizzy.Pages
 
                 textBlock.MouseLeftButtonDown += (s, e) =>
                 {
-                    DataBase.DataBase.TitleMAainText = TextMain;
-                    var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
+                    DataBase.DataBase.HomeWorkTitle = TextMain;
+                    var addToDoWindow = new Pages.HomeWork.ViewWork();
                     addToDoWindow.Show();
                 };
 
-                Text.Children.Add(new Border
+                TextHomeWork.Children.Add(new Border
                 {
                     Background = Brushes.LightGray,
                     BorderBrush = Brushes.Black,
@@ -56,8 +58,11 @@ namespace Wizzy.Pages
                     VerticalAlignment = VerticalAlignment.Top,
                     Child = textBlock
                 });
-
             }
+
+            
+
+
         }
     }
 }
