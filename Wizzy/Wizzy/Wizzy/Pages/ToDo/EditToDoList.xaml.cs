@@ -19,11 +19,14 @@ namespace Wizzy.Pages.ToDo
     /// </summary>
     public partial class EditToDoList : Window
     {
+        DataBase.DataBase database = new DataBase.DataBase();
+        string Maintext = DataBase.DataBase.TitleMainText;
         public EditToDoList()
         {
             InitializeComponent();
-            DataBase.DataBase database = new DataBase.DataBase();
+            
             database.Connect();
+            
 
             var Content = database.ViewContentToDoList();
             foreach(var item in Content)
@@ -34,7 +37,7 @@ namespace Wizzy.Pages.ToDo
                 {
                     this.Close();
                 }
-                if (DataBase.DataBase.TitleMAainText == TextDoTo)
+                if (Maintext == Title)
                 {
                     EditTitleToDoListTextBlock.Text = Title;
                     EditTextBlock.Text = TextDoTo;
@@ -44,7 +47,6 @@ namespace Wizzy.Pages.ToDo
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            DataBase.DataBase database = new DataBase.DataBase();
             database.Connect();
 
             string NewTitle = EditTitleToDoListTextBlock.Text;
@@ -55,7 +57,7 @@ namespace Wizzy.Pages.ToDo
                 MessageBox.Show("Поля не можуть бути пустими!");
                 return;
             }
-            database.UpdateToDo(NewTitle, NewText);
+            database.UpdateDataBase(NewTitle, NewText, 1);
             MessageBox.Show("Зміни збережено!");
             this.Close();
         }
@@ -65,7 +67,7 @@ namespace Wizzy.Pages.ToDo
             DataBase.DataBase database = new DataBase.DataBase();
             database.Connect();
 
-            database.DeleteToDo();
+            database.DeleteDataBase(1);
             this.Close();
         }
     }

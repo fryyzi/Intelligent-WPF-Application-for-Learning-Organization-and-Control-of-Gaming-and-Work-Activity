@@ -18,6 +18,10 @@
             x:Name="EditTextBlock" 
             Text="Редагувати нотатку"
             FontSize="20"
+            TextWrapping="Wrap"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Disabled"
             Margin="0,39,0,62"
             />
         <Button 

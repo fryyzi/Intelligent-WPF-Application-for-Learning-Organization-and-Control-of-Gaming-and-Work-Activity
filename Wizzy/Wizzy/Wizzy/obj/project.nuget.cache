@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zgg7kvd4em8=",
+  "dgSpecHash": "yzWiUDMKTd8=",
   "success": true,
   "projectFilePath": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Wizzy.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\liter\\.nuget\\packages\\avalonedit\\6.3.1.120\\avalonedit.6.3.1.120.nupkg.sha512",
     "C:\\Users\\liter\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\liter\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\liter\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

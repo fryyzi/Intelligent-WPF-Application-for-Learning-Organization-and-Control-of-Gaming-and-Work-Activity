@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
         xmlns:local="clr-namespace:Wizzy.Pages.ToDo"
         mc:Ignorable="d"
         Title="ViewContentToDoList" Height="466" Width="800">
@@ -16,20 +17,37 @@
             Text="Вміст нотатки"
             FontSize="25" Height="39" VerticalAlignment="Top" RenderTransformOrigin="0.506,1.406" Margin="165,0,10,0"
             />
-        <TextBlock
+        <TextBox
             x:Name="ContentToDoListTextBox"
-            FontSize="20" Height="350" VerticalAlignment="Top" Margin="0,39,0,0"
+            FontSize="20" 
+            Height="350" 
+            VerticalAlignment="Top"
+            VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Disabled"
+            AcceptsReturn="True"
+            IsReadOnly="True"
+            Margin="0,39,0,0"
             TextWrapping="Wrap"
+            Visibility="Hidden"
             />
+        <avalonedit:TextEditor
+            x:Name="CodeSynTextBox"
+            FontSize="20"
+            VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Disabled"
+            FontFamily="Consolas"
+            Background="Black"
+            Foreground="White"
+            Margin="0,39,0,67"
+            IsReadOnly="True"
+            Visibility="Hidden"
+            />
+
         <Button 
             x:Name="EditToDoListButton"
             Content="Змінити" 
-            FontSize="20"
-            HorizontalAlignment="Left" 
-            Margin="666,394,0,0" 
-            VerticalAlignment="Top" 
-            Height="36" 
-            Width="124" Click="EditToDoListButton_Click"/>
+            FontSize="20" 
+            Margin="0,0,10,26" Click="EditToDoListButton_Click" HorizontalAlignment="Right" Width="124" Height="36" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>

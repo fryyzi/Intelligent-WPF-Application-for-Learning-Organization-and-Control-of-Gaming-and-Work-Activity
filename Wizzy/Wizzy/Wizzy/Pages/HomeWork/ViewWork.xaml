@@ -10,23 +10,44 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
+
+        <!-- Заголовок -->
         <TextBlock
             x:Name="TitleHomeWorkTextBlock"
             Text="Вміст завдання"
             FontSize="25" Height="39" 
             VerticalAlignment="Top" 
-            TextAlignment="Center"
-            RenderTransformOrigin="0.506,1.406" 
-            Margin="10,0,0,0"
+            HorizontalAlignment="Center"
             Grid.Row="0"
             />
-        <TextBlock
+
+        <!-- Опис -->
+        <TextBox
             x:Name="DescriptionHomeWorkTextBox"
             Text="Опис"
             FontSize="20" 
-            Margin="0,39,0,0"
-    />
+            Margin="10"
+            Grid.Row="1"
+            VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Disabled"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            IsReadOnly="True"
+        />
+
+        <!-- Кнопка -->
+        <Button
+            x:Name="EditButton"
+            Grid.Row="3" 
+            Margin="10"
+            Content="Змінити"
+            FontSize="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom" Click="EditButton_Click"
+            />
     </Grid>
 </Window>

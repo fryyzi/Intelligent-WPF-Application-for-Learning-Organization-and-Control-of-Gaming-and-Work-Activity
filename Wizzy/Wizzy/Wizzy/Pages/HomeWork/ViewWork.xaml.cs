@@ -47,9 +47,13 @@ namespace Wizzy.Pages.HomeWork
                     DescriptionHomeWorkTextBox.Text = DescriptionText;
                 }
             }
+        }
 
-            
-
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            EditHomeWork editHomeWork = new EditHomeWork();
+            editHomeWork.Show();
+            this.Close();
         }
     }
 }

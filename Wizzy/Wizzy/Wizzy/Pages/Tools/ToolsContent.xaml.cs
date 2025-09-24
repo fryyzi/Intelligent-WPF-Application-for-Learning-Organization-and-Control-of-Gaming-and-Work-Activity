@@ -47,5 +47,11 @@ namespace Wizzy.Pages.tools
             var ConvertWindow = new Tools.AllTools.AllConverns();
             ConvertWindow.Show();
         }
+
+        private void PomodoroButton_Click(object sender, RoutedEventArgs e)
+        {
+            var PomodoroWindow = new Tools.AllTools.Pomodoro.MainWindowPomodoro();
+            PomodoroWindow.ShowDialog();
+        }
     }
 }

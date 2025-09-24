@@ -16,16 +16,32 @@ namespace Wizzy.Pages.ToDo
     {
         string newToDoText = String.Empty;
         string newMainToDoListName = String.Empty;
+        string IsCodeAddToDo = String.Empty;
+
+        int IsNotCode = 0;
+
         Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
 
         public AddToDo()
         {
             InitializeComponent();
-            dataBase.Connect();
+            LanguageComboBox.ItemsSource = new List<string>
+            {
+                "C#",
+                "HTML",
+                "XML",
+                "JavaScript",
+                "SQL",
+                "PHP",
+                "VB",
+                "XAML"
+            };
+            LanguageComboBox.SelectedIndex = 0;
         }
 
         private void AddButtonNewToDoListClick(object sender, RoutedEventArgs e)
         {
+            dataBase.Connect();
             newToDoText = NewToDoTextBox.Text.Trim();
             newMainToDoListName = NewMainToDoListTextBox.Text.Trim();
             if (string.IsNullOrEmpty(newToDoText) || string.IsNullOrEmpty(newMainToDoListName))
@@ -35,9 +51,30 @@ namespace Wizzy.Pages.ToDo
             }
             DataBase.DataBase.Text = newToDoText;
             DataBase.DataBase.ToDoListName = newMainToDoListName;
+            if (LanguageComboBox.SelectedItem != null && IsCodeCheckBox.IsChecked == true)
+            {
 
-            dataBase.AddToDoList(newToDoText, newMainToDoListName);
+                var item = LanguageComboBox.SelectedItem as string;
+                {
+                    IsCodeAddToDo = LanguageComboBox.SelectedItem.ToString();
+                }
+            }
+            else
+            {
+                IsCodeAddToDo = "None";
+            }
+            dataBase.AddToDoList(newToDoText, newMainToDoListName, IsCodeAddToDo);
+
         }
-        
+
+        private void IsCodeCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            LanguageComboBox.Visibility = Visibility.Visible;
+        }
+
+        private void IsCodeCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            LanguageComboBox.Visibility = Visibility.Hidden;
+        }
     }
 }

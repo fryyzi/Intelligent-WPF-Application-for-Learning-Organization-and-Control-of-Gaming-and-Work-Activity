@@ -121,3 +121,8 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Schedule\
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Schedule\Schedule.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\HomeWork\HomeWork.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\HomeWork\HomeWork.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\HomeWork\EditHomeWork.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\HomeWork\EditHomeWork.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\ICSharpCode.AvalonEdit.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.baml

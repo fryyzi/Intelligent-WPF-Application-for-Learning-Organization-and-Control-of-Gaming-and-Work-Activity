@@ -41,7 +41,7 @@ namespace Wizzy.Pages
 
                 textBlock.MouseLeftButtonDown += (s, e) =>
                 {
-                    DataBase.DataBase.TitleMAainText = TextMain;
+                    DataBase.DataBase.TitleMainText = TextMain;
                     var addToDoWindow = new Pages.ToDo.ViewContentToDoList();
                     addToDoWindow.Show();
                 };

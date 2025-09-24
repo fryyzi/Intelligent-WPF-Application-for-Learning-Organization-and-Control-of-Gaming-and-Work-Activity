@@ -5,6 +5,9 @@
     <Compile Update="Pages\HomeWork\AddWork.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\HomeWork\EditHomeWork.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\HomeWork\HomeWork.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -45,6 +48,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\TImer.xaml.cs">

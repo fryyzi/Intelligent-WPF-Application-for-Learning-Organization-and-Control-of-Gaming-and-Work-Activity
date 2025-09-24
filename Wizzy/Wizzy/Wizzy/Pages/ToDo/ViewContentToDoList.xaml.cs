@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using ICSharpCode.AvalonEdit.Highlighting;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,9 @@ namespace Wizzy.Pages.ToDo
         Wizzy.Pages.DataBase.DataBase database = new Wizzy.Pages.DataBase.DataBase();
         string Title = String.Empty;
         string TextDoTo = String.Empty;
-        string Maintext = DataBase.DataBase.TitleMAainText;
+        string Code = String.Empty;
+
+        string Maintext = DataBase.DataBase.TitleMainText;
 
         public ViewContentToDoList()
         {
@@ -27,6 +30,7 @@ namespace Wizzy.Pages.ToDo
             {
                 Title = item.GetValue("ToDoListName").AsString;
                 TextDoTo = item.GetValue("Text").AsString;
+                Code = item.GetValue("Код").AsString;
 
                 if (string.IsNullOrEmpty(Title) || string.IsNullOrEmpty(TextDoTo))
                 {
@@ -36,7 +40,37 @@ namespace Wizzy.Pages.ToDo
                 if(Maintext == Title)
                 {
                     TitleToDoListTextBlock.Text = Title;
-                    ContentToDoListTextBox.Text = TextDoTo;
+                    if(Code != "None")
+                    {
+                        CodeSynTextBox.Text = TextDoTo;
+                        CodeSynTextBox.Visibility = Visibility.Visible;
+                        ContentToDoListTextBox.Visibility = Visibility.Hidden;
+                        if (Code == "C#")
+                        {
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("C#");
+                        }
+                        if (Code == "HTML") 
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("HTML");
+                        if (Code == "XML")
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("XML");
+                        if (Code == "JavaScript")
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("JavaScript");
+                        if (Code == "SQL")
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("SQL");
+                        if (Code == "PHP")
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("PHP");
+                        if (Code == "VB") 
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("VB");
+                        if (Code == "XAML") 
+                            CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("XAML");
+                    }
+                    else
+                    {
+                        CodeSynTextBox.Visibility = Visibility.Hidden;
+                        ContentToDoListTextBox.Visibility = Visibility.Visible;
+                        ContentToDoListTextBox.Text = TextDoTo;
+                    }
+                       
                 }
             }
         }

@@ -18,9 +18,13 @@ namespace Wizzy.Pages.DataBase
 
         public static string HomeWorkTitle = "No Name HomeWork";
 
-        public static string TitleMAainText;
+        public static string IsCode = string.Empty;
+
+        public static string TitleMainText = " ";
+        public static string TitleMainHomeWork;
 
         public static int Id = 0;
+        public static int IsCodeDataBase;
 
         private IMongoCollection<BsonDocument> _collectionToDo;
         private IMongoCollection<BsonDocument> _collectionHomeWork;
@@ -44,7 +48,7 @@ namespace Wizzy.Pages.DataBase
                 Connect();
         }
 
-        public void AddToDoList(string newToDoText, string newMainToDoListName)
+        public void AddToDoList(string newToDoText, string newMainToDoListName, string IsCodeDataBase = "")
         {
             NoConnect();
             ViewContentToDoList();
@@ -53,6 +57,8 @@ namespace Wizzy.Pages.DataBase
             {
                 { "ToDoListName", newMainToDoListName },
                 { "Text", newToDoText },
+                {"Код", IsCodeDataBase},
+                //{"IsCode", CodeFunction},
                 { "Id", Id += 1 }
             };
             _collectionToDo.InsertOne(AddToDoList);
@@ -60,6 +66,7 @@ namespace Wizzy.Pages.DataBase
         }
 
         public List<BsonDocument> ViewContentToDoList()
+
         {
             NoConnect();
 
@@ -70,36 +77,61 @@ namespace Wizzy.Pages.DataBase
                 Id = item.GetValue("Id").AsInt32;
                 if (Id == 0)
                     Id = 1;
-
             }
             return dociuments;
         }
-        public void UpdateToDo(string newTitle, string newText)
+
+        public void UpdateDataBase(string newTitle, string newText, int NumberFunction)
         {
             NoConnect();
 
-            var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMAainText);
 
-            var update = Builders<BsonDocument>.Update
-                .Set("ToDoListName", newTitle)
-                .Set("Text", newText);
-            _collectionToDo.UpdateOne(filter, update);
+            switch (NumberFunction)
+            {
+                case 1:
+                    var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMainText);
 
-            MessageBox.Show("Нагадування оновлено!");
+                    var update = Builders<BsonDocument>.Update
+                        .Set("ToDoListName", newTitle)
+                        .Set("Text", newText);
+                    _collectionToDo.UpdateOne(filter, update);
+
+                    MessageBox.Show("Нагадування оновлено!");
+                    break;
+                case 2:
+                    var fileterHomeWork = Builders<BsonDocument>.Filter.Eq("Назва", TitleMainHomeWork);
+                    var updateHomeWork = Builders<BsonDocument>.Update
+                        .Set("Назва", newTitle)
+                        .Set("Опис", newText);
+                    _collectionHomeWork.UpdateOne(fileterHomeWork, updateHomeWork);
+                    break;
+            }
+            
         }
 
-        public void DeleteToDo()
+        public void DeleteDataBase(int NumberFunction)
         {
             NoConnect();
-            var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMAainText);
-            _collectionToDo.DeleteOne(filter);
-            MessageBox.Show("Нагадування видалено!");
-            
+            switch (NumberFunction)
+            {
+                case 1:
+                    var filter = Builders<BsonDocument>.Filter.Eq("ToDoListName", TitleMainText);
+                    _collectionToDo.DeleteOne(filter);
+                    MessageBox.Show("Нагадування видалено!");
+                    break;
+                case 2:
+                    var filterHomeWork = Builders<BsonDocument>.Filter.Eq("Назва", TitleMainHomeWork);
+                    _collectionHomeWork.DeleteMany(filterHomeWork);
+                    MessageBox.Show("Домашнє завдання видалено!");
+                    break;
+                    
+            }
         }
 
         public void AddHomeWork(string Title, string DescriptionText)
         {
             NoConnect();
+            
             var AddHomeWork = new BsonDocument
             {
                 {"Назва", Title},
@@ -116,8 +148,10 @@ namespace Wizzy.Pages.DataBase
             foreach (var item in dociuments)
             {
                 Id = item.GetValue("id").AsInt32;
+                IsCodeDataBase = item.GetValue("Код").AsInt32;
                 if (Id == 0)
                     Id = 1;
+
             }
             return dociuments;
         }
