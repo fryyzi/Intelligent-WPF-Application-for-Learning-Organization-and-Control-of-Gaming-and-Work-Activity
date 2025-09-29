@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wizzy.Pages.Tools.AllTools.Pomodoro"
         mc:Ignorable="d"
-        Title="Pomodoro Timer" Height="450" Width="800">
-    <Grid>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        Title="Pomodoro Timer" Height="450" Width="800" >
+    <Grid x:Name="MainGrid">
+        <Grid.Background>
+            <ImageBrush TileMode="FlipX" ImageSource="/Pages/Tools/AllTools/Pomodoro/photo_2025-09-29_04-09-55.jpg"/>
+        </Grid.Background>
 
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label
                 x:Name="TimerLabel"
+                Foreground="White"
                 Content="25:00:00"
                 FontSize="40"
                 FontWeight="Bold"
@@ -39,6 +43,25 @@
                     Height="40"
                     Click="ResetButton_Click"/>
             </StackPanel>
+
         </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left" Width="52">
+            <Image 
+                Source="F:\programing\Project\Wizzy\Wizzy\Wizzy\Pages\Tools\AllTools\Pomodoro\Image\Tomato.ico" 
+                Width="30" 
+                Height="30" 
+                />
+            <Label
+                x:Name="SessionCountLabel"
+                Content="0" 
+                Height="26"
+                />
+        </StackPanel>
+        <Button Height="27" VerticalAlignment="Top" HorizontalAlignment="Right" Width="34" Click="Button_Click">
+            <Image Source="F:\programing\Project\Wizzy\Wizzy\Wizzy\Pages\Tools\AllTools\Pomodoro\Image\setting.ico"/>
+        </Button>
+        <ContentControl 
+            x:Name="SettingControl" Height="434" VerticalAlignment="Top" HorizontalAlignment="Center" SizeChanged="SettingControl_SizeChanged"
+                        />
     </Grid>
 </Window>

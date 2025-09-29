@@ -67,6 +67,7 @@
             Grid.Row="1" Click="PomodoroButton_Click"  
             />
         <Button 
+            x:Name="PasswordGenerator"
             Content="Генератор паролів"
             Margin="10"
             FontSize="16"
@@ -75,7 +76,7 @@
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
             Grid.Column="1"
-            Grid.Row="1"
+            Grid.Row="1" Click="PasswordGenerator_Click"
             />
         <Button
             Content="Калькулятор"

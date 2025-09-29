@@ -17,18 +17,20 @@ namespace Wizzy.Pages.DataBase
         public static string ToDoListName = "No Name ToDoList";
 
         public static string HomeWorkTitle = "No Name HomeWork";
-
         public static string IsCode = string.Empty;
 
         public static string TitleMainText = " ";
-        public static string TitleMainHomeWork;
+        public static string TitleMainHomeWork = "";
 
         public static int Id = 0;
         public static int IsCodeDataBase;
 
+        public static string WorkTimeDataBase = "";
+
+
         private IMongoCollection<BsonDocument> _collectionToDo;
         private IMongoCollection<BsonDocument> _collectionHomeWork;
-
+        private IMongoCollection<BsonDocument> _collectionTimePomodoro;
 
         public void Connect()
         {
@@ -41,10 +43,11 @@ namespace Wizzy.Pages.DataBase
             var database = client.GetDatabase("Wizzy");
             _collectionToDo = database.GetCollection<BsonDocument>("ToDoLists");
             _collectionHomeWork = database.GetCollection<BsonDocument>("HomeWork");
+            _collectionTimePomodoro = database.GetCollection<BsonDocument>("Time");
         }
         public void NoConnect()
         {
-            if (_collectionToDo == null || _collectionHomeWork == null)
+            if (_collectionToDo == null || _collectionHomeWork == null || _collectionTimePomodoro == null)
                 Connect();
         }
 
@@ -85,11 +88,10 @@ namespace Wizzy.Pages.DataBase
         {
             NoConnect();
 
-
             switch (NumberFunction)
             {
                 case 1:
-                    var filter = Builders<BsonDocument>.Filter.Eq("Text", TitleMainText);
+                    var filter = Builders<BsonDocument>.Filter.Eq("ToDoListName", TitleMainText);
 
                     var update = Builders<BsonDocument>.Update
                         .Set("ToDoListName", newTitle)
@@ -106,7 +108,6 @@ namespace Wizzy.Pages.DataBase
                     _collectionHomeWork.UpdateOne(fileterHomeWork, updateHomeWork);
                     break;
             }
-            
         }
 
         public void DeleteDataBase(int NumberFunction)
@@ -124,7 +125,6 @@ namespace Wizzy.Pages.DataBase
                     _collectionHomeWork.DeleteMany(filterHomeWork);
                     MessageBox.Show("Домашнє завдання видалено!");
                     break;
-                    
             }
         }
 
@@ -154,6 +154,41 @@ namespace Wizzy.Pages.DataBase
 
             }
             return dociuments;
+        }
+    
+        public void AddTimePomodoro(string WorkTime, string ShortBreakTime, string LongBraakTime)
+        {
+            NoConnect();
+
+            var AddTimePomodoro = new BsonDocument
+            {
+                {"IdSettings", "Налаштування"},
+                {"WorkTime", WorkTime},
+                {"ShortBreakTime", ShortBreakTime},
+                {"LongBreakTime", LongBraakTime}
+                
+            };
+            _collectionTimePomodoro.InsertOne(AddTimePomodoro);
+        }
+    
+        public List<BsonDocument> ViewTimePomodoro()
+        {
+            NoConnect();
+            var dociuments = _collectionTimePomodoro.Find(new BsonDocument()).ToList();
+            return dociuments;
+        }
+
+        public void UpgradeSettingsPomodoro(string UpdateWorkTime, string UpdateShortBreakTime, string UpdateLongBreakTime)
+        {
+            NoConnect();
+
+            var filter = Builders<BsonDocument>.Filter.Eq("IdSettings", "Налаштування");
+            var update = Builders<BsonDocument>.Update
+                .Set("WorkTime", UpdateWorkTime)
+                .Set("ShortBreakTime", UpdateShortBreakTime)
+                .Set("LongBreakTime", UpdateLongBreakTime);
+
+            _collectionTimePomodoro.UpdateOne(filter, update);
         }
     }
 }

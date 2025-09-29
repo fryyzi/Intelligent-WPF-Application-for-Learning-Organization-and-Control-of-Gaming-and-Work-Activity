@@ -50,7 +50,13 @@
     <Compile Update="Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\BreakWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\Settings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\TImer.xaml.cs">

@@ -1,0 +1,24 @@
+﻿<Window x:Class="Wizzy.Pages.Tools.AllTools.Pomodoro.BreakWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wizzy.Pages.Tools.AllTools.Pomodoro"
+        mc:Ignorable="d"
+        Title="BreakWindow" Height="108" Width="231">
+    <Grid>
+        <Label
+            x:Name="BreakLabel"
+            Content="Break Time!"
+            FontSize="20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            />
+        <Label
+            x:Name="TimeLable"
+            Content="05:00"
+            FontSize="25"
+            HorizontalAlignment="Center" Height="48" VerticalAlignment="Bottom"
+            />
+    </Grid>
+</Window>

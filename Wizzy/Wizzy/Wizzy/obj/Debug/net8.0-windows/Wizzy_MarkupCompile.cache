@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 F:\programing\Project\Wizzy\Wizzy\Wizzy\App.xaml
-212146459703
+231499873630
 
-28842907217
+31-981787676
 222285273751
-MainWindow.xaml;Pages\HomeWork\AddWork.xaml;Pages\HomeWork\EditHomeWork.xaml;Pages\HomeWork\HomeWork.xaml;Pages\HomeWork\ViewWork.xaml;Pages\SchedulePage.xaml;Pages\Schedule\EditSchedule.xaml;Pages\Schedule\Schedule.xaml;Pages\ToDo\AddToDo.xaml;Pages\ToDo\EditToDoList.xaml;Pages\ToDo\ToDoList.xaml;Pages\ToDo\ViewContentToDoList.xaml;Pages\Tools\AllTools\AllConverns.xaml;Pages\Tools\AllTools\CalculatorTool.xaml;Pages\Tools\AllTools\Converns\Leght\Legth.xaml;Pages\Tools\AllTools\Converns\Mass\Mass.xaml;Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml;Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml;Pages\Tools\AllTools\TImer.xaml;Pages\Tools\Calculator.xaml;Pages\Tools\ToolsContent.xaml;
+MainWindow.xaml;Pages\HomeWork\AddWork.xaml;Pages\HomeWork\EditHomeWork.xaml;Pages\HomeWork\HomeWork.xaml;Pages\HomeWork\ViewWork.xaml;Pages\SchedulePage.xaml;Pages\Schedule\EditSchedule.xaml;Pages\Schedule\Schedule.xaml;Pages\ToDo\AddToDo.xaml;Pages\ToDo\EditToDoList.xaml;Pages\ToDo\ToDoList.xaml;Pages\ToDo\ViewContentToDoList.xaml;Pages\Tools\AllTools\AllConverns.xaml;Pages\Tools\AllTools\CalculatorTool.xaml;Pages\Tools\AllTools\Converns\Leght\Legth.xaml;Pages\Tools\AllTools\Converns\Mass\Mass.xaml;Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml;Pages\Tools\AllTools\Pomodoro\BreakWindow.xaml;Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml;Pages\Tools\AllTools\Pomodoro\Settings.xaml;Pages\Tools\AllTools\TImer.xaml;Pages\Tools\Calculator.xaml;Pages\Tools\ToolsContent.xaml;
 
 False
 

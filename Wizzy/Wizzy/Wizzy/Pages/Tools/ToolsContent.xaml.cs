@@ -53,5 +53,12 @@ namespace Wizzy.Pages.tools
             var PomodoroWindow = new Tools.AllTools.Pomodoro.MainWindowPomodoro();
             PomodoroWindow.ShowDialog();
         }
+
+        private void PasswordGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "F:\\programing\\Project\\GenerationPassword\\Generation password\\bin\\Debug\\net8.0-windows\\Generation password.exe";
+            System.Diagnostics.Process.Start("explorer.exe", path);
+        }
+
     }
 }
