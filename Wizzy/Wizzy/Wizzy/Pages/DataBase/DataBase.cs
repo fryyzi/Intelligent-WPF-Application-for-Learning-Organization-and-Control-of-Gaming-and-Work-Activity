@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Xml.Serialization;
+using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
 namespace Wizzy.Pages.DataBase
 {
@@ -27,10 +28,10 @@ namespace Wizzy.Pages.DataBase
 
         public static string WorkTimeDataBase = "";
 
-
         private IMongoCollection<BsonDocument> _collectionToDo;
         private IMongoCollection<BsonDocument> _collectionHomeWork;
         private IMongoCollection<BsonDocument> _collectionTimePomodoro;
+
 
         public void Connect()
         {

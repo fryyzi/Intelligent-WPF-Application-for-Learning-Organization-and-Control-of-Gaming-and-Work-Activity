@@ -43,8 +43,6 @@ namespace Wizzy
         private void ToolsButton(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new ToolsContent();
-            //MainPanelRight.Content = new ToolsRightPanel(); 
-
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

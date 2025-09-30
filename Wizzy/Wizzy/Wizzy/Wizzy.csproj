@@ -12,6 +12,7 @@
     <None Remove="Pages\Tools\AllTools\Pomodoro\BackGrounds%28One%29.jpg" />
     <None Remove="Pages\Tools\AllTools\Pomodoro\photo_2025-09-29_04-07-14.jpg" />
     <None Remove="Pages\Tools\AllTools\Pomodoro\photo_2025-09-29_04-09-55.jpg" />
+    <None Remove="Pages\Tools\AllTools\Pomodoro\SetingsFolder\photo_2025-09-29_04-09-55.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,13 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Tools\AllTools\Pomodoro\Image\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Pages\Tools\AllTools\Pomodoro\BackGrounds(One).jpg" />
-    <Resource Include="Pages\Tools\AllTools\Pomodoro\photo_2025-09-29_04-07-14.jpg" />
-    <Resource Include="Pages\Tools\AllTools\Pomodoro\photo_2025-09-29_04-09-55.jpg" />
+    <Resource Include="Pages\Tools\AllTools\Pomodoro\Image\BackGrounds%28One%29.jpg" />
+    <Resource Include="Pages\Tools\AllTools\Pomodoro\Image\photo_2025-09-29_04-07-14.jpg" />
+    <Resource Include="Pages\Tools\AllTools\Pomodoro\Image\photo_2025-09-29_04-09-55.jpg" />
   </ItemGroup>
 
 </Project>

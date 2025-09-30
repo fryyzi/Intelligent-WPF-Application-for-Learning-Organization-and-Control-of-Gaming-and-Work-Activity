@@ -1,6 +1,9 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using System.IO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,7 +16,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Wizzy.Pages.DataBase;
+using Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
 namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 {
@@ -26,8 +31,10 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
         private TimeSpan _timeLeft;
 
         Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
+        private IMongoCollection<ImageDocument> _imageSavePomodoro;
 
-        
+
+
 
         int CountSessions = 0;
         public MainWindowPomodoro()
@@ -36,8 +43,16 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             Timer();
             UpdateTimerLabel();
 
-            
+            var settings = MongoClientSettings.FromConnectionString(
+               "mongodb://localhost:27017/"
+           );
+            settings.SslSettings = new SslSettings { EnabledSslProtocols = SslProtocols.Tls12 };
 
+            var client = new MongoClient(settings);
+            var database = client.GetDatabase("Wizzy");
+            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveImage");
+
+            
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -75,21 +90,19 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             if (WorkTime > 0)
             {
 
-                TimeSettings(WorkTime);
+                _timeLeft = TimeSpan.FromMinutes(WorkTime);
+                _timer = new DispatcherTimer();
+                _timer.Interval = TimeSpan.FromSeconds(1);
+                _timer.Tick += Timer_Tick;
             }
             else
             {
-                TimeSettings(25);
+                _timeLeft = TimeSpan.FromMinutes(25);
+                _timer = new DispatcherTimer();
+                _timer.Interval = TimeSpan.FromSeconds(1);
+                _timer.Tick += Timer_Tick;
             }
 
-        }
-
-        private void TimeSettings(double WorkTimeSettings)
-        {
-            _timeLeft = TimeSpan.FromMinutes(WorkTimeSettings);
-            _timer = new DispatcherTimer();
-            _timer.Interval = TimeSpan.FromSeconds(1);
-            _timer.Tick += Timer_Tick;
         }
 
         private void Timer()
@@ -135,9 +148,11 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            Settings settingsWindow = new Settings();
+            SettingsWindow settingsWindow = new SettingsWindow();
             settingsWindow.Show();
+            
+
+
 
         }
 

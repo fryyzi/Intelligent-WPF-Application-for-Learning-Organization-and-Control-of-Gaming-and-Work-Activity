@@ -56,7 +56,16 @@
     <Compile Update="Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\Pomodoro\Settings.xaml.cs">
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AddImage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\BackGroundSetting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingTIme.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\TImer.xaml.cs">

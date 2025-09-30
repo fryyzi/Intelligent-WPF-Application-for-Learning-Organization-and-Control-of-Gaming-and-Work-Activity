@@ -12,23 +12,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Wizzy.Pages.Tools.AllTools.Pomodoro
+namespace Wizzy.Pages.Tools.AllTools.Pomodoro.Setings
 {
     /// <summary>
-    /// Interaction logic for Settings.xaml
+    /// Interaction logic for SettingTIme.xaml
     /// </summary>
-    public partial class Settings : Window
+    public partial class SettingTIme : UserControl
     {
+
         Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
 
         string WorkTime = String.Empty;
         string ShortBreakTime = String.Empty;
         string LongBreakTime = String.Empty;
 
-        public Settings()
+        public SettingTIme()
         {
             InitializeComponent();
-
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

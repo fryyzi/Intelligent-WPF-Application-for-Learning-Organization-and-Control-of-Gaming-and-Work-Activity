@@ -128,5 +128,11 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\All
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\BreakWindow.g.cs
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\BreakWindow.baml
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\Settings.g.cs
-F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\Settings.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingTIme.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingTIme.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\BackGroundSetting.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\BackGroundSetting.baml
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\AddImage.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\AddImage.baml
