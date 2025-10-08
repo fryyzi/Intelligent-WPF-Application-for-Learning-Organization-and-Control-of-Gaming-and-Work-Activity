@@ -35,10 +35,6 @@ npm-debug.log*
 *.suo
 *.sln.docstates
 .vscode/
-.ConsoleWizzyTest
-.Test
-.TestConsole
-.TestWPF
 
 # Резервні копії файлів
 *.bak
