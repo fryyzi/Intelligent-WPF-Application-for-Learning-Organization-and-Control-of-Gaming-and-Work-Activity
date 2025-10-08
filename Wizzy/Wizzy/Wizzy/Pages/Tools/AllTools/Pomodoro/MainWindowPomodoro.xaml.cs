@@ -42,7 +42,6 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             InitializeComponent();
             Timer();
             UpdateTimerLabel();
-
             var settings = MongoClientSettings.FromConnectionString(
                "mongodb://localhost:27017/"
            );
@@ -50,9 +49,39 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
-            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveImage");
+            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
 
-            
+            string NameImage = "";
+            var ContentImage = dataBase.ViewImagePomodoro();
+            if (ContentImage != null)
+            {
+                foreach (var item in ContentImage)
+                {
+                    NameImage = item.GetType().Name;
+                }
+            }
+
+            var result = _imageSavePomodoro.Find(Builders<ImageDocument>.Filter.Empty).ToList();
+            string Name = "test";
+            foreach (var item in result)
+            {
+                File.WriteAllBytes(Name, item.ImageData);
+
+                ImageBrush imageBrush = new ImageBrush();
+                BitmapImage bitmap = new BitmapImage();
+
+                using (var stream = new FileStream(Name, FileMode.Open, FileAccess.Read))
+                {
+                    bitmap.BeginInit();
+                    bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmap.StreamSource = stream;
+                    bitmap.EndInit();
+                    bitmap.Freeze();
+                }
+
+                imageBrush.ImageSource = bitmap;
+                this.Background = imageBrush;
+            }
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -150,10 +179,6 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
         {
             SettingsWindow settingsWindow = new SettingsWindow();
             settingsWindow.Show();
-            
-
-
-
         }
 
         private void SettingControl_SizeChanged(object sender, SizeChangedEventArgs e)

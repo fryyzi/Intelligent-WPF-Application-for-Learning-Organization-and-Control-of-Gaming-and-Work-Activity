@@ -31,6 +31,7 @@ namespace Wizzy.Pages.DataBase
         private IMongoCollection<BsonDocument> _collectionToDo;
         private IMongoCollection<BsonDocument> _collectionHomeWork;
         private IMongoCollection<BsonDocument> _collectionTimePomodoro;
+        private IMongoCollection<ImageDocument> _collectionImagePomodoro;
 
 
         public void Connect()
@@ -45,6 +46,7 @@ namespace Wizzy.Pages.DataBase
             _collectionToDo = database.GetCollection<BsonDocument>("ToDoLists");
             _collectionHomeWork = database.GetCollection<BsonDocument>("HomeWork");
             _collectionTimePomodoro = database.GetCollection<BsonDocument>("Time");
+            _collectionImagePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
         }
         public void NoConnect()
         {
@@ -177,6 +179,12 @@ namespace Wizzy.Pages.DataBase
             NoConnect();
             var dociuments = _collectionTimePomodoro.Find(new BsonDocument()).ToList();
             return dociuments;
+        }
+        public List<ImageDocument> ViewImagePomodoro()
+        {
+            NoConnect();
+            var document = _collectionImagePomodoro.Find(Builders<ImageDocument>.Filter.Empty).ToList();
+            return document;
         }
 
         public void UpgradeSettingsPomodoro(string UpdateWorkTime, string UpdateShortBreakTime, string UpdateLongBreakTime)

@@ -46,7 +46,7 @@ namespace Wizzy
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void AddHomeWork(object sender, RoutedEventArgs e)

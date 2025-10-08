@@ -24,6 +24,8 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
     {
 
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
+        //private IMongoCollection<ImageDocument> _CollectionSaveImage;
+        Pages.DataBase.DataBase dataBase = new DataBase.DataBase();
 
         public class ImageDocument
         {
@@ -37,6 +39,8 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
         {
             InitializeComponent();
 
+            
+            
 
             var settings = MongoClientSettings.FromConnectionString(
                "mongodb://localhost:27017/"
@@ -46,11 +50,12 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
             _collectionImagePomodoro = database.GetCollection<ImageDocument>("Image");
+            //_CollectionSaveImage = database.GetCollection<ImageDocument>("SaveSetings");
         }
 
         private void AddImage_Click(object sender, RoutedEventArgs e)
         {
-
+            
             string path = UrlImage.Text;
 
             if (File.Exists(path))

@@ -2,6 +2,7 @@
 using MongoDB.Driver.GridFS;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Authentication;
 using System.Text;
@@ -14,7 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.IO;
+using Wizzy.Pages.DataBase;
 using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
 namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
@@ -27,6 +28,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
 
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
         private IMongoCollection<ImageDocument> _imageSavePomodoro;
+        Pages.DataBase.DataBase dataBase = new DataBase.DataBase();
 
         public BackGroundSetting()
         {
@@ -40,7 +42,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
             _collectionImagePomodoro = database.GetCollection<ImageDocument>("Image");
-            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveImage");
+            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
 
             var result = _collectionImagePomodoro.Find(Builders<ImageDocument>.Filter.Empty).ToList();
 
@@ -75,19 +77,40 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                         }
                     }
                     string path = fileName;
-                    if (File.Exists(path))
+                    var contentImage = dataBase.ViewImagePomodoro();
+                    string NameSave = "BackGround";
+                    string ViewName = "";
+                    if (contentImage != null)
                     {
-                        byte[] imageBytes = File.ReadAllBytes(path);
-                        var img = new ImageDocument
+                        foreach (var item in contentImage)
                         {
-                            Name = System.IO.Path.GetFileName(fileName.ToString()),
-                            ImageData = imageBytes
-                        };
-                        _imageSavePomodoro.InsertOne(img);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Файл не знайдено!");
+                            ViewName = item.Name;
+                        }
+                        if(NameSave == ViewName)
+                        {
+                            byte[] imageBytes = File.ReadAllBytes(path);
+                            var filters = Builders<ImageDocument>.Filter.Eq("Name", "BackGround");
+                            var update = Builders<ImageDocument>.Update
+                                .Set("ImageData", imageBytes);
+                            _imageSavePomodoro.UpdateOne(filters, update);
+                        }
+                        else
+                        {
+                            if (File.Exists(path))
+                            {
+                                byte[] imageBytes = File.ReadAllBytes(path);
+                                var img = new ImageDocument
+                                {
+                                    Name = System.IO.Path.GetFileName(NameSave.ToString()),
+                                    ImageData = imageBytes
+                                };
+                                _imageSavePomodoro.InsertOne(img);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Файл не знайдено!");
+                            }
+                        }
                     }
                 };
 
@@ -99,21 +122,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
 
         private void TestBackGround_Click(object sender, RoutedEventArgs e)
         {
-            ImageBrush imageBrush = new ImageBrush();
-            imageBrush.ImageSource = new BitmapImage(
-                new Uri(@"F:\programing\Project\Wizzy\Wizzy\Wizzy\Pages\Tools\AllTools\Pomodoro\Image\photo_2025-09-29_04-09-55.jpg",
-                UriKind.Absolute));
-
-            imageBrush.Stretch = Stretch.UniformToFill;
-
-            foreach (Window window in Application.Current.Windows)
-            {
-                if (window is MainWindowPomodoro mainWindowPomodoro)
-                {
-                    mainWindowPomodoro.Background = imageBrush;
-                    break;
-                }
-            }
+           
         }
 
         private void AddImage_Click(object sender, RoutedEventArgs e)
