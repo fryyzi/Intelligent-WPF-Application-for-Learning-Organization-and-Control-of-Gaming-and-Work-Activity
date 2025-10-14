@@ -40,8 +40,10 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
         public MainWindowPomodoro()
         {
             InitializeComponent();
+            EditColors();
             Timer();
             UpdateTimerLabel();
+            
             var settings = MongoClientSettings.FromConnectionString(
                "mongodb://localhost:27017/"
            );
@@ -49,7 +51,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
-            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
+            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveImageSetings");
 
             string NameImage = "";
             var ContentImage = dataBase.ViewImagePomodoro();
@@ -81,6 +83,28 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
                 imageBrush.ImageSource = bitmap;
                 this.Background = imageBrush;
+            }
+        }
+
+        private void EditColors()
+        {
+            var content = dataBase.ViewColorPomodoro();
+            
+            if (content != null)
+            {
+                foreach (var item in content)
+                {
+                    var colorValue = item.GetValue("ColorData");
+                    MessageBox.Show("Test");
+                    if (colorValue == "White")
+                    {
+                        TimerLabel.Foreground = Brushes.White;
+                    }
+                    if (colorValue == "Black")
+                    {
+                        TimerLabel.Foreground = Brushes.Black;
+                    }
+                }
             }
         }
 
@@ -177,7 +201,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SettingsWindow settingsWindow = new SettingsWindow();
+            Pages.Tools.AllTools.Pomodoro.SetingsFolder.SettingsWindow settingsWindow = new Pages.Tools.AllTools.Pomodoro.SetingsFolder.SettingsWindow();
             settingsWindow.Show();
         }
 

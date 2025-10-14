@@ -36,5 +36,11 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
             settingsWindow.Show();
             this.Close();
         }
+
+        private void Button_Click_Colors(object sender, RoutedEventArgs e)
+        {
+            ControlSetting.Content = new AllSetings.ColorSettings();
+
+        }
     }
 }

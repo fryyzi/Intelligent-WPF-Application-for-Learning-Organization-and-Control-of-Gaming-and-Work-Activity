@@ -23,6 +23,9 @@
     <Compile Update="Pages\Schedule\Schedule.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\SettingsWindow\MainSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\ToDo\AddToDo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -56,16 +59,19 @@
     <Compile Update="Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AddImage.xaml.cs">
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\AddImage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\BackGroundSetting.xaml.cs">
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\BackGroundSetting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\ColorSettings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingTIme.xaml.cs">
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\SettingTIme.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\TImer.xaml.cs">

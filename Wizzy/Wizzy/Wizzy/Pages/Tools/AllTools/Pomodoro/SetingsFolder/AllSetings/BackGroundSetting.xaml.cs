@@ -9,12 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Wizzy.Pages.DataBase;
 using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
@@ -25,7 +22,6 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
     /// </summary>
     public partial class BackGroundSetting : Window
     {
-
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
         private IMongoCollection<ImageDocument> _imageSavePomodoro;
         Pages.DataBase.DataBase dataBase = new DataBase.DataBase();
@@ -34,15 +30,13 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
         {
             InitializeComponent();
 
-            var settings = MongoClientSettings.FromConnectionString(
-               "mongodb://localhost:27017/"
-           );
+            var settings = MongoClientSettings.FromConnectionString("mongodb://localhost:27017/");
             settings.SslSettings = new SslSettings { EnabledSslProtocols = SslProtocols.Tls12 };
 
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
             _collectionImagePomodoro = database.GetCollection<ImageDocument>("Image");
-            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
+            _imageSavePomodoro = database.GetCollection<ImageDocument>("SaveImageSetings");
 
             var result = _collectionImagePomodoro.Find(Builders<ImageDocument>.Filter.Empty).ToList();
 
@@ -57,14 +51,14 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                     Width = 100,
                     Height = 100,
                     Margin = new Thickness(5),
-                    Source = new BitmapImage(new Uri(System.IO.Path.GetFullPath(fileName), UriKind.Absolute))
+                    Source = LoadImageFromFile(fileName)
                 };
 
                 image.MouseLeftButtonDown += (s, e) =>
                 {
                     ImageBrush imageBrush = new ImageBrush
                     {
-                        ImageSource = new BitmapImage(new Uri(System.IO.Path.GetFullPath(fileName), UriKind.Absolute)),
+                        ImageSource = LoadImageFromFile(fileName),
                         Stretch = Stretch.UniformToFill
                     };
 
@@ -76,19 +70,23 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                             break;
                         }
                     }
+
                     string path = fileName;
                     var contentImage = dataBase.ViewImagePomodoro();
                     string NameSave = "BackGround";
                     string ViewName = "";
+
                     if (contentImage != null)
                     {
-                        foreach (var item in contentImage)
+                        foreach (var content in contentImage)
                         {
-                            ViewName = item.Name;
+                            ViewName = content.Name;
                         }
-                        if(NameSave == ViewName)
+
+                        byte[] imageBytes = File.ReadAllBytes(path);
+
+                        if (NameSave == ViewName)
                         {
-                            byte[] imageBytes = File.ReadAllBytes(path);
                             var filters = Builders<ImageDocument>.Filter.Eq("Name", "BackGround");
                             var update = Builders<ImageDocument>.Update
                                 .Set("ImageData", imageBytes);
@@ -96,20 +94,12 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                         }
                         else
                         {
-                            if (File.Exists(path))
+                            var img = new ImageDocument
                             {
-                                byte[] imageBytes = File.ReadAllBytes(path);
-                                var img = new ImageDocument
-                                {
-                                    Name = System.IO.Path.GetFileName(NameSave.ToString()),
-                                    ImageData = imageBytes
-                                };
-                                _imageSavePomodoro.InsertOne(img);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Файл не знайдено!");
-                            }
+                                Name = NameSave,
+                                ImageData = imageBytes
+                            };
+                            _imageSavePomodoro.InsertOne(img);
                         }
                     }
                 };
@@ -117,12 +107,23 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                 MainGrid.Children.Add(image);
                 i++;
             }
-
+        }
+        private BitmapImage LoadImageFromFile(string filePath)
+        {
+            var bitmap = new BitmapImage();
+            using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                bitmap.BeginInit();
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.StreamSource = stream;
+                bitmap.EndInit();
+            }
+            bitmap.Freeze();
+            return bitmap;
         }
 
         private void TestBackGround_Click(object sender, RoutedEventArgs e)
         {
-           
         }
 
         private void AddImage_Click(object sender, RoutedEventArgs e)

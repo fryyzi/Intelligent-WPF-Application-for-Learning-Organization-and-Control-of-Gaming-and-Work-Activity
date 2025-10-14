@@ -7,6 +7,7 @@ using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
 using System.Xml.Serialization;
 using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
@@ -32,6 +33,7 @@ namespace Wizzy.Pages.DataBase
         private IMongoCollection<BsonDocument> _collectionHomeWork;
         private IMongoCollection<BsonDocument> _collectionTimePomodoro;
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
+        private IMongoCollection<BsonDocument> _SaveColorsSetings;
 
 
         public void Connect()
@@ -47,6 +49,7 @@ namespace Wizzy.Pages.DataBase
             _collectionHomeWork = database.GetCollection<BsonDocument>("HomeWork");
             _collectionTimePomodoro = database.GetCollection<BsonDocument>("Time");
             _collectionImagePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
+            _SaveColorsSetings = database.GetCollection<BsonDocument>("SaveColorsSetings");
         }
         public void NoConnect()
         {
@@ -198,6 +201,27 @@ namespace Wizzy.Pages.DataBase
                 .Set("LongBreakTime", UpdateLongBreakTime);
 
             _collectionTimePomodoro.UpdateOne(filter, update);
+        }
+        public void AddColorPomodoro(string Color)
+        {
+            NoConnect();
+
+            _SaveColorsSetings.DeleteMany(Builders<BsonDocument>.Filter.Empty);
+
+            var addColors = new BsonDocument
+            {
+                { "Name", "Color" },
+                { "ColorData", Color }
+            };
+
+            _SaveColorsSetings.InsertOne(addColors);
+        }
+
+        public List<BsonDocument> ViewColorPomodoro()
+        {
+            NoConnect();
+            var dociuments = _SaveColorsSetings.Find(new BsonDocument()).ToList();
+            return dociuments;
         }
     }
 }

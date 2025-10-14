@@ -14,14 +14,21 @@
             >
             <Button
                 x:Name="TimerSettings"
-                Margin="20"
+                Margin="10"
                 Content="Таймер"
                 FontSize="20" Click="TimerSettings_Click"
                 />
             <Button
                 Margin="10 0"
                 Content="Зайдній фон"
-                FontSize="20" Click="Button_Click"
+                FontSize="20" 
+                Click="Button_Click"
+                />
+            <Button
+                Margin="10"
+                Content="Кольори"
+                FontSize="20"
+                Click="Button_Click_Colors"
                 />
         </StackPanel>
         <UserControl x:Name="ControlSetting" Margin="181,0,0,0" Height="435" Width="581"/>
