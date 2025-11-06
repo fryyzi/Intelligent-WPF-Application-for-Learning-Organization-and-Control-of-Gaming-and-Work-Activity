@@ -4,10 +4,10 @@ using System.Windows;
 using System.Windows.Diagnostics;
 
 using Wizzy.Pages;
+using Wizzy.Pages.Classes;
 using Wizzy.Pages.HomeWork;
 using Wizzy.Pages.tools;
 using Wizzy.Pages.Tools.AllTools.Converns;
-
 
 namespace Wizzy
 {
@@ -20,6 +20,10 @@ namespace Wizzy
         {
             InitializeComponent();
             this.Loaded += Window_Loaded;
+
+            var voice = new Voices();
+            voice.StartListeningAsync();
+
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -29,6 +33,9 @@ namespace Wizzy
             var outputDevice = new WaveOutEvent();
             outputDevice.Init(audioFile);
             outputDevice.Play();
+
+
+            
         }
         private void ToDoListButton(object sender, RoutedEventArgs e)
         {

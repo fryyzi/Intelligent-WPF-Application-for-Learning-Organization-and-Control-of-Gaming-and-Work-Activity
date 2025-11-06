@@ -66,6 +66,10 @@
             "NAudio": {
               "target": "Package",
               "version": "[2.2.1, )"
+            },
+            "System.Speech": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             }
           },
           "imports": [

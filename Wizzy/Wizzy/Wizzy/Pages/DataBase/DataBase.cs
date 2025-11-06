@@ -30,6 +30,7 @@ namespace Wizzy.Pages.DataBase
         public static string WorkTimeDataBase = "";
 
         private IMongoCollection<BsonDocument> _collectionToDo;
+        private IMongoCollection<BsonDocument> _testCollesction;
         private IMongoCollection<BsonDocument> _collectionHomeWork;
         private IMongoCollection<BsonDocument> _collectionTimePomodoro;
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
@@ -154,7 +155,7 @@ namespace Wizzy.Pages.DataBase
             foreach (var item in dociuments)
             {
                 Id = item.GetValue("id").AsInt32;
-                IsCodeDataBase = item.GetValue("Код").AsInt32;
+                IsCodeDataBase = item.GetValue("id").AsInt32;
                 if (Id == 0)
                     Id = 1;
 
