@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Diagnostics;
+using Wizzy.Pages.tools;
 
 
 namespace Wizzy.Pages.Classes
@@ -12,7 +13,7 @@ namespace Wizzy.Pages.Classes
     {
         public async Task StartListeningAsync()
         {
-
+            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
             Process.Start(new ProcessStartInfo
             {
                 FileName = "python",
@@ -65,6 +66,46 @@ namespace Wizzy.Pages.Classes
                                 UseShellExecute = true
                             });
                             break;
+
+
+                        case string s when s.Contains("відкрий нотатки"):
+                            
+                            mainWindow.MainContent.Content = new ToDoList();
+                            break;
+
+                        case string s when s.Contains("відкрити інструменти"):
+                            mainWindow.MainContent.Content = new ToolsContent();
+                            break;
+
+                        case string s when s.Contains("добавити нотатку"):
+                            Pages.ToDo.AddToDo viewContentTools = new Pages.ToDo.AddToDo();
+                            viewContentTools.Show();
+                            break;
+
+
+                        case string s when s.Contains("відкрити калькулятор"):
+                            var calculatorWindow = new Tools.AllTools.CalculatorTool();
+                            calculatorWindow.Show();
+                            break;
+
+                        case string s when s.Contains("відкрити таймер"):
+                            var timerWindow = new Pages.Tools.AllTools.TImer();
+                            timerWindow.Show();
+                            break;
+                        case string s when s.Contains("відкрити помодоро"):
+                            var PomodoroWindow = new Tools.AllTools.Pomodoro.MainWindowPomodoro();
+                            PomodoroWindow.ShowDialog();
+                            break;
+                        case string s when s.Contains("відкрити генератор паролів"):
+                            string path = "F:\\programing\\Project\\GenerationPassword\\Generation password\\bin\\Debug\\net8.0-windows\\Generation password.exe";
+                            System.Diagnostics.Process.Start("explorer.exe", path);
+                            break;
+                        case string s when s.Contains("відкрити конвертер"):
+                            var ConvertWindow = new Tools.AllTools.AllConverns();
+                            ConvertWindow.Show();
+                            break;
+
+
                         default:
                             break;  
 
