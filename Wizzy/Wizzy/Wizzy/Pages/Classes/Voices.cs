@@ -31,46 +31,43 @@ namespace Wizzy.Pages.Classes
                 {
                     string command = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     command = command.ToLower();
-                    //MessageBox.Show("Команда з голосу: " + command);
 
-                    if (command.Contains("відкрий меню"))
+                    switch (command)
                     {
-                        MessageBox.Show("➡ Відкриваю меню");
-                    }
-                    if (command.Contains("відкрий браузер") || command.Contains("відкрий brow") || command.Contains("відкрий бра") || command.Contains("відкрий брау"))
-                    {
-                        Process.Start(new ProcessStartInfo
-                        {
-                            FileName = "https://google.com",
-                            UseShellExecute = true
-                        });
-                    }
-                    if (command.Contains("закрий браузер") || command.Contains("закрий brow") || command.Contains("закрий бра") || command.Contains("закрий брау"))
-                    {
-                        foreach (var process in Process.GetProcessesByName("chrome"))
-                        {
-                            process.Kill();
-                        }
-                        foreach (var process in Process.GetProcessesByName("firefox"))
-                        {
-                            process.Kill();
-                        }
-                    }
-                    if (command.Contains("відкрий youtube") || command.Contains("відкрий ютуб"))
-                    {
-                        Process.Start(new ProcessStartInfo
-                        {
-                            FileName = "https://youtube.com",
-                            UseShellExecute = true
-                        });
-                    }
-                    if (command.Contains("відкрий chat") || command.Contains("відкрий чат"))
-                    {
-                        Process.Start(new ProcessStartInfo
-                        {
-                            FileName = "https://chatgpt.com",
-                            UseShellExecute = true
-                        });
+                        case string s when s.Contains("відкрий браузер") || s.Contains("відкрий brow") || s.Contains("відкрий бра") || s.Contains("відкрий брау"):
+                            Process.Start(new ProcessStartInfo
+                            {
+                                FileName = "https://google.com",
+                                UseShellExecute = true
+                            });
+                            break;
+                        case string s when s.Contains("закрий браузер") || s.Contains("закрий brow") || s.Contains("закрий бра") || s.Contains("закрий брау"):
+                            foreach (var process in Process.GetProcessesByName("chrome"))
+                            {
+                                process.Kill();
+                            }
+                            foreach (var process in Process.GetProcessesByName("firefox"))
+                            {
+                                process.Kill();
+                            }
+                            break;
+                        case string s when s.Contains("відкрий youtube") || s.Contains("відкрий ютуб"):
+                            Process.Start(new ProcessStartInfo
+                            {
+                                FileName = "https://youtube.com",
+                                UseShellExecute = true
+                            });
+                            break;
+                        case string s when s.Contains("відкрий chat") || s.Contains("відкрий чат"):
+                            Process.Start(new ProcessStartInfo
+                            {
+                                FileName = "https://chatgpt.com",
+                                UseShellExecute = true
+                            });
+                            break;
+                        default:
+                            break;  
+
                     }
                 }
             }
