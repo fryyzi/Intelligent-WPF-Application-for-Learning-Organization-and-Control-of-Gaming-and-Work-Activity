@@ -19,3 +19,24 @@ F:\programing\C# Programs\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\refint\Te
 F:\programing\C# Programs\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.pdb
 F:\programing\C# Programs\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.genruntimeconfig.cache
 F:\programing\C# Programs\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\ref\TestWPF.dll
+F:\programing\Project\Wizzy\Wizzy\TestWPF\bin\Debug\net8.0-windows\TestWPF.exe
+F:\programing\Project\Wizzy\Wizzy\TestWPF\bin\Debug\net8.0-windows\TestWPF.deps.json
+F:\programing\Project\Wizzy\Wizzy\TestWPF\bin\Debug\net8.0-windows\TestWPF.runtimeconfig.json
+F:\programing\Project\Wizzy\Wizzy\TestWPF\bin\Debug\net8.0-windows\TestWPF.dll
+F:\programing\Project\Wizzy\Wizzy\TestWPF\bin\Debug\net8.0-windows\TestWPF.pdb
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\App.g.cs
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF_MarkupCompile.cache
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF_MarkupCompile.lref
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\MainWindow.baml
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.g.resources
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.GeneratedMSBuildEditorConfig.editorconfig
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.AssemblyInfoInputs.cache
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.AssemblyInfo.cs
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.csproj.CoreCompileInputs.cache
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.sourcelink.json
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.dll
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\refint\TestWPF.dll
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.pdb
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\TestWPF.genruntimeconfig.cache
+F:\programing\Project\Wizzy\Wizzy\TestWPF\obj\Debug\net8.0-windows\ref\TestWPF.dll

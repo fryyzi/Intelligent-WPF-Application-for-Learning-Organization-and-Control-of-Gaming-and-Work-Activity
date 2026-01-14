@@ -4,9 +4,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Wizzy.Pages;
 using Wizzy.Pages.tools;
-
-using Wizzy.Pages.Classes;
 
 
 namespace Wizzy.Pages.Classes
@@ -15,6 +14,7 @@ namespace Wizzy.Pages.Classes
     {
         public async Task StartListeningAsync()
         {
+
             VoiceCommands voiceCommands = new VoiceCommands();
             MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
             Process.Start(new ProcessStartInfo
@@ -37,6 +37,7 @@ namespace Wizzy.Pages.Classes
                 {
                     string command = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     command = command.ToLower();
+                    Console.WriteLine($"Виконую команду: {command}");
 
                     switch (command)
                     {
@@ -49,13 +50,9 @@ namespace Wizzy.Pages.Classes
                             break;
                         case string s when VoiceCommands.Matches(s, VoiceCommands.closeBrowserCommands):
                             foreach (var process in Process.GetProcessesByName("chrome"))
-                            {
                                 process.Kill();
-                            }
                             foreach (var process in Process.GetProcessesByName("firefox"))
-                            {
                                 process.Kill();
-                            }
                             break;
                         case string s when VoiceCommands.Matches(s, VoiceCommands.YoutuberCommands):
                             Process.Start(new ProcessStartInfo
@@ -85,10 +82,9 @@ namespace Wizzy.Pages.Classes
                             break;
 
                         case string s when VoiceCommands.Matches(s, VoiceCommands.AddNoteCommands):
-                            Pages.ToDo.AddToDo viewContentTools = new Pages.ToDo.AddToDo();
+                            ToDo.AddToDo viewContentTools = new ToDo.AddToDo();
                             viewContentTools.Show();
                             break;
-
 
                         case string s when VoiceCommands.Matches(s, VoiceCommands.CalculatorCommands):
                             var calculatorWindow = new Tools.AllTools.CalculatorTool();
@@ -96,7 +92,7 @@ namespace Wizzy.Pages.Classes
                             break;
 
                         case string s when VoiceCommands.Matches(s, VoiceCommands.TimerCommands):
-                            var timerWindow = new Pages.Tools.AllTools.TImer();
+                            var timerWindow = new Tools.AllTools.TImer();
                             timerWindow.Show();
                             break;
                         case string s when VoiceCommands.Matches(s, VoiceCommands.PomodoroCommands):
@@ -105,7 +101,7 @@ namespace Wizzy.Pages.Classes
                             break;
                         case string s when VoiceCommands.Matches(s, VoiceCommands.PasswordGeneratorCommands):
                             string path = "F:\\programing\\Project\\GenerationPassword\\Generation password\\bin\\Debug\\net8.0-windows\\Generation password.exe";
-                            System.Diagnostics.Process.Start("explorer.exe", path);
+                            Process.Start("explorer.exe", path);
                             break;
                         case string s when VoiceCommands.Matches(s, VoiceCommands.ConverterCommands):
                             var ConvertWindow = new Tools.AllTools.AllConverns();

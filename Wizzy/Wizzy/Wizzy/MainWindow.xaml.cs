@@ -1,9 +1,11 @@
 ﻿using NAudio.Wave;
 using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Diagnostics;
 
 using Wizzy.Pages;
+using Wizzy.Pages.AIChat;
 using Wizzy.Pages.Classes;
 using Wizzy.Pages.HomeWork;
 using Wizzy.Pages.tools;
@@ -16,13 +18,16 @@ namespace Wizzy
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
             InitializeComponent();
             this.Loaded += Window_Loaded;
 
-            var voice = new Voices();
-            voice.StartListeningAsync();
+            //Pages.Classes.Voices voice = new Pages.Classes.Voices();
+            //voice.StartListeningAsync();
+
 
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -35,7 +40,7 @@ namespace Wizzy
             outputDevice.Play();
 
 
-            
+
         }
         private void ToDoListButton(object sender, RoutedEventArgs e)
         {
@@ -45,7 +50,7 @@ namespace Wizzy
         {
             Pages.ToDo.AddToDo viewContentTools = new Pages.ToDo.AddToDo();
             viewContentTools.Show();
-            
+
         }
         private void ToolsButton(object sender, RoutedEventArgs e)
         {
@@ -53,7 +58,7 @@ namespace Wizzy
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void AddHomeWork(object sender, RoutedEventArgs e)
@@ -65,6 +70,12 @@ namespace Wizzy
         private void ViewHomeWork(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new HomeWork();
+        }
+
+        private void AiChatButton_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.AIChat.AiChat aIChatPage = new Pages.AIChat.AiChat();
+            aIChatPage.Show();
         }
     }
 }

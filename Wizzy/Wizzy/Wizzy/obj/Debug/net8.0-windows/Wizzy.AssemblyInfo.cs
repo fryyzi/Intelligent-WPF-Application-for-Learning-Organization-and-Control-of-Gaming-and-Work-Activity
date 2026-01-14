@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wizzy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44b7c7d0fe976330e7a8dabc803a1f476a1b1eea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d676c0200ef34c2a434ccec767397994164469c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wizzy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wizzy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

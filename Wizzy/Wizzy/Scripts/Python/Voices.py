@@ -10,20 +10,19 @@ mic = sr.Microphone()
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(1)
-    print("🎤 Voice server running...")
+    print(f"🟢 Сервер з хотінгом: {HOST} та з портом {PORT} запущений")
     conn, addr = s.accept()
-    print(f"Connected to: {addr}")
+    print(f"Приєднуюсь до адресу: {addr}")
+    print("Говоріть: ")
 
     with conn:
         while True:
-            try:
-                with mic as source:
+            with mic as source:
                     recognizer.adjust_for_ambient_noise(source)
-                    print("Listening...")
+                    
+                    ##print("Listening...")
                     audio = recognizer.listen(source)
                     text = recognizer.recognize_google(audio, language="uk-UA")
-                    print("Heard:", text)
+                    ##print("Heard:", text)
 
                     conn.sendall(text.encode('utf-8'))
-            except Exception as e:
-                print("Error:", e)

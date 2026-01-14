@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Wizzy.Pages.AIChat.AiChat" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAEAAIAAAAIAAAAQAAAAEAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Pages\AIChat\AiChat.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Classes.Chat.ConnectPytonFile" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Classes\Chat\ConnectPytonFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.Classes.VoiceCommands">
+    <Position X="6.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAAAAAAAAIQQAgAQAEASEAAAAAgAAAAAAIAA=</HashCode>
+      <FileName>Pages\Classes\VoiceCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.Classes.Voices">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Classes\Voices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.DataBase.DataBase" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAiYgAAAABAAQACAAAAIKQAQAQAAQEBAAAACKkAIBA=</HashCode>
+      <FileName>Pages\DataBase\DataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.DataBase.DataBaseTime" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Pages\DataBase\DataBaseTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.HomeWork.AddWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\HomeWork\AddWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.HomeWork.EditHomeWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\HomeWork\EditHomeWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.HomeWork.HomeWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\HomeWork\HomeWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.HomeWork.ViewWork" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Pages\HomeWork\ViewWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Schedule.EditSchedule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Schedule\EditSchedule.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Schedule.Schedule" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Schedule\Schedule.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.SettingsWindow.MainSettings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\SettingsWindow\MainSettings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.ToDo.AddToDo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQEAEAAAAAIAAAAAAAIJAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ToDo\AddToDo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.ToDo.EditToDoList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Pages\ToDo\EditToDoList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.ToDo.ViewContentToDoList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAEBAAAAgAAABAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Pages\ToDo\ViewContentToDoList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.ToDoList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ToDo\ToDoList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.SchedulePage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\SchedulePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Leght.ConvertLeght" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAIAQAAAAAIAAABAAAAAECAKAAgAQAAAAAAIA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Leght\ConvertLeght.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Legth" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Leght\Legth.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Mass.Mass" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Mass\Mass.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Mass.MassConvert" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAAAAAAAAAAgIABAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Mass\MassConvert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Time.TimeConverts" Collapsed="true">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Time\TimeConverts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Converns.Time.TimeWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.689" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\AddImage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.BackGroundSetting" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAACAAAAAQBAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\BackGroundSetting.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.SettingsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AllSetings.ColorSettings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAgEAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\ColorSettings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.Setings.SettingTIme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEAAAAAAAAAAAAAAhAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\SetingsFolder\AllSetings\SettingTIme.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.BreakWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAABAhAAAAAAAAAAAAAAIAAACAAAEAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\BreakWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.Pomodoro.MainWindowPomodoro" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQgEkEABAAAAgAAEAAAAAEAAIAAABgAAEBAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\Pomodoro\MainWindowPomodoro.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.AllConverns" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\AllConverns.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.CalculatorTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\CalculatorTool.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.AllTools.TImer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAEAAAAAAAAgAAAAQIAAACAAAAAAAABAIAAAEAA=</HashCode>
+      <FileName>Pages\Tools\AllTools\TImer.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.Tools.Calculator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Tools\Calculator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.Pages.tools.ToolsContent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAEAAQA=</HashCode>
+      <FileName>Pages\Tools\ToolsContent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Wizzy.App" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wizzy.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAgAsAAAQAAAAAAAAAACAAIAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

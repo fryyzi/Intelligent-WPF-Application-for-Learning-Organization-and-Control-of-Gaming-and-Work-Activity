@@ -142,3 +142,5 @@ F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\All
 F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\Tools\AllTools\Pomodoro\SetingsFolder\SettingsWindow.baml
 F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\System.Speech.dll
 F:\programing\Project\Wizzy\Wizzy\Wizzy\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\AIChat\AiChat.g.cs
+F:\programing\Project\Wizzy\Wizzy\Wizzy\obj\Debug\net8.0-windows\Pages\AIChat\AiChat.baml

@@ -29,4 +29,8 @@
     <Resource Include="Pages\Tools\AllTools\Pomodoro\Image\photo_2025-09-29_04-09-55.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Classes\VoicesClass\" />
+  </ItemGroup>
+
 </Project>
