@@ -41,6 +41,9 @@
     <Compile Update="Pages\Tools\AllTools\AllConverns.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Tools\AllTools\AwarageScore.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Tools\AllTools\CalculatorTool.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

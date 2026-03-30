@@ -71,7 +71,7 @@ namespace Wizzy.Pages.DataBase
                 { "Id", Id += 1 }
             };
             _collectionToDo.InsertOne(AddToDoList);
-            MessageBox.Show("Нагадування додано!"); 
+            MessageBox.Show("Нагадування додано!");
         }
 
         public List<BsonDocument> ViewContentToDoList()
@@ -137,7 +137,7 @@ namespace Wizzy.Pages.DataBase
         public void AddHomeWork(string Title, string DescriptionText)
         {
             NoConnect();
-            
+
             var AddHomeWork = new BsonDocument
             {
                 {"Назва", Title},
@@ -154,14 +154,14 @@ namespace Wizzy.Pages.DataBase
             foreach (var item in dociuments)
             {
                 Id = item.GetValue("id").AsInt32;
-                IsCodeDataBase = item.GetValue("Код").AsInt32;
+                IsCodeDataBase = item.GetValue("id").AsInt32;
                 if (Id == 0)
                     Id = 1;
 
             }
             return dociuments;
         }
-    
+
         public void AddTimePomodoro(string WorkTime, string ShortBreakTime, string LongBraakTime)
         {
             NoConnect();
@@ -172,11 +172,11 @@ namespace Wizzy.Pages.DataBase
                 {"WorkTime", WorkTime},
                 {"ShortBreakTime", ShortBreakTime},
                 {"LongBreakTime", LongBraakTime}
-                
+
             };
             _collectionTimePomodoro.InsertOne(AddTimePomodoro);
         }
-    
+
         public List<BsonDocument> ViewTimePomodoro()
         {
             NoConnect();

@@ -15,7 +15,6 @@
                         <Button Content="Планувальник" VerticalAlignment="Center" Margin="0,5,36,5" Height="35" Click="ToDoListButton"/>
                         <Button Content="+" Margin="144,5,0,5" Click="AddToDoList"/>
                     </Grid>
-                    <Button Content="Розклад"  Margin="0,5" Height="35"/>
                     <Grid>
                         <Button Content="Домашні завдання" Margin="0,5,36,5" Height="35" Click="ViewHomeWork" />
                         <Button Content="+" Margin="144,5,0,5" Click="AddHomeWork"/>
@@ -26,10 +25,9 @@
                 </StackPanel>
             </DockPanel>
         </ContentControl>
-        
 
-        <Grid Margin="200,0,0,0" >
-            <ContentControl x:Name="MainContent" Width="600" Margin="0,2,0,0"/>
+        <Grid Margin="200,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+            <ContentControl x:Name="MainContent" Margin="0,2,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </Grid>
 
     </Grid>

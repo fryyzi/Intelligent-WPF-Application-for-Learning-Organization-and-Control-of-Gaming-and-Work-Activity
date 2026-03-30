@@ -60,5 +60,10 @@ namespace Wizzy.Pages.tools
             System.Diagnostics.Process.Start("explorer.exe", path);
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var AwardWindow = new Tools.AllTools.AwarageScore();
+            AwardWindow.ShowDialog();
+        }
     }
 }

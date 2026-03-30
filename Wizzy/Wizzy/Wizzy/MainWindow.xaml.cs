@@ -23,12 +23,12 @@ namespace Wizzy
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var audioFile = new AudioFileReader(@"F:\programing\C# Programs\Wizzy\Wizzy\Sound\Open.wav");
+            /*var audioFile = new AudioFileReader(@"F:\programing\C# Programs\Wizzy\Wizzy\Sound\Open.wav");
             audioFile.Volume = 0.1f;
 
             var outputDevice = new WaveOutEvent();
             outputDevice.Init(audioFile);
-            outputDevice.Play();
+            outputDevice.Play();*/
         }
         private void ToDoListButton(object sender, RoutedEventArgs e)
         {
@@ -38,7 +38,7 @@ namespace Wizzy
         {
             Pages.ToDo.AddToDo viewContentTools = new Pages.ToDo.AddToDo();
             viewContentTools.Show();
-            
+
         }
         private void ToolsButton(object sender, RoutedEventArgs e)
         {
@@ -46,7 +46,7 @@ namespace Wizzy
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void AddHomeWork(object sender, RoutedEventArgs e)

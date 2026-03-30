@@ -27,7 +27,7 @@ namespace Wizzy.Pages
 
             var Content = database.ViewContentToDoList();
 
-            foreach(var item in Content)
+            foreach (var item in Content)
             {
                 var TextMain = item.GetValue("ToDoListName").AsString;
 
