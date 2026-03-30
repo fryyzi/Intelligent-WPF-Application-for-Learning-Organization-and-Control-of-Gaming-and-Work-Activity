@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Wizzy.Pages"
         mc:Ignorable="d"
         Background="White">
-    <Grid HorizontalAlignment="Center" Width="590" Height="433">
-        <StackPanel x:Name="Text" Orientation="Horizontal"/>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <WrapPanel x:Name="Text" Orientation="Horizontal"/>
     </Grid>
 </UserControl>

@@ -45,7 +45,7 @@
         </DockPanel>
 
         <Grid Margin="200,0,0,0">
-            <ContentControl x:Name="MainContent" Width="600" Margin="0,2,0,0"/>
+            <ContentControl x:Name="MainContent" Margin="0,2,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         </Grid>
     </Grid>
 </Window>
