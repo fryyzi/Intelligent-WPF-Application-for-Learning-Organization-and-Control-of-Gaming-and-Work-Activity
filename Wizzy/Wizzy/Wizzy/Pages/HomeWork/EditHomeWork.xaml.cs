@@ -28,8 +28,8 @@ namespace Wizzy.Pages.HomeWork
             var Content = dataBase.ViewHomeWork();
             foreach (var item in Content)
             {
-                var MainName = item.GetValue("Назва").AsString;
-                var DespenshionText = item.GetValue("Опис").AsString;
+                var MainName = item.Name;
+                var DespenshionText = item.Description;
                 if (string.IsNullOrEmpty(MainName) || string.IsNullOrEmpty(DespenshionText))
                 {
                     this.Close();
@@ -53,18 +53,18 @@ namespace Wizzy.Pages.HomeWork
                 return;
             }
 
-            DataBase.DataBase.TitleMainHomeWork = MyTitle; 
+            DataBase.DataBase.TitleMainHomeWork = MyTitle;
             dataBase.DeleteDataBase(2);
             this.Close();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            dataBase.Connect();                 
+            dataBase.Connect();
             string MyTitle = EditTitleHomeWorkTextBlock.Text;
             string MyDespenshion = EditDespenshionTextBlock.Text;
 
-            if(string.IsNullOrEmpty(MyTitle) || string.IsNullOrEmpty(MyDespenshion))
+            if (string.IsNullOrEmpty(MyTitle) || string.IsNullOrEmpty(MyDespenshion))
             {
                 MessageBox.Show("Поля не можуть бути пустими!");
                 return;

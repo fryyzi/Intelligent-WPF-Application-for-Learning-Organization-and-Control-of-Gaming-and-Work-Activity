@@ -8,8 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using System.Xml.Linq;
 using System.Xml.Serialization;
+using Wizzy.Pages.DataBase.Model;
 using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
+
 
 namespace Wizzy.Pages.DataBase
 {
@@ -24,17 +27,17 @@ namespace Wizzy.Pages.DataBase
         public static string TitleMainText = " ";
         public static string TitleMainHomeWork = "";
 
-        public static int Id = 0;
+        public static int IdToDo = 0;
         public static int IsCodeDataBase;
 
         public static string WorkTimeDataBase = "";
 
-        private IMongoCollection<BsonDocument> _collectionToDo;
-        private IMongoCollection<BsonDocument> _testCollesction;
-        private IMongoCollection<BsonDocument> _collectionHomeWork;
-        private IMongoCollection<BsonDocument> _collectionTimePomodoro;
+        private IMongoCollection<ToDoModel> _collectionToDo;//complited
+        private IMongoCollection<HomeWorkModel> _collectionHomeWork;//complited
+        private IMongoCollection<TimePomodoroModel> _collectionTimePomodoro;
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
         private IMongoCollection<BsonDocument> _SaveColorsSetings;
+
 
 
         public void Connect()
@@ -46,49 +49,16 @@ namespace Wizzy.Pages.DataBase
 
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
-            _collectionToDo = database.GetCollection<BsonDocument>("ToDoLists");
-            _collectionHomeWork = database.GetCollection<BsonDocument>("HomeWork");
-            _collectionTimePomodoro = database.GetCollection<BsonDocument>("Time");
-            _collectionImagePomodoro = database.GetCollection<ImageDocument>("SaveSetings");
+            _collectionToDo = database.GetCollection<ToDoModel>("ToDoLists");
+            _collectionHomeWork = database.GetCollection<HomeWorkModel>("HomeWork");
+            _collectionTimePomodoro = database.GetCollection<TimePomodoroModel>("Time");
+            _collectionImagePomodoro = database.GetCollection<ImageDocument>("Image");
             _SaveColorsSetings = database.GetCollection<BsonDocument>("SaveColorsSetings");
         }
         public void NoConnect()
         {
             if (_collectionToDo == null || _collectionHomeWork == null || _collectionTimePomodoro == null)
                 Connect();
-        }
-
-        public void AddToDoList(string newToDoText, string newMainToDoListName, string IsCodeDataBase = "")
-        {
-            NoConnect();
-            ViewContentToDoList();
-
-            var AddToDoList = new BsonDocument
-            {
-                { "ToDoListName", newMainToDoListName },
-                { "Text", newToDoText },
-                {"Код", IsCodeDataBase},
-                //{"IsCode", CodeFunction},
-                { "Id", Id += 1 }
-            };
-            _collectionToDo.InsertOne(AddToDoList);
-            MessageBox.Show("Нагадування додано!"); 
-        }
-
-        public List<BsonDocument> ViewContentToDoList()
-
-        {
-            NoConnect();
-
-            var dociuments = _collectionToDo.Find(new BsonDocument()).ToList();
-
-            foreach (var item in dociuments)
-            {
-                Id = item.GetValue("Id").AsInt32;
-                if (Id == 0)
-                    Id = 1;
-            }
-            return dociuments;
         }
 
         public void UpdateDataBase(string newTitle, string newText, int NumberFunction)
@@ -98,9 +68,9 @@ namespace Wizzy.Pages.DataBase
             switch (NumberFunction)
             {
                 case 1:
-                    var filter = Builders<BsonDocument>.Filter.Eq("ToDoListName", TitleMainText);
+                    var filter = Builders<ToDoModel>.Filter.Eq("ToDoListName", TitleMainText);
 
-                    var update = Builders<BsonDocument>.Update
+                    var update = Builders<ToDoModel>.Update
                         .Set("ToDoListName", newTitle)
                         .Set("Text", newText);
                     _collectionToDo.UpdateOne(filter, update);
@@ -108,82 +78,126 @@ namespace Wizzy.Pages.DataBase
                     MessageBox.Show("Нагадування оновлено!");
                     break;
                 case 2:
-                    var fileterHomeWork = Builders<BsonDocument>.Filter.Eq("Назва", TitleMainHomeWork);
-                    var updateHomeWork = Builders<BsonDocument>.Update
+                    var fileterHomeWork = Builders<HomeWorkModel>.Filter.Eq("Name", TitleMainHomeWork);
+                    var updateHomeWork = Builders<HomeWorkModel>.Update
                         .Set("Назва", newTitle)
                         .Set("Опис", newText);
                     _collectionHomeWork.UpdateOne(fileterHomeWork, updateHomeWork);
                     break;
             }
         }
-
         public void DeleteDataBase(int NumberFunction)
         {
             NoConnect();
             switch (NumberFunction)
             {
                 case 1:
-                    var filter = Builders<BsonDocument>.Filter.Eq("ToDoListName", TitleMainText);
+                    var filter = Builders<ToDoModel>.Filter.Eq("ToDoListName", TitleMainText);
                     _collectionToDo.DeleteOne(filter);
                     MessageBox.Show("Нагадування видалено!");
                     break;
                 case 2:
-                    var filterHomeWork = Builders<BsonDocument>.Filter.Eq("Назва", TitleMainHomeWork);
+                    var filterHomeWork = Builders<HomeWorkModel>.Filter.Eq("Name", TitleMainHomeWork);
                     _collectionHomeWork.DeleteMany(filterHomeWork);
                     MessageBox.Show("Домашнє завдання видалено!");
                     break;
             }
         }
 
+        //list
+        public void AddToDoList(string newToDoText, string newMainToDoListName, string IsCodeDataBase = "")
+        {
+
+            NoConnect();
+            ViewContentToDoList();
+
+            var todo = new ToDoModel
+            {
+                ToDoListName = newMainToDoListName,
+                Text = newToDoText,
+                IsCode = IsCodeDataBase,
+            };
+
+            _collectionToDo.InsertOne(todo);
+            MessageBox.Show("Нагадування додано!");
+        }
+
+        public List<ToDoModel> ViewContentToDoList()
+        {
+            NoConnect();
+
+            var docuuments = _collectionToDo.Find(_ => true).ToList();
+
+            foreach (var item in docuuments)
+            {
+
+                if (IdToDo == 0)
+                    IdToDo = 1;
+            }
+            return docuuments;
+        }
+
+        //HomeWork
         public void AddHomeWork(string Title, string DescriptionText)
         {
             NoConnect();
-            
-            var AddHomeWork = new BsonDocument
+
+            var AddHomeWork = new HomeWorkModel
             {
-                {"Назва", Title},
-                {"Опис", DescriptionText},
-                {"id", Id += 1}
+                Name = Title,
+                Description = DescriptionText,
             };
             _collectionHomeWork.InsertOne(AddHomeWork);
             MessageBox.Show("Домашнє завдання додано!");
         }
-        public List<BsonDocument> ViewHomeWork()
+        public List<HomeWorkModel> ViewHomeWork()
         {
             NoConnect();
-            var dociuments = _collectionHomeWork.Find(new BsonDocument()).ToList();
-            foreach (var item in dociuments)
+            var docuuments = _collectionHomeWork.Find(_ => true).ToList();
+            foreach (var item in docuuments)
             {
-                Id = item.GetValue("id").AsInt32;
-                IsCodeDataBase = item.GetValue("id").AsInt32;
-                if (Id == 0)
-                    Id = 1;
+                if (IdToDo == 0)
+                    IdToDo = 1;
 
             }
-            return dociuments;
+            return docuuments;
         }
-    
+
+        //Pomodoro
         public void AddTimePomodoro(string WorkTime, string ShortBreakTime, string LongBraakTime)
         {
             NoConnect();
 
-            var AddTimePomodoro = new BsonDocument
+            var AddTimePomodoro = new TimePomodoroModel
             {
-                {"IdSettings", "Налаштування"},
-                {"WorkTime", WorkTime},
-                {"ShortBreakTime", ShortBreakTime},
-                {"LongBreakTime", LongBraakTime}
-                
+
+                IdSettings = "Налаштування",
+                ShortBreakTime = ShortBreakTime,
+                WorkTime = WorkTime,
+                LongBreakTime = LongBraakTime,
+
             };
             _collectionTimePomodoro.InsertOne(AddTimePomodoro);
         }
-    
-        public List<BsonDocument> ViewTimePomodoro()
+
+        public List<TimePomodoroModel> ViewTimePomodoro()
         {
             NoConnect();
-            var dociuments = _collectionTimePomodoro.Find(new BsonDocument()).ToList();
-            return dociuments;
+            var docuuments = _collectionTimePomodoro.Find(_ => true).ToList();
+            return docuuments;
         }
+
+        public void addImage(byte[] ImageData, string Name)
+        {
+            var img = new ImageDocument
+            {
+                Name = System.IO.Path.GetFileName(Name),
+                ImageData = ImageData
+            };
+            _collectionImagePomodoro.InsertOne(img);
+            MessageBox.Show("Зображення додано!");
+        }
+
         public List<ImageDocument> ViewImagePomodoro()
         {
             NoConnect();
@@ -195,8 +209,8 @@ namespace Wizzy.Pages.DataBase
         {
             NoConnect();
 
-            var filter = Builders<BsonDocument>.Filter.Eq("IdSettings", "Налаштування");
-            var update = Builders<BsonDocument>.Update
+            var filter = Builders<TimePomodoroModel>.Filter.Eq("IdSettings", "Налаштування");
+            var update = Builders<TimePomodoroModel>.Update
                 .Set("WorkTime", UpdateWorkTime)
                 .Set("ShortBreakTime", UpdateShortBreakTime)
                 .Set("LongBreakTime", UpdateLongBreakTime);

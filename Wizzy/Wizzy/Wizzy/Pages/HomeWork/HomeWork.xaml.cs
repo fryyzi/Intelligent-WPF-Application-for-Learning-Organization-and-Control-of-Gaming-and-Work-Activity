@@ -28,9 +28,9 @@ namespace Wizzy.Pages.HomeWork
 
             var Content = dataBase.ViewHomeWork();
 
-            foreach( var item in Content)
+            foreach (var item in Content)
             {
-                var TextMain = item.GetValue("Назва").AsString;
+                var TextMain = item.Name;
 
 
                 TextBlock textBlock = new TextBlock
@@ -60,7 +60,7 @@ namespace Wizzy.Pages.HomeWork
                 });
             }
 
-            
+
 
 
         }

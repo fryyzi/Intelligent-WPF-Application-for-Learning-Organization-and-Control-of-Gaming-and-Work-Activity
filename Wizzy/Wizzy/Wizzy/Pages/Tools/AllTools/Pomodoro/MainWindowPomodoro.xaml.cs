@@ -43,7 +43,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             EditColors();
             Timer();
             UpdateTimerLabel();
-            
+
             var settings = MongoClientSettings.FromConnectionString(
                "mongodb://localhost:27017/"
            );
@@ -89,7 +89,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
         private void EditColors()
         {
             var content = dataBase.ViewColorPomodoro();
-            
+
             if (content != null)
             {
                 foreach (var item in content)
@@ -117,7 +117,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             }
             else
             {
-                SessionCountLabel.Content = $"{CountSessions =+ 1}";
+                SessionCountLabel.Content = $"{CountSessions = +1}";
                 BreakWindow breakWindow = new BreakWindow();
                 breakWindow.Show();
                 _timer.Stop();
@@ -133,9 +133,10 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             {
                 foreach (var item in content)
                 {
-                    if (item.Contains("WorkTime"))
+                    //item.Contains("WorkTime"
+                    if (double.TryParse(item.LongBreakTime, out double result))
                     {
-                        WorkTime = item.GetValue("WorkTime").ToDouble();
+                        WorkTime = result;
                     }
                 }
             }
@@ -160,7 +161,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
         private void Timer()
         {
-            if(Pages.DataBase.DataBaseTime.CountSessions == 0)
+            if (Pages.DataBase.DataBaseTime.CountSessions == 0)
             {
                 SettingsTimer();
             }
@@ -172,7 +173,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
                     _timer.Start();
                 });
             }
-            
+
         }
 
         private void UpdateTimerLabel()
@@ -207,7 +208,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
 
         private void SettingControl_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            
+
         }
     }
 }

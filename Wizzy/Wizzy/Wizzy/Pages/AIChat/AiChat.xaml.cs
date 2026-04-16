@@ -49,7 +49,7 @@ namespace Wizzy.Pages.AIChat
             ChatScroll.ScrollToEnd();
         }
 
-        /*public void StartPythonBot()
+        public void StartPythonBot()
         {
             pythonProcess = new Process();
             pythonProcess.StartInfo = new ProcessStartInfo()
@@ -69,30 +69,30 @@ namespace Wizzy.Pages.AIChat
 
             pythonProcess.Start();
             pythonProcess.BeginOutputReadLine();
-        }*/
-        /* private void Python_OutputDataReceived(object sender, DataReceivedEventArgs e)
-         {
-             if (string.IsNullOrWhiteSpace(e.Data))
-                 return;
+        }
+        private void Python_OutputDataReceived(object sender, DataReceivedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(e.Data))
+                return;
 
-             if (e.Data.Trim() == "READY")
-                 return;
+            if (e.Data.Trim() == "READY")
+                return;
 
 
-             try
-             {
-                 var json = System.Text.Json.JsonDocument.Parse(e.Data);
-                 var response = json.RootElement.GetProperty("response").GetString();
-                 Dispatcher.Invoke(() =>
-                 {
-                     AddMessage("Bot: " + response, false);
-                 });
-             }
-             catch
-             {
-                 // ignore parse errors
-             }
-         }*/
+            try
+            {
+                var json = System.Text.Json.JsonDocument.Parse(e.Data);
+                var response = json.RootElement.GetProperty("response").GetString();
+                Dispatcher.Invoke(() =>
+                {
+                    AddMessage("Bot: " + response, false);
+                });
+            }
+            catch
+            {
+                // ignore parse errors
+            }
+        }
         public string SendMessage(string msg)
         {
             using (TcpClient client = new TcpClient("127.0.0.1", 5050))

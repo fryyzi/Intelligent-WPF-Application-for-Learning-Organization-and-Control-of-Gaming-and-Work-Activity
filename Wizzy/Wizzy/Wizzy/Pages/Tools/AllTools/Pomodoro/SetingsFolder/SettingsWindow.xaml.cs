@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 using Wizzy.Pages.Tools.AllTools.Pomodoro.Setings;
 
 namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
@@ -20,6 +23,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
     /// </summary>
     public partial class SettingsWindow : Window
     {
+
         public SettingsWindow()
         {
             InitializeComponent();
@@ -32,6 +36,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             BackGroundSetting settingsWindow = new BackGroundSetting();
             settingsWindow.Show();
             this.Close();

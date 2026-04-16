@@ -17,6 +17,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
 {
@@ -24,7 +25,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
     {
 
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
-        //private IMongoCollection<ImageDocument> _CollectionSaveImage;
+        private IMongoCollection<ImageDocument> _CollectionSaveImage;
         Pages.DataBase.DataBase dataBase = new DataBase.DataBase();
 
         public class ImageDocument
@@ -39,9 +40,6 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
         {
             InitializeComponent();
 
-            
-            
-
             var settings = MongoClientSettings.FromConnectionString(
                "mongodb://localhost:27017/"
             );
@@ -50,12 +48,20 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
             var client = new MongoClient(settings);
             var database = client.GetDatabase("Wizzy");
             _collectionImagePomodoro = database.GetCollection<ImageDocument>("Image");
-            //_CollectionSaveImage = database.GetCollection<ImageDocument>("SaveSetings");
+            _CollectionSaveImage = database.GetCollection<ImageDocument>("SaveSetings");
         }
 
         private void AddImage_Click(object sender, RoutedEventArgs e)
         {
-            
+
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Image files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+
+            if (dialog.ShowDialog() == true)
+            {
+                UrlImage.Text = dialog.FileName;
+            }
+
             string path = UrlImage.Text;
 
             if (File.Exists(path))
@@ -63,17 +69,16 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
                 byte[] imageBytes = File.ReadAllBytes(path);
                 var img = new ImageDocument
                 {
-                    Name = System.IO.Path.GetFileName(UrlImage.ToString()),
-                    ImageData = imageBytes  
+                    Name = System.IO.Path.GetFileName(path),
+                    ImageData = imageBytes
                 };
                 _collectionImagePomodoro.InsertOne(img);
+                MessageBox.Show("Зображення додано!");
             }
             else
             {
                 MessageBox.Show("Файл не знайдено!");
             }
-
-            
         }
     }
 }

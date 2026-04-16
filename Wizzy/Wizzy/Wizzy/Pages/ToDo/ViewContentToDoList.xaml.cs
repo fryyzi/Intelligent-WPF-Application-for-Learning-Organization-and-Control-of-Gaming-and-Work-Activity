@@ -26,21 +26,21 @@ namespace Wizzy.Pages.ToDo
 
             var Content = database.ViewContentToDoList();
 
-            foreach (var item in Content) 
+            foreach (var item in Content)
             {
-                Title = item.GetValue("ToDoListName").AsString;
-                TextDoTo = item.GetValue("Text").AsString;
-                Code = item.GetValue("Код").AsString;
+                Title = item.ToDoListName;
+                TextDoTo = item.Text;
+                Code = item.IsCode;
 
                 if (string.IsNullOrEmpty(Title) || string.IsNullOrEmpty(TextDoTo))
                 {
                     this.Close();
                 }
 
-                if(Maintext == Title)
+                if (Maintext == Title)
                 {
                     TitleToDoListTextBlock.Text = Title;
-                    if(Code != "None")
+                    if (Code != "None")
                     {
                         CodeSynTextBox.Text = TextDoTo;
                         CodeSynTextBox.Visibility = Visibility.Visible;
@@ -49,7 +49,7 @@ namespace Wizzy.Pages.ToDo
                         {
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("C#");
                         }
-                        if (Code == "HTML") 
+                        if (Code == "HTML")
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("HTML");
                         if (Code == "XML")
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("XML");
@@ -59,9 +59,9 @@ namespace Wizzy.Pages.ToDo
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("SQL");
                         if (Code == "PHP")
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("PHP");
-                        if (Code == "VB") 
+                        if (Code == "VB")
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("VB");
-                        if (Code == "XAML") 
+                        if (Code == "XAML")
                             CodeSynTextBox.SyntaxHighlighting = HighlightingManager.Instance.GetDefinition("XAML");
                     }
                     else
@@ -70,7 +70,7 @@ namespace Wizzy.Pages.ToDo
                         ContentToDoListTextBox.Visibility = Visibility.Visible;
                         ContentToDoListTextBox.Text = TextDoTo;
                     }
-                       
+
                 }
             }
         }

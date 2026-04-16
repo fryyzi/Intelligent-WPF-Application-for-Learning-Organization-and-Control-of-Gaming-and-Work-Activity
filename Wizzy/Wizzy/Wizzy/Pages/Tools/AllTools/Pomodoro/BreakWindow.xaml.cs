@@ -38,14 +38,15 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
             {
                 foreach (var item in Content)
                 {
-                    if (item.Contains("ShortBreakTime"))
+                    //item.Contains("ShortBreakTime")
+                    if (double.TryParse(item.ShortBreakTime, out double result))
                     {
-                        ShortBreakTime = item.GetValue("ShortBreakTime").ToDouble();
+                        ShortBreakTime = result;
                     }
                 }
 
             }
-            if(ShortBreakTime > 0)
+            if (ShortBreakTime > 0)
             {
                 _BreakTime = TimeSpan.FromMinutes(ShortBreakTime);
                 _timer = new DispatcherTimer();
@@ -58,7 +59,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro
                 MessageBox.Show("Час для короткої перерви не знайдено в базі");
             }
 
-            
+
         }
         private void Timer_Tick(object sender, EventArgs e)
         {

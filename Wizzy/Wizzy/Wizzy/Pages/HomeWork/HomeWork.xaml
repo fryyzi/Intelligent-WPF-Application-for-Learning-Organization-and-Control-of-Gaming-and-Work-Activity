@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wizzy.Pages.HomeWork"
         mc:Ignorable="d"
-        Width="590" Height="433" Background="AliceBlue">
-    <Grid>
-        <StackPanel x:Name="TextHomeWork" Orientation="Horizontal"/>
+        Background="AliceBlue">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <WrapPanel x:Name="TextHomeWork" Orientation="Horizontal"/>
     </Grid>
 </UserControl>

@@ -24,15 +24,15 @@ namespace Wizzy.Pages.ToDo
         public EditToDoList()
         {
             InitializeComponent();
-            
+
             database.Connect();
-            
+
 
             var Content = database.ViewContentToDoList();
-            foreach(var item in Content)
+            foreach (var item in Content)
             {
-                string Title = item.GetValue("ToDoListName").AsString;
-                string TextDoTo = item.GetValue("Text").AsString;
+                string Title = item.ToDoListName;
+                string TextDoTo = item.Text;
                 if (string.IsNullOrEmpty(Title) || string.IsNullOrEmpty(TextDoTo))
                 {
                     this.Close();

@@ -27,15 +27,15 @@ namespace Wizzy.Pages.HomeWork
         public ViewWork()
         {
             InitializeComponent();
-            
+
             dataBase.Connect();
 
             var Content = dataBase.ViewHomeWork();
 
             foreach (var item in Content)
             {
-                var Title = item.GetValue("Назва").AsString;
-                var DescriptionText = item.GetValue("Опис").AsString;
+                var Title = item.Name;
+                var DescriptionText = item.Description;
                 if (string.IsNullOrEmpty(Title) || string.IsNullOrEmpty(DescriptionText))
                 {
                     this.Close();

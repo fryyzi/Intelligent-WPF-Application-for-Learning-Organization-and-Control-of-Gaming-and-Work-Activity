@@ -35,11 +35,12 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.Setings
         {
             dataBase.Connect();
 
+
             WorkTime = WorkDurationTextBox.Text.Trim();
             ShortBreakTime = ShortBreakDurationTextBox.Text.Trim();
             LongBreakTime = LongBreakDurationTextBox.Text.Trim();
 
-            //Pages.DataBase.DataBase.WorkTimeDataBase = WorkTime;
+            Pages.DataBase.DataBase.WorkTimeDataBase = WorkTime;
 
             if (string.IsNullOrEmpty(WorkTime) || string.IsNullOrEmpty(ShortBreakTime) || string.IsNullOrEmpty(LongBreakTime))
             {

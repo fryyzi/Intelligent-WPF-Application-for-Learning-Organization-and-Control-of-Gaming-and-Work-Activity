@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using Microsoft.Win32;
+using MongoDB.Driver;
 using MongoDB.Driver.GridFS;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,9 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using Wizzy.Pages.DataBase;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using static Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder.AddImage;
 
 namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
@@ -25,6 +28,7 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
         private IMongoCollection<ImageDocument> _collectionImagePomodoro;
         private IMongoCollection<ImageDocument> _imageSavePomodoro;
         Pages.DataBase.DataBase dataBase = new DataBase.DataBase();
+
 
         public BackGroundSetting()
         {
@@ -128,9 +132,28 @@ namespace Wizzy.Pages.Tools.AllTools.Pomodoro.SetingsFolder
 
         private void AddImage_Click(object sender, RoutedEventArgs e)
         {
-            AddImage image = new AddImage();
-            image.Show();
-            this.Close();
+            dataBase.Connect();
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+
+            if (openFileDialog.ShowDialog() != true)
+            {
+                return;
+            }
+
+            string path = openFileDialog.FileName;
+
+            if (!File.Exists(path))
+            {
+                MessageBox.Show("Файл не знайдено!");
+                return;
+            }
+
+            byte[] ImageData = File.ReadAllBytes(path);
+            string Name = System.IO.Path.GetFileName(path);
+
+            dataBase.addImage(ImageData, Name);
         }
     }
 }
