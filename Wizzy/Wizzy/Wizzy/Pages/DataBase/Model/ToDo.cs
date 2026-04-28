@@ -19,5 +19,13 @@ namespace Wizzy.Pages.DataBase.Model
 
         [BsonElement("Код")]
         public string IsCode { get; set; }
+
+        internal DataBase DataBase
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

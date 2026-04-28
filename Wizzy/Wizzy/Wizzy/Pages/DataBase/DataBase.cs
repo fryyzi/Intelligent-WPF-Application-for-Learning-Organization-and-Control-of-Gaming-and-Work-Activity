@@ -32,6 +32,18 @@ namespace Wizzy.Pages.DataBase
 
         public static string WorkTimeDataBase = "";
 
+        public List<ToDoModel> ToDos { get; set; } = new List<ToDoModel>();
+        public List<HomeWorkModel> HomeWorks { get; set; } = new List<HomeWorkModel>();
+        public List<TimePomodoroModel> TimePomodoros { get; set; } = new List<TimePomodoroModel>();
+        public List<AddImageModel> ImagePomodoros { get; set; } = new List<AddImageModel>();
+        public List<BsonDocument> SaveColorsSetings { get; set; } = new List<BsonDocument>();
+
+        private ToDoModel _toDoModel;
+        private HomeWorkModel _homeWorkModel;
+        private TimePomodoroModel _timePomodoroModel;
+        private ImageDocument _imageDocument;
+        private BsonDocument _bsonDocument;
+
         private IMongoCollection<ToDoModel> _collectionToDo;//complited
         private IMongoCollection<HomeWorkModel> _collectionHomeWork;//complited
         private IMongoCollection<TimePomodoroModel> _collectionTimePomodoro;
@@ -117,6 +129,10 @@ namespace Wizzy.Pages.DataBase
                 Text = newToDoText,
                 IsCode = IsCodeDataBase,
             };
+
+            _toDoModel = todo;
+            ToDos.Add(todo);
+
 
             _collectionToDo.InsertOne(todo);
             MessageBox.Show("Нагадування додано!");

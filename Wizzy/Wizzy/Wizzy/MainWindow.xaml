@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wizzy"
         mc:Ignorable="d"
-        Title="Wizzy" Height="450" Width="800"
+        Title="Wizzy" Height="470" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="#FFF"
         Loaded="Window_Loaded">
@@ -26,6 +26,8 @@
                 <Button Content="Нотатки" Margin="0,5" Height="35" />
                 <Button Content="Інструменти" Margin="0,5" Height="35" Click="ToolsButton"/>
                 <Button Content="Налаштування" Margin="0,20,0,0" Height="35"/>
+                <Button x:Name="BlockApp" Content="Заблокувани програму" Margin="0,10,0,0" Height="35" Click="BlockApp_Click"/>
+                
             </StackPanel>
 
             <StackPanel DockPanel.Dock="Bottom" Margin="10" VerticalAlignment="Bottom" HorizontalAlignment="Left">
@@ -39,7 +41,8 @@
                     <Image Source="F:\programing\Project\Wizzy\Wizzy\Wizzy\Pages\Image\Chat_Ai.ico"
                     Stretch="Uniform"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    Visibility="Hidden"/>
                 </Button>
             </StackPanel>
         </DockPanel>

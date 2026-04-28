@@ -77,5 +77,14 @@ namespace Wizzy
             Pages.AIChat.AiChat aIChatPage = new Pages.AIChat.AiChat();
             aIChatPage.Show();
         }
+
+        private void BlockApp_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = @"F:\programing\Project\Block_Game\BLockGame\BLockGame\bin\Debug\net8.0-windows\BLockGame.exe",
+                UseShellExecute = false
+            });
+        }
     }
 }

@@ -3,24 +3,68 @@
   "WorkspaceRootPath": "F:\\programing\\Project\\Wizzy\\Wizzy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\addimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\addimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|f:\\programing\\project\\wizzy\\wizzy\\testwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|solutionrelative:testwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|f:\\programing\\project\\wizzy\\wizzy\\testwpf\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|solutionrelative:testwpf\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|f:\\programing\\project\\wizzy\\wizzy\\testwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5592CDB0-B670-404D-8A92-806D05DB2C39}|TestWPF\\TestWPF.csproj|solutionrelative:testwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\addimage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\addimage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\timepomodoromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\timepomodoromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\homeworkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\homeworkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\addimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\addimagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\homework\\edithomework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\homework\\edithomework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\scripts\\python\\voices.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\scripts\\python\\voices.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\scripts\\python\\text.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\scripts\\python\\text.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\addtodo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +75,8 @@
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\homeworkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\homeworkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\backgroundsetting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\mainwindowpomodoro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\tools\\alltools\\pomodoro\\mainwindowpomodoro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\database\\model\\timepomodoromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\database\\model\\timepomodoromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\tools\\alltools\\pomodoro\\setingsfolder\\allsetings\\settingtime.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -91,24 +123,12 @@
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\homework\\addwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\homework\\homework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\homework\\homework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\aichat\\aichat.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\aichat\\aichat.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\classes\\chat\\connectpytonfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,14 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\edittodolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\edittodolist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\scripts\\python\\voices.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\scripts\\python\\voices.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\todo\\addtodo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\schedule\\schedule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -202,10 +214,6 @@
       "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\homework\\viewwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|f:\\programing\\project\\wizzy\\wizzy\\wizzy\\pages\\homework\\edithomework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{92595E8D-375A-4E2C-9EF3-17CA7C2AB181}|Wizzy\\Wizzy.csproj|solutionrelative:wizzy\\pages\\homework\\edithomework.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -240,7 +248,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 491,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -256,57 +264,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SettingsWindow.xaml",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
+              "DocumentIndex": 12,
+              "Title": "AddToDo.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T21:38:33.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T00:10:00.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddImageModel.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T12:46:13.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeWorkModel.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T11:02:38.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BackGroundSetting.xaml",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
+              "RelativeToolTip": "Wizzy\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-09T08:28:36.795Z",
+              "WhenOpened": "2025-09-26T21:26:43.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TestWPF\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "TestWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:24:08.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\Person.cs",
+              "RelativeDocumentMoniker": "TestWPF\\Person.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\Person.cs",
+              "RelativeToolTip": "TestWPF\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:25:14.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TestWPF\\MainWindow.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestWPF\\MainWindow.xaml",
+              "RelativeToolTip": "TestWPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T06:23:52.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Wizzy\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAzwFUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:17:53.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditHomeWork.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-29T09:15:30.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ToDo.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\ToDo.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\ToDo.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\ToDo.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\ToDo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T16:32:17.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataBase.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\DataBase.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T06:20:38.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TimePomodoroModel.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:02:29.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeWorkModel.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\HomeWorkModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:02:38.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddImageModel.cs",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
+              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\AddImageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T12:46:13.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AddToDo.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs",
@@ -314,12 +416,57 @@
               "RelativeToolTip": "Wizzy\\Pages\\ToDo\\AddToDo.xaml.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwCwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T22:22:26.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T22:22:26.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Voices.py",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\Voices.py",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Scripts\\Python\\Voices.py",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\Voices.py",
+              "RelativeToolTip": "Wizzy\\Pages\\Scripts\\Python\\Voices.py",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-29T00:16:05.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SettingsWindow.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-14T21:38:33.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BackGroundSetting.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
+              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-09T08:28:36.795Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "text.py",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\text.py",
+              "RelativeDocumentMoniker": "Wizzy\\Pages\\Scripts\\Python\\text.py",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\text.py",
+              "RelativeToolTip": "Wizzy\\Pages\\Scripts\\Python\\text.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-04-21T10:15:55.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "DataBaseTime.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBaseTime.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\DataBaseTime.cs",
@@ -327,86 +474,69 @@
               "RelativeToolTip": "Wizzy\\Pages\\DataBase\\DataBaseTime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T22:33:39.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T22:33:39.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "SettingTIme.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\SettingTIme.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\SettingTIme.xaml",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\SettingTIme.xaml",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\SettingTIme.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T21:21:43.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T21:21:43.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "ViewWork.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\ViewWork.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\ViewWork.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\ViewWork.xaml.cs",
               "RelativeToolTip": "Wizzy\\Pages\\HomeWork\\ViewWork.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T12:40:37.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "MainWindowPomodoro.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-09T10:43:09.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T10:43:09.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "BreakWindow.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml.cs",
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACkAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAIBQwCkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T11:21:14.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T11:21:14.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TimePomodoroModel.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\Model\\TimePomodoroModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T11:02:29.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "AddWork.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\AddWork.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\AddWork.xaml.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\AddWork.xaml.cs",
               "RelativeToolTip": "Wizzy\\Pages\\HomeWork\\AddWork.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T09:15:24.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "MainWindowPomodoro.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml.cs",
@@ -414,12 +544,11 @@
               "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\MainWindowPomodoro.xaml.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAAQwI0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T21:29:10.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T21:29:10.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "EditToDoList.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\EditToDoList.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\EditToDoList.xaml.cs",
@@ -431,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "EditHomeWork.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml.cs",
@@ -443,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "AddWork.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\AddWork.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\AddWork.xaml",
@@ -454,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "ViewContentToDoList.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml.cs",
@@ -466,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "HomeWork.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\HomeWork.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\HomeWork.xaml.cs",
@@ -478,30 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Wizzy\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwC4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:17:53.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
-              "RelativeToolTip": "Wizzy\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-26T21:26:43.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "HomeWork.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\HomeWork.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\HomeWork.xaml",
@@ -512,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "AiChat.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\AIChat\\AiChat.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\AIChat\\AiChat.xaml.cs",
@@ -524,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ConnectPytonFile.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Classes\\Chat\\ConnectPytonFile.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Classes\\Chat\\ConnectPytonFile.cs",
@@ -536,30 +642,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ClassDiagram1.cd",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\ClassDiagram1.cd",
-              "RelativeDocumentMoniker": "Wizzy\\ClassDiagram1.cd",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\ClassDiagram1.cd",
-              "RelativeToolTip": "Wizzy\\ClassDiagram1.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2025-11-28T23:56:42.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "VoiceCommands.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Classes\\VoiceCommands.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Classes\\VoiceCommands.cs",
               "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Classes\\VoiceCommands.cs",
               "RelativeToolTip": "Wizzy\\Pages\\Classes\\VoiceCommands.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T22:33:28.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "EditToDoList.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\EditToDoList.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\EditToDoList.xaml",
@@ -570,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "ViewContentToDoList.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\ViewContentToDoList.xaml",
@@ -581,30 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Voices.py",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\Voices.py",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Scripts\\Python\\Voices.py",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Scripts\\Python\\Voices.py",
-              "RelativeToolTip": "Wizzy\\Pages\\Scripts\\Python\\Voices.py",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-29T00:16:05.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AddToDo.xaml",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\ToDo\\AddToDo.xaml",
-              "RelativeToolTip": "Wizzy\\Pages\\ToDo\\AddToDo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-29T00:10:00.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Schedule.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Schedule\\Schedule.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Schedule\\Schedule.xaml.cs",
@@ -616,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\TestConsole\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "TestConsole\\ClassDiagram1.cd",
@@ -627,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "AiChat.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\AIChat\\AiChat.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\AIChat\\AiChat.xaml",
@@ -638,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "ToolsContent.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\ToolsContent.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\ToolsContent.xaml",
@@ -649,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "ToolsContent.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\ToolsContent.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\ToolsContent.xaml.cs",
@@ -661,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "ColorSettings.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\ColorSettings.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\ColorSettings.xaml.cs",
@@ -673,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "BreakWindow.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\BreakWindow.xaml",
@@ -684,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "ColorSettings.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\ColorSettings.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\ColorSettings.xaml",
@@ -695,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "AddImage.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml",
@@ -706,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "MainSettings.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\SettingsWindow\\MainSettings.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\SettingsWindow\\MainSettings.xaml",
@@ -717,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "MainSettings.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\SettingsWindow\\MainSettings.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\SettingsWindow\\MainSettings.xaml.cs",
@@ -729,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "AllConverns.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\AllConverns.xaml",
@@ -740,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "SchedulePage.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\SchedulePage.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\SchedulePage.xaml",
@@ -751,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "BackGroundSetting.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\BackGroundSetting.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\BackGroundSetting.xaml",
@@ -762,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "AddImage.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AddImage.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AddImage.xaml.cs",
@@ -773,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "Microsoft.WinFX.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
@@ -783,7 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "AddImage.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AddImage.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AddImage.xaml",
@@ -794,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "SettingTIme.xaml.cs",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingTIme.xaml.cs",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingTIme.xaml.cs",
@@ -805,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "SettingTIme.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingTIme.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingTIme.xaml",
@@ -816,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "Schedule.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Schedule\\Schedule.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Schedule\\Schedule.xaml",
@@ -827,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "EditSchedule.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Schedule\\EditSchedule.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\Schedule\\EditSchedule.xaml",
@@ -838,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "ViewWork.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\ViewWork.xaml",
               "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\ViewWork.xaml",
@@ -849,18 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "EditHomeWork.xaml",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
-              "RelativeToolTip": "Wizzy\\Pages\\HomeWork\\EditHomeWork.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-29T09:15:30.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "App.xaml",
               "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\App.xaml",
               "RelativeDocumentMoniker": "Wizzy\\App.xaml",
@@ -872,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -910,115 +971,13 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "cd92c8a6-179e-4a15-941f-98a456e18120",
+        "Id": "4c49f499-981d-4f9c-8a83-8e245606904c",
         "Display": 1,
-        "X": 759,
-        "Y": 358,
-        "Width": 1185,
-        "Height": 643,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddImage.xaml.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\AddImage.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAA1wEcAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T12:30:40.903Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "5bc0ac10-a871-4269-90bb-a870fe79ca75",
-        "Display": 1,
-        "X": -5,
-        "Y": 18,
-        "Width": 1923,
-        "Height": 507,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SettingsWindow.xaml.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\SettingsWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T09:43:46.434Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "2d8fe8ee-bae8-4f4b-9573-1ae1e856402c",
-        "Display": 1,
-        "X": -5,
-        "Y": 394,
-        "Width": 1185,
-        "Height": 643,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataBase.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\DataBase\\DataBase.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\DataBase\\DataBase.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\DataBase\\DataBase.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAUwDYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T00:00:11.319Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "64dcbeec-cc91-4c30-a4c5-22e2c8913b34",
-        "Display": 1,
-        "X": -5,
-        "Y": 152,
-        "Width": 1185,
-        "Height": 643,
-        "WindowState": 0
+        "X": 479,
+        "Y": 156,
+        "Width": 800,
+        "Height": 600,
+        "WindowState": 2
       },
       "DocumentGroups": [
         {
@@ -1028,14 +987,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BackGroundSetting.xaml.cs",
-              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml.cs",
-              "RelativeDocumentMoniker": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml.cs",
-              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml.cs",
-              "RelativeToolTip": "Wizzy\\Pages\\Tools\\AllTools\\Pomodoro\\SetingsFolder\\AllSetings\\BackGroundSetting.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwC8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T08:29:39.264Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Wizzy\\MainWindow.xaml",
+              "ToolTip": "F:\\programing\\Project\\Wizzy\\Wizzy\\Wizzy\\MainWindow.xaml",
+              "RelativeToolTip": "Wizzy\\MainWindow.xaml",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvysAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-28T06:06:30.238Z",
               "EditorCaption": ""
             }
           ]

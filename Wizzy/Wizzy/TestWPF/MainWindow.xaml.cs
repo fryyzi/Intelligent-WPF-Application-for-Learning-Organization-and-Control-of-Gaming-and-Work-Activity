@@ -19,19 +19,18 @@ namespace TestWPF
         public MainWindow()
         {
             InitializeComponent();
+
+            var people = new List<Person>
+            {
+               new Person {Name = "Viktor", Age = 12 }
+            };
+
+            MyGrid.ItemsSource = people;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TextBlock textBlock = new TextBlock
-            {
-                Text = "Hello, World!",
-                FontSize = 24,
-                Foreground = Brushes.Blue,
-                Margin = new Thickness(5),
 
-            };
-            TestPanel.Children.Add(textBlock);
         }
     }
 }

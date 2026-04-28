@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="27,336,0,0" VerticalAlignment="Top" Height="65" Width="167" Click="Button_Click"/>
-        <StackPanel x:Name="TestPanel" Orientation="Horizontal" Margin="0,0,0,103"/>
+        <DataGrid x:Name="MyGrid" AutoGenerateColumns="True"/>
     </Grid>
 </Window>
