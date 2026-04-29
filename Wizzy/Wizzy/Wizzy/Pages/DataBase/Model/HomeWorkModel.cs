@@ -11,9 +11,10 @@ namespace Wizzy.Pages.DataBase.Model
     public class HomeWorkModel
     {
         [BsonId]
-        [BsonElement("Id")]
-        public Object Id { get; set; }
+        public ObjectId Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string DeadLine { get; set; }
+        public string Time { get; set; }
     }
 }

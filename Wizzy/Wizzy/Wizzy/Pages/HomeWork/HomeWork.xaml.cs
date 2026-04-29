@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Wizzy.Pages.DataBase.Model;
 
 namespace Wizzy.Pages.HomeWork
 {
@@ -19,9 +20,11 @@ namespace Wizzy.Pages.HomeWork
     /// </summary>
     public partial class HomeWork : UserControl
     {
+        private List<HomeWorkModel> _homeWorks = new List<HomeWorkModel>();
         public HomeWork()
         {
             Wizzy.Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
+
             InitializeComponent();
 
             dataBase.Connect();
@@ -31,33 +34,20 @@ namespace Wizzy.Pages.HomeWork
             foreach (var item in Content)
             {
                 var TextMain = item.Name;
+                var DescriptionText = item.Description;
+                var DeadLineText = item.DeadLine;
+                var Time = item.Time;
 
-
-                TextBlock textBlock = new TextBlock
+                _homeWorks.Add(new HomeWorkModel
                 {
-                    Text = TextMain,
-                    FontSize = 16,
-                    Margin = new Thickness(10),
-                    Cursor = Cursors.Hand
-                };
-
-                textBlock.MouseLeftButtonDown += (s, e) =>
-                {
-                    DataBase.DataBase.HomeWorkTitle = TextMain;
-                    var addToDoWindow = new Pages.HomeWork.ViewWork();
-                    addToDoWindow.Show();
-                };
-
-                TextHomeWork.Children.Add(new Border
-                {
-                    Background = Brushes.LightGray,
-                    BorderBrush = Brushes.Black,
-                    BorderThickness = new Thickness(1),
-                    CornerRadius = new CornerRadius(5),
-                    Margin = new Thickness(10),
-                    VerticalAlignment = VerticalAlignment.Top,
-                    Child = textBlock
+                    Name = TextMain,
+                    Description = DescriptionText,
+                    DeadLine = DeadLineText,
+                    Time = Time
                 });
+
+                MyGrid.ItemsSource = null;
+                MyGrid.ItemsSource = _homeWorks;
             }
 
 

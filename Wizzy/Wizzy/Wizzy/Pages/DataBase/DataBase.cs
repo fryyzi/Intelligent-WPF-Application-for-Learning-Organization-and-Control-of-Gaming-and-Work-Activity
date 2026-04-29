@@ -154,7 +154,7 @@ namespace Wizzy.Pages.DataBase
         }
 
         //HomeWork
-        public void AddHomeWork(string Title, string DescriptionText)
+        public void AddHomeWork(string Title, string DescriptionText, string DeadLineText, string TimeDataBase)
         {
             NoConnect();
 
@@ -162,6 +162,8 @@ namespace Wizzy.Pages.DataBase
             {
                 Name = Title,
                 Description = DescriptionText,
+                DeadLine = DeadLineText,
+                Time = TimeDataBase
             };
             _collectionHomeWork.InsertOne(AddHomeWork);
             MessageBox.Show("Домашнє завдання додано!");
@@ -174,7 +176,6 @@ namespace Wizzy.Pages.DataBase
             {
                 if (IdToDo == 0)
                     IdToDo = 1;
-
             }
             return docuuments;
         }

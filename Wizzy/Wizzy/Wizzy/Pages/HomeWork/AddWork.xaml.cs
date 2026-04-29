@@ -19,28 +19,54 @@ namespace Wizzy.Pages.HomeWork
     /// <summary>
     /// Interaction logic for AddWork.xaml
     /// </summary>
+    /// 
+
     public partial class AddWork : Window
     {
         Wizzy.Pages.DataBase.DataBase dataBase = new Pages.DataBase.DataBase();
+
         public AddWork()
         {
             InitializeComponent();
             dataBase.Connect();
         }
 
-        private void AddHomeWorkButton_Click(object sender, RoutedEventArgs e)
+        public void CheckText()
         {
             var TitleText = TitleHomeWorkTextBox.Text.Trim();
             var DescriptionText = DescriptionHomeWorkTextBox.Text.Trim();
-
-            if (string.IsNullOrEmpty(TitleText) || string.IsNullOrEmpty(DescriptionText))
+            DateTime? dateTime = DeadlineDatePicker.SelectedDate;
+            if (dateTime == null)
             {
-                MessageBox.Show("Будь ласка, заповніть всі поля.");
+                MessageBox.Show("Оберіть дату");
+            }
+            TimeSpan timeSpan;
+            if (!TimeSpan.TryParse(DeadlineTimeTextBox.Text.Trim(), out timeSpan))
+            {
+                MessageBox.Show("Невірний формат часу. Введіть час у формате ЧЧ:ММ");
                 return;
             }
-            dataBase.AddHomeWork(TitleText, DescriptionText);
 
+
+            if (string.IsNullOrEmpty(TitleText))
+            {
+                MessageBox.Show("Ведіть назву");
+                return;
+            }
+            if (string.IsNullOrEmpty(DescriptionText))
+            {
+                MessageBox.Show("Ведіть опис");
+                return;
+            }
+            dataBase.AddHomeWork(TitleText, DescriptionText, DeadlineDatePicker.Text, DeadlineTimeTextBox.Text);
+        }
+
+        private void AddHomeWorkButton_Click(object sender, RoutedEventArgs e)
+        {
+            CheckText();
             this.Close();
+
+            MessageBox.Show(DeadlineDatePicker.Text);
         }
     }
 }
