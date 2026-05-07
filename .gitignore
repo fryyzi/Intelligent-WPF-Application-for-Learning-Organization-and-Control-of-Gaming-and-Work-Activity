@@ -98,8 +98,10 @@ project.assets.json
 
 # Папка з тимчасовими файлами та кешами для розробки на .NET
 .temp/
-GenerationPassword
 ConsoleWizzyTest/
 Wizzy/Test/
 Wizzy/TestConsole/
 Wizzy/TestWPF/
+Register.xaml.cs
+MainWindow.xaml.cs
+Secret.cs
