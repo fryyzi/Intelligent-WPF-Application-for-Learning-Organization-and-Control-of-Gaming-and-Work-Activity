@@ -1,0 +1,103 @@
+﻿<Window x:Class="BLockGame.FocusFolder.MainWindowFocus.All_Focus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BLockGame.FocusFolder.MainWindowFocus"
+        mc:Ignorable="d"
+        Title="Вибір режиму фокусування" Height="535" Width="850"
+        WindowStartupLocation="CenterScreen"
+        Background="#0F1116" FontFamily="Segoe UI">
+    <Window.Resources>
+        <Style x:Key="FocusCardStyle" TargetType="Border">
+            <Setter Property="Background" Value="#1C1F26"/>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#2D3436"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#4A90E2"/>
+                    <Setter Property="Background" Value="#252A34"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="StartButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#4A90E2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0,15,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Оберіть свій режим роботи" 
+                   Foreground="White" FontSize="26" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <UniformGrid Grid.Row="1" Columns="3" Margin="0,0,0,-20">
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="🍅 Pomodoro" FontSize="20" FontWeight="Bold" Foreground="#E74C3C"/>
+                    <TextBlock Text="Класика: 25 хв роботи та 5 хв відпочинку. Найкраще для рутинних завдань." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Запустити (25/5)" Style="{StaticResource StartButtonStyle}" Click="StartPomodoro_Click"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="🌊 Flowtime" FontSize="20" FontWeight="Bold" Foreground="#3498DB"/>
+                    <TextBlock Text="Працюйте скільки зручно. Перерва розраховується від часу фокусу." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Увійти в потік" Style="{StaticResource StartButtonStyle}" Click="StartFlowtime_Click"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="⚖️ Метод 52/17" FontSize="20" FontWeight="Bold" Foreground="#2ECC71"/>
+                    <TextBlock Text="Золотий стандарт: 52 хв інтенсиву та 17 хв повного релаксу." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Почати цикл" Style="{StaticResource StartButtonStyle}" Click="Start5217_Click"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="🧠 Ультрадіанний" FontSize="20" FontWeight="Bold" Foreground="#F1C40F"/>
+                    <TextBlock Text="Цикли по 90 хв. Для глибокого навчання та складного програмування." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Глибокий фокус" Style="{StaticResource StartButtonStyle}" Click="StartDeepWork_Click"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="🎮 Ігровий режим" FontSize="20" FontWeight="Bold" Foreground="#9B59B6"/>
+                    <TextBlock Text="Блокує Telegram/браузер, щоб не відволікатися від проходження ігор." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Активувати" Style="{StaticResource StartButtonStyle}" Click="StartGamingMode_Click"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource FocusCardStyle}">
+                <StackPanel>
+                    <TextBlock Text="⚙️ Свій режим" FontSize="20" FontWeight="Bold" Foreground="#95A5A6"/>
+                    <TextBlock Text="Налаштуйте власні таймери та список заблокованих програм." 
+                               Foreground="#BDC3C7" TextWrapping="Wrap" Margin="0,10,0,0" Height="60"/>
+                    <Button Content="Налаштувати" Style="{StaticResource StartButtonStyle}" Click="CustomMode_Click"/>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</Window>

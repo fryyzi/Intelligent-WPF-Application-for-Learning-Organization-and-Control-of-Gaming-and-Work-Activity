@@ -42,17 +42,32 @@
     </Window.Resources>
 
     <Grid>
-        <TextBlock Text="App Game" FontSize="32" FontWeight="Bold" Foreground="White"
-                   HorizontalAlignment="Center" Margin="0,30,0,20"/>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+        <TextBlock Text="FocusMind" FontSize="32" FontWeight="Bold" Foreground="White"
+                   HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="320">
+
+            <Button x:Name="FocusModes" Content="🎯 Режими фокусування" 
+                    Background="#6200EE" Click="FocusModes_Click"/>
+
             <Button x:Name="AddApp" Content="🔒 Заблокувати додаток" Click="Button_Click_3"/>
             <Button x:Name="DeleteApp" Content="🔓 Розблокувати додаток" Click="Button_Click"/>
+
+            <Button x:Name="Notes" Content="📝 Записані нотатки" 
+                    Background="#2D3436" Click="Notes_Click"/>
+
             <Button Content="🌐 Мова інтерфейса"/>
             <Button Content="ℹ️ Про додаток" Click="Button_Click_2"/>
         </StackPanel>
-        <Button x:Name="Profile" Margin="435,10,10,564" Background="Transparent" Click="Profile_Click">
-            <Image Source="/Image/user(1).png" Width="55" Height="60"/>
+
+        <Button x:Name="Profile" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                Margin="0,10,10,0" Width="60" Height="60" 
+                Background="Transparent" Click="Profile_Click">
+            <Image Source="/Image/user(1).png" Width="45" Height="45"/>
         </Button>
-        <Button Content="Test" HorizontalAlignment="Left" Margin="415,554,0,0" VerticalAlignment="Top" Width="75" Click="LogsAdmin"/>
+
+        <Button Content="Test" HorizontalAlignment="Left" Margin="10,0,0,10" 
+                VerticalAlignment="Bottom" Width="75" Height="40" 
+                FontSize="12" Click="LogsAdmin"/>
     </Grid>
 </Window>

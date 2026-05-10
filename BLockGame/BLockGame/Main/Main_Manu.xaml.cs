@@ -1,4 +1,5 @@
 ﻿using BLockGame.Admin;
+using BLockGame.FocusFolder;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Diagnostics;
@@ -13,12 +14,10 @@ using WinFormsApp = System.Windows.Forms.Application;
 using WpfApp = System.Windows.Application;
 using WpfMessageBox = System.Windows.MessageBox;
 
-
 namespace BLockGame
 {
     public partial class Main_Manu : Window
     {
-
 
         private NotifyIcon trayIcon;
 
@@ -65,7 +64,6 @@ namespace BLockGame
                 this.Closing += Windows_Closing;
             }
 
-            //Ліцензія
             FileText = File.ReadAllText("F:\\programing\\Project\\Block_Game\\BLockGame\\BLockGame\\bin\\Debug\\net8.0-windows\\Code.txt");
             if (FileText == FileCode)
             {
@@ -219,6 +217,17 @@ namespace BLockGame
         {
             Admin.Logi adminLogi = new Admin.Logi();
             adminLogi.Show();
+        }
+
+        private void FocusModes_Click(object sender, RoutedEventArgs e)
+        {
+            FocusFolder.MainWindowFocus.All_Focus focusFolder = new FocusFolder.MainWindowFocus.All_Focus();
+            focusFolder.Show();
+        }
+
+        private void Notes_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
