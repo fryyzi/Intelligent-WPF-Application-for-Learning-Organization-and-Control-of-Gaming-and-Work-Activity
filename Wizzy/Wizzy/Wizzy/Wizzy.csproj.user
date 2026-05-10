@@ -41,9 +41,6 @@
     <Compile Update="Pages\Tools\AllTools\AllConverns.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\AwarageScore.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Pages\Tools\AllTools\CalculatorTool.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -53,7 +50,7 @@
     <Compile Update="Pages\Tools\AllTools\Converns\Mass\Mass.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Tools\AllTools\Converns\Time\TimeWindow.xaml.cs">
+    <Compile Update="Pages\Tools\AllTools\Pomodoro\TimeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Tools\AllTools\Pomodoro\BreakWindow.xaml.cs">

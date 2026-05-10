@@ -62,8 +62,8 @@ namespace Wizzy.Pages.tools
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var AwardWindow = new Tools.AllTools.AwarageScore();
-            AwardWindow.ShowDialog();
+            //var AwardWindow = new Tools.AllTools.AwarageScore();
+            //AwardWindow.ShowDialog();
         }
     }
 }
