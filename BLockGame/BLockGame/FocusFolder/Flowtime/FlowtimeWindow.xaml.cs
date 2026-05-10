@@ -32,8 +32,6 @@ namespace BLockGame.FocusFolder.Flowtime
             _timer = new DispatcherTimer();
             _timer.Interval = TimeSpan.FromSeconds(1);
             _timer.Tick += Timer_Tick;
-
-
         }
 
 
@@ -61,7 +59,6 @@ namespace BLockGame.FocusFolder.Flowtime
                     TextTime.Text = "WAVE FLOW";
                 }
             }
-
         }
 
 
@@ -79,7 +76,7 @@ namespace BLockGame.FocusFolder.Flowtime
             _isBreakMode = true;
             TextTime.Text = "Перерва";
 
-            if (elapsed <= TimeSpan.FromSeconds(5))
+            if (elapsed <= TimeSpan.FromSeconds(25))
                 _timeLeft = TimeSpan.FromSeconds(5);
             else if (elapsed <= TimeSpan.FromMinutes(50))
                 _timeLeft = TimeSpan.FromMinutes(9);
@@ -87,7 +84,6 @@ namespace BLockGame.FocusFolder.Flowtime
                 _timeLeft = TimeSpan.FromMinutes(10);
             else
                 _timeLeft = TimeSpan.FromMinutes(20);
-
         }
 
         /*private void TimerPause()
