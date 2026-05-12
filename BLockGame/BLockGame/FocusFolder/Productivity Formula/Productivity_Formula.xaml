@@ -4,12 +4,11 @@
         Title="Productivity Formula" Height="500" Width="400"
         WindowStartupLocation="CenterScreen"
         Background="Transparent" AllowsTransparency="True" WindowStyle="None"
-        MouseDown="Window_MouseDown">
+        >
 
     <Window.Resources>
         <DropShadowEffect x:Key="GlowEffect" BlurRadius="20" ShadowDepth="0" Color="#9B59B6" Opacity="0.6"/>
     </Window.Resources>
-
     <Border CornerRadius="20" BorderBrush="#1C1F26" BorderThickness="2" Background="#0F1116" Margin="10">
         <Grid Margin="20">
             <Grid.RowDefinitions>
@@ -18,27 +17,23 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-
             <StackPanel Grid.Row="0">
                 <Button Content="✕" HorizontalAlignment="Right" Background="Transparent" 
                         Foreground="#555" BorderThickness="0" Click="Close_Click" Cursor="Hand"/>
                 <TextBlock Text="PRODUCTIVITY 54/17" HorizontalAlignment="Center" Foreground="#9B59B6" 
                            FontSize="14" FontWeight="Bold"/>
             </StackPanel>
-
             <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Ellipse Width="220" Height="220" Stroke="#1C1F26" StrokeThickness="8"/>
                 <Ellipse x:Name="TimerCircle" Width="220" Height="220" Stroke="#9B59B6" StrokeThickness="8" 
                          StrokeDashArray="10 2" Effect="{StaticResource GlowEffect}"/>
-
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock x:Name="TimerText" Text="54:00" Foreground="White" 
+                    <TextBlock x:Name="TimerText" Text="00:00:00" Foreground="White" 
                                FontSize="48" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBlock x:Name="StatusText" Text="ФОКУС" Foreground="#555E6B" 
                                FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0" FontWeight="SemiBold"/>
                 </StackPanel>
             </Grid>
-
             <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
                 <Button x:Name="StartBtn" Content="▶" Width="65" Height="65" Margin="15,0"
                         Background="#9B59B6" Foreground="White" FontSize="22" Click="Start_Click">
@@ -50,7 +45,6 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-
                 <Button x:Name="ResetBtn" Content="↺" Width="65" Height="65" Margin="15,0"
                         Background="#34495E" Foreground="White" FontSize="22" Click="Reset_Click">
                     <Button.Template>
@@ -62,7 +56,6 @@
                     </Button.Template>
                 </Button>
             </StackPanel>
-
             <Border Grid.Row="3" Background="#1C1F26" CornerRadius="12" Padding="15">
                 <StackPanel>
                     <TextBlock Text="ПОТОЧНИЙ ЦИКЛ:" Foreground="#BDC3C7" FontSize="11" FontWeight="Bold"/>

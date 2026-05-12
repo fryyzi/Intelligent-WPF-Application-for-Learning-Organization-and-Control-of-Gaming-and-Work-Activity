@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace BLockGame.FocusFolder.MainWindowFocus
 {
-    /// <summary>
-    /// Interaction logic for All_Focus.xaml
-    /// </summary>
     public partial class All_Focus : Window
     {
         public All_Focus()
@@ -37,7 +34,8 @@ namespace BLockGame.FocusFolder.MainWindowFocus
 
         private void Start5217_Click(object sender, RoutedEventArgs e)
         {
-
+            FocusFolder.Productivity_Formula.Productivity_Formula productivity_Formula = new FocusFolder.Productivity_Formula.Productivity_Formula();
+            productivity_Formula.Show();
         }
 
         private void StartDeepWork_Click(object sender, RoutedEventArgs e)

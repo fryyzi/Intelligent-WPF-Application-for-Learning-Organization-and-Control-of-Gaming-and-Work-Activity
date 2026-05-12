@@ -40,7 +40,6 @@ namespace BLockGame.FocusFolder.Flowtime
             if (!_isBreakMode)
             {
                 TimeSpan elapsed = DateTime.Now - _StartTimer;
-
                 TimerText.Text = elapsed.ToString(@"hh\:mm\:ss");
             }
             else
@@ -48,14 +47,12 @@ namespace BLockGame.FocusFolder.Flowtime
                 if (_timeLeft > TimeSpan.Zero)
                 {
                     _timeLeft = _timeLeft.Subtract(TimeSpan.FromSeconds(1));
-
                     TimerText.Text = _timeLeft.ToString(@"hh\:mm\:ss");
                 }
                 else
                 {
                     _timer.Stop();
                     _isBreakMode = false;
-                    System.Windows.MessageBox.Show("Перерва закінчилася! Пора до роботи.");
                     TextTime.Text = "WAVE FLOW";
                 }
             }
