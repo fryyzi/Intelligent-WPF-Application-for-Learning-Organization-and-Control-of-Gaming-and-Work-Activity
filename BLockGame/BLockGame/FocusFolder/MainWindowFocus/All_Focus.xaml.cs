@@ -40,7 +40,8 @@ namespace BLockGame.FocusFolder.MainWindowFocus
 
         private void StartDeepWork_Click(object sender, RoutedEventArgs e)
         {
-
+            FocusFolder.UltraFocus.UltraFocus ultrafocus = new FocusFolder.UltraFocus.UltraFocus();
+            ultrafocus.Show();
         }
 
         private void StartGamingMode_Click(object sender, RoutedEventArgs e)

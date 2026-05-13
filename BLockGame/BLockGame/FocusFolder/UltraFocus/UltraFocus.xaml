@@ -1,0 +1,98 @@
+﻿<Window x:Class="BLockGame.FocusFolder.UltraFocus.UltraFocus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UltraFocus" Height="550" Width="450"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" AllowsTransparency="True" WindowStyle="None"
+        >
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="UltraGlow" BlurRadius="25" ShadowDepth="0" Color="#FF4747" Opacity="0.7"/>
+    </Window.Resources>
+
+    <Border CornerRadius="30" BorderBrush="#2A2D35" BorderThickness="3" Background="#0A0B0E" Margin="15">
+        <Grid Margin="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <Button Content="✕" HorizontalAlignment="Right" Background="Transparent" 
+                        Foreground="#666" BorderThickness="0" Click="Close_Click" Cursor="Hand"/>
+                <TextBlock Text="ULTRA FOCUS MODE" HorizontalAlignment="Center" Foreground="#FF4747" 
+                           FontSize="16" FontWeight="ExtraBold" />
+                <Separator Background="#333" Margin="0,10,0,0" Width="50"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Ellipse Width="240" Height="240" Stroke="#16181D" StrokeThickness="12"/>
+
+                <Ellipse Width="240" Height="240" StrokeThickness="12" 
+                         StrokeDashArray="15 2" Effect="{StaticResource UltraGlow}">
+                    <Ellipse.Stroke>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#FF4747" Offset="0.0"/>
+                            <GradientStop Color="#B22222" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Stroke>
+                </Ellipse>
+
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock x:Name="TimerText" Text="90:00" Foreground="White" 
+                               FontSize="56" FontWeight="Black" HorizontalAlignment="Center"/>
+                    <TextBlock Text="DEEP WORK" Foreground="#666" 
+                               FontSize="11" HorizontalAlignment="Center" Margin="0,5,0,0" />
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,30">
+                <Button x:Name="StartBtn" Width="70" Height="70" Margin="15,0"
+                        Background="#FF4747" Click="Start_Click" Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="35" x:Name="border">
+                                <Path Data="M 0,0 L 15,10 L 0,20 Z" Fill="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="#FF6666"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Width="70" Height="70" Margin="15,0"
+                      Background="#1C1F26" Click="Reset_Click" Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="35" BorderBrush="#333" BorderThickness="1">
+                                <Rectangle Width="18" Height="18" Fill="White"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+
+            <Border Grid.Row="3" Background="#16181D" CornerRadius="15" Padding="15">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Ellipse Width="8" Height="8" Fill="#FF4747" Margin="0,0,10,0">
+                        <Ellipse.Triggers>
+                            <EventTrigger RoutedEvent="Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0.3" Duration="0:0:0.8" AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Ellipse.Triggers>
+                    </Ellipse>
+                    <TextBlock Text="SYSTEMS LOCKED • FOCUS REQUIRED" Foreground="#888" FontSize="10" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
