@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLockGame.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,21 @@ namespace BLockGame.FocusFolder.MainWindowFocus
 {
     public partial class All_Focus : Window
     {
+
+        private BlockApp _blockApp;
+
         public All_Focus()
         {
             InitializeComponent();
+
+            _blockApp = new BlockApp();
+
         }
 
         private void StartPomodoro_Click(object sender, RoutedEventArgs e)
         {
-
+            FocusFolder.Pomodoro.pomodoro pomodoroWindow = new FocusFolder.Pomodoro.pomodoro();
+            pomodoroWindow.Show();
         }
 
         private void StartFlowtime_Click(object sender, RoutedEventArgs e)

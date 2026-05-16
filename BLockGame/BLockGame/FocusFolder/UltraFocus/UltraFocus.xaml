@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="UltraFocus" Height="550" Width="450"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent" AllowsTransparency="True" WindowStyle="None"
+        Background="Transparent" AllowsTransparency="True" WindowStyle="None" Closed="Window_Closed"
         >
 
     <Window.Resources>
@@ -41,8 +41,8 @@
                 </Ellipse>
 
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock x:Name="TimerText" Text="90:00" Foreground="White" 
-                               FontSize="56" FontWeight="Black" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="TimerText" Text="00:00:00" Foreground="White" 
+                               FontSize="56" FontWeight="Black" HorizontalAlignment="Center" Height="72" Width="240"/>
                     <TextBlock Text="DEEP WORK" Foreground="#666" 
                                FontSize="11" HorizontalAlignment="Center" Margin="0,5,0,0" />
                 </StackPanel>

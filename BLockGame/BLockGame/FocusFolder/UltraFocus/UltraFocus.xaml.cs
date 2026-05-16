@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLockGame.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,15 +25,21 @@ namespace BLockGame.FocusFolder.UltraFocus
 
         private bool _isRunning = true;
 
+        private BlockApp _blockApp;
+
         public UltraFocus()
         {
             InitializeComponent();
+
+            _blockApp = new BlockApp();
+
+            _blockApp.StartMonitoring(Base_User.User, 3, "NoBD");
+
             _timeLeft = new TimeSpan(0, 90, 0);
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
         }
-
 
         public void Timer_Tick(object sender, EventArgs e)
         {
@@ -71,6 +78,11 @@ namespace BLockGame.FocusFolder.UltraFocus
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             timer.Stop();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
         }
     }
 }

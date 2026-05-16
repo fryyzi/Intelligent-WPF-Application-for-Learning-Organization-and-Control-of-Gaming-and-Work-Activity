@@ -1,0 +1,72 @@
+﻿<Window x:Class="BLockGame.FocusFolder.Pomodoro.pomodoro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BLockGame.FocusFolder.Pomodoro"
+        mc:Ignorable="d"
+        Title="Pomodoro Timer" Height="400" Width="350" 
+        WindowStartupLocation="CenterScreen" Background="#1E1E1E" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="StatusText" Grid.Row="0" Text="Час фокусуватися!" 
+                   HorizontalAlignment="Center" Foreground="#FF6B6B" 
+                   FontSize="20" FontWeight="SemiBold" Margin="0,10,0,0"/>
+
+        <TextBlock x:Name="TimerText" Grid.Row="1" Text="25:00" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Foreground="White" FontSize="64" FontWeight="Bold"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <Button x:Name="StartPauseButton" TextBlock.FontSize="16" Content="Старт" Width="100" Height="40" Margin="5" Click="StartPauseButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#4CAF50"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="Medium"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#45A049"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button x:Name="ResetButton" TextBlock.FontSize="16" Content="Скидання" Width="100" Height="40" Margin="5" Click="ResetButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#E0E0E0"/>
+                        <Setter Property="Foreground" Value="#333333"/>
+                        <Setter Property="FontWeight" Value="Medium"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#BDBDBD"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+
+        <TextBlock x:Name="CycleText" Grid.Row="3" Text="Завершено циклів: 0" 
+                   HorizontalAlignment="Center" Foreground="#888888" FontSize="14"/>
+    </Grid>
+</Window>
