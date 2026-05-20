@@ -108,6 +108,7 @@ namespace BLockGame
 
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
+            new Profile.Profile().Show();
         }
 
         private void LogsAdmin(object sender, RoutedEventArgs e)
