@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLockGame.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,8 @@ namespace BLockGame.FocusFolder.Productivity_Formula
 
         private bool _isBreakMode = true;
 
+        int numberfocus;
+
 
         public Productivity_Formula()
         {
@@ -46,6 +49,7 @@ namespace BLockGame.FocusFolder.Productivity_Formula
             {
                 if (!_isBreakMode)
                 {
+                    AddNumberFocus.UpdateProductivity_Formula();
                     _timeLeft = new TimeSpan(0, 17, 0);
                     StatusText.Text = "ПЕРЕРВА";
                     _isBreakMode = true;

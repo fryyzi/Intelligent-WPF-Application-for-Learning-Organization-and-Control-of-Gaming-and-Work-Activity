@@ -5,41 +5,158 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         xmlns:local="clr-namespace:BLockGame.Profile" 
         mc:Ignorable="d" 
-        Title="Profile" Height="450" Width="400"
+        Title="Profile and Sessions" Height="550" Width="900"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent" AllowsTransparency="True" WindowStyle="None">
+        Background="Transparent" AllowsTransparency="True" WindowStyle="None"
+        >
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="PomodoroGlow" BlurRadius="10" ShadowDepth="0" Color="#E74C3C" Opacity="0.15"/>
+        <DropShadowEffect x:Key="FlowtimeGlow" BlurRadius="10" ShadowDepth="0" Color="#3498DB" Opacity="0.15"/>
+        <DropShadowEffect x:Key="WaveGlow" BlurRadius="10" ShadowDepth="0" Color="#9B59B6" Opacity="0.15"/>
+        <DropShadowEffect x:Key="UltraGlow" BlurRadius="10" ShadowDepth="0" Color="#F1C40F" Opacity="0.15"/>
+        <DropShadowEffect x:Key="GameGlow" BlurRadius="10" ShadowDepth="0" Color="#9B59B6" Opacity="0.15"/>
+        <DropShadowEffect x:Key="CustomGlow" BlurRadius="10" ShadowDepth="0" Color="#1ABC9C" Opacity="0.15"/>
+    </Window.Resources>
 
     <Border CornerRadius="25" BorderBrush="#1C1F26" BorderThickness="2" Background="#0F1116" Margin="10">
         <Grid Margin="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
 
-            <Grid Grid.Row="0">
-                <Button Content="← Назад" HorizontalAlignment="Left" Background="Transparent" 
-                        Foreground="#7F8C8D" BorderThickness="0" FontSize="12" Cursor="Hand" Click="Back_Click"/>
+            <Grid Grid.Column="0" Margin="0,0,15,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-                <Button Content="Налаштування ⚙" HorizontalAlignment="Right" Background="Transparent" 
-                        Foreground="#3498DB" BorderThickness="0" FontSize="12" FontWeight="SemiBold" Cursor="Hand" Click="Settings_Click"/>
+                <TextBlock Text="СТАТИСТИКА ФОКУСУВАННЯ" Foreground="#555E6B" FontSize="11" FontWeight="Bold" Margin="5,0,0,15"/>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+                    <StackPanel>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource PomodoroGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="🍅 POMODORO" Foreground="#E74C3C" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Класика: 25 хв роботи та 5 хв відпочинку." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountPomodoro" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" сесій" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource FlowtimeGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="🌊 FLOWTIME" Foreground="#3498DB" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Працюйте скільки зручно. Перерва від часу фокусу." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountFlowtime" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" сесій" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource WaveGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="⚖ МЕТОД 52/17" Foreground="#2ECC71" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Золотий стандарт: 52 хв інтенсиву та 17 хв релаксу." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountWaveFlow" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" сесій" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource UltraGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="⚡ УЛЬТРАДІАННИЙ" Foreground="#F1C40F" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Цикли по 90 хв. Для глибокого навчання та кодингу." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountUltraFocus" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" сесій" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource GameGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="🎮 ІГРОВИЙ РЕЖИМ" Foreground="#9B59B6" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Блокування Telegram/браузера під час проходження ігор." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountGameMode" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" разів" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource CustomGlow}">
+                            <Grid>
+                                <StackPanel>
+                                    <TextBlock Text="⚙ СВІЙ РЕЖИМ" Foreground="#1ABC9C" FontSize="13" FontWeight="Bold"/>
+                                    <TextBlock Text="Власні таймери та кастомні списки блокувань." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                    <TextBlock x:Name="CountCustomMode" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                                    <TextBlock Text=" разів" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                    </StackPanel>
+                </ScrollViewer>
             </Grid>
 
-            <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0,0,0,10">
+            <Rectangle Grid.Column="1" Width="1" Fill="#1C1F26" Margin="5,10"/>
 
-                <TextBlock x:Name="UserNickname" Text="PROG_WARRIOR" Foreground="White" 
-                           FontSize="26" FontWeight="Black" HorizontalAlignment="Center" />
+            <Grid Grid.Column="2" Margin="15,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-                <Rectangle Height="3" Fill="#3498DB" HorizontalAlignment="Center" Width="50" Margin="0,10,0,20"/>
+                <Grid Grid.Row="0">
+                    <Button Content="← Назад" HorizontalAlignment="Left" Background="Transparent" 
+                            Foreground="#7F8C8D" BorderThickness="0" FontSize="12" Cursor="Hand" Click="Back_Click"/>
 
-                <Border Background="#16181D" CornerRadius="12" Padding="15" BorderBrush="#1C1F26" BorderThickness="1">
-                    <StackPanel>
-                        <TextBlock Text="ПРО КОРИСТУВАЧА" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,8" />
-                        <TextBlock x:Name="UserDescription" Foreground="#BDC3C7" FontSize="12" LineHeight="18" TextWrapping="Wrap"
-                                   Text="Студент-розробник. Знищую баги, пишу чистий код на C# та оптимізую свій час за допомогою глибокого фокусу. Жодної прокрастинації."/>
-                    </StackPanel>
-                </Border>
+                    <Button Content="Налаштування ⚙" HorizontalAlignment="Right" Background="Transparent" 
+                            Foreground="#3498DB" BorderThickness="0" FontSize="12" FontWeight="SemiBold" Cursor="Hand" Click="Settings_Click"/>
+                </Grid>
 
-            </StackPanel>
+                <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0,0,0,20">
+                    <TextBlock x:Name="UserNickname" Text="PROG_WARRIOR" Foreground="White" 
+                               FontSize="26" FontWeight="Black" HorizontalAlignment="Center" />
+
+                    <Rectangle Height="3" Fill="#3498DB" HorizontalAlignment="Center" Width="50" Margin="0,10,0,20"/>
+
+                    <Border Background="#16181D" CornerRadius="12" Padding="15" BorderBrush="#1C1F26" BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock Text="ПРО КОРИСТУВАЧА" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,8" />
+                            <TextBlock x:Name="UserDescription" Foreground="#BDC3C7" FontSize="12" LineHeight="18" TextWrapping="Wrap"
+                                       Text="Студент-розробник. Знищую баги, пишу чистий код на C# та оптимізую свій час за допомогою глибокого фокусу. Жодної прокрастинації."/>
+                        </StackPanel>
+                    </Border>
+
+                    <Grid Margin="0,20,0,0">
+                        <TextBlock Text="Усього сесій фокусу:" Foreground="#555E6B" FontSize="12"/>
+                        <TextBlock Text="141" Foreground="White" FontWeight="Bold" FontSize="14" HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+
         </Grid>
     </Border>
 </Window>

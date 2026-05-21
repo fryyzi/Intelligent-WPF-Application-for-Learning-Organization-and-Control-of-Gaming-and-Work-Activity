@@ -27,18 +27,15 @@ namespace BLockGame
 
             _blockApp = new BlockApp();
 
-            // Перевіряємо початковий стан галочки під час запуску вікна
 
             _blockApp.StartMonitoring(Base_User.User);
         }
 
-        // Спрацьовує, коли користувач ставить галочку "Блокувати програми"
         private void BlockAppsCheckBox_Checked(object sender, RoutedEventArgs e)
         {
             _blockApp?.StartMonitoring(Base_User.User);
         }
 
-        // Спрацьовує, коли користувач прибирає галочку
         private void BlockAppsCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
             _blockApp?.StopMonitoring();

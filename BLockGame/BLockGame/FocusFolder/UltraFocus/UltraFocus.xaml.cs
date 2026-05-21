@@ -33,10 +33,12 @@ namespace BLockGame.FocusFolder.UltraFocus
 
             _blockApp = new BlockApp();
 
+
+
             //BLockApp
             _blockApp.StartMonitoring(Base_User.User, 3, "NoBD");
 
-            _timeLeft = new TimeSpan(0, 90, 0);
+            _timeLeft = new TimeSpan(0, 0, 1);
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
@@ -53,12 +55,14 @@ namespace BLockGame.FocusFolder.UltraFocus
             {
                 if (!_isRunning)
                 {
+                    //plus number focus
+                    AddNumberFocus.UpdateUltraFocus();
                     _timeLeft = new TimeSpan(0, 30, 0);
                     _isRunning = true;
                 }
                 else
                 {
-                    _timeLeft = new TimeSpan(0, 90, 0);
+                    _timeLeft = new TimeSpan(0, 0, 2);
                     _isRunning = false;
                 }
             }

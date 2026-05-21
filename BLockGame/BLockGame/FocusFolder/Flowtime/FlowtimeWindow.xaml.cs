@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLockGame.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,7 @@ namespace BLockGame.FocusFolder.Flowtime
             {
                 if (_timeLeft > TimeSpan.Zero)
                 {
+                    AddNumberFocus.UpdateFlowtimeWindow();
                     _timeLeft = _timeLeft.Subtract(TimeSpan.FromSeconds(1));
                     TimerText.Text = _timeLeft.ToString(@"hh\:mm\:ss");
                 }
@@ -65,6 +67,11 @@ namespace BLockGame.FocusFolder.Flowtime
             _StartTimer = DateTime.Now;
 
             _timer.Start();
+
+            //використовуєтся щоб додавати до бд рахунок
+
+
+
         }
 
         private void Stop_Click(object sender, RoutedEventArgs e)

@@ -35,7 +35,6 @@ namespace BLockGame.Class
         {
             var gameBlock = _collectionGame.Find(new BsonDocument()).ToList();
 
-            // Перевіряємо, чи в базі взагалі щось є
             foreach (var item in gameBlock)
             {
                 _idProgram = item.Contains("Id_Game") ? item["Id_Game"].ToString() : string.Empty;
@@ -46,7 +45,6 @@ namespace BLockGame.Class
             }
         }
 
-        // Перевантажений метод спеціально для Головного Меню (за замовчуванням запускає режим БД)
         public void StartMonitoring(string currentUserEmail)
         {
             StartMonitoring(currentUserEmail, 0, "BD");
@@ -54,7 +52,6 @@ namespace BLockGame.Class
 
         public void StartMonitoring(string currentUserEmail, int numberFocus, string mode)
         {
-            // Якщо моніторинг уже запущений — спочатку зупиняємо його
             StopMonitoring();
 
             _cts = new CancellationTokenSource();
@@ -89,7 +86,6 @@ namespace BLockGame.Class
                         bool isCorrectDay = dayOfWeekUkrainian.Equals(_day, StringComparison.OrdinalIgnoreCase);
                         bool isAllowedTime = currentTime >= _startTime && currentTime < _endTime;
 
-                        // Якщо день або час НЕ є дозволеними — блокуємо додаток
                         if (!(isCorrectDay && isAllowedTime))
                         {
                             if (!string.IsNullOrEmpty(_idProgram) && IsAppRunning(_idProgram))
@@ -106,12 +102,11 @@ namespace BLockGame.Class
 
                 try
                 {
-                    // Очікування 5 секунд з можливістю миттєвого переривання токеном
                     Task.Delay(5000, token).Wait(token);
                 }
                 catch (OperationCanceledException)
                 {
-                    break; // Виходимо з циклу, якщо моніторинг зупинено
+                    break;
                 }
             }
         }

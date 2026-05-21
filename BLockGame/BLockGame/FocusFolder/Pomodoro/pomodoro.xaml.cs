@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLockGame.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,8 +57,10 @@ namespace BLockGame.FocusFolder.Pomodoro
                 if (_isWorkingSession)
                 {
                     _completedCycles++;
+                    AddNumberFocus.UpdatePomodoro();
                     CycleText.Text = $"Завершено циклів: {_completedCycles}";
                     //MessageBox.Show("Час для відпочинку! Відкладіть роботу.", "Помодоро", MessageBoxButton.OK, MessageBoxImage.Information);
+
 
                     _isWorkingSession = false;
                     StatusText.Text = "Час відпочити";

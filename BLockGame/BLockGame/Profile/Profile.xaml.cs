@@ -21,9 +21,16 @@ namespace BLockGame.Profile
             InitializeComponent();
 
             ViewProfile.ViewProfileData();
+            AddNumberFocus.GetFocus();
 
             UserNickname.Text = ViewProfile.FindNameProgramDataBase;
             UserDescription.Text = ViewProfile.FindUserDescription;
+
+            CountPomodoro.Text = AddNumberFocus.Pomodoro;
+            CountFlowtime.Text = AddNumberFocus.FlowtimeWindow;
+            CountWaveFlow.Text = AddNumberFocus.Productivity_Formula;
+            CountUltraFocus.Text = AddNumberFocus.FindUltraFocus;
+
 
         }
 
