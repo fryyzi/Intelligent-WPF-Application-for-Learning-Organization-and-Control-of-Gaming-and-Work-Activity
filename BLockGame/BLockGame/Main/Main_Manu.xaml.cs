@@ -25,10 +25,23 @@ namespace BLockGame
             SetupTray();
             CheckLicenseFile();
 
-            //Зробиити галочку щоб вибирати блокувати програми в головному меню чи не робить
+            _blockApp = new BlockApp();
 
-            /*            _blockApp = new BlockApp();
-                        _blockApp.StartMonitoring(Base_User.User);*/
+            // Перевіряємо початковий стан галочки під час запуску вікна
+
+            _blockApp.StartMonitoring(Base_User.User);
+        }
+
+        // Спрацьовує, коли користувач ставить галочку "Блокувати програми"
+        private void BlockAppsCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            _blockApp?.StartMonitoring(Base_User.User);
+        }
+
+        // Спрацьовує, коли користувач прибирає галочку
+        private void BlockAppsCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _blockApp?.StopMonitoring();
         }
 
         private void SetupTray()
@@ -86,6 +99,7 @@ namespace BLockGame
 
         private void ExitApp(object sender, EventArgs e)
         {
+            _blockApp?.StopMonitoring(); // Зупиняємо моніторинг перед закриттям додатка
             trayIcon?.Dispose();
             WpfApp.Current.Shutdown();
         }

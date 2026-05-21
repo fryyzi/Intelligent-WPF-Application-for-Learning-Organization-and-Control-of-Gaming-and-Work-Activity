@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BLockGame.Class;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace BLockGame.Profile
 {
@@ -19,9 +10,21 @@ namespace BLockGame.Profile
     /// </summary>
     public partial class Profile : Window
     {
+
+        public static string FindNameProgramDataBase;
+        public static string FindUserDescription;
+
+        private static IMongoCollection<BsonDocument> _collectionProfile;
+
         public Profile()
         {
             InitializeComponent();
+
+            ViewProfile.ViewProfileData();
+
+            UserNickname.Text = ViewProfile.FindNameProgramDataBase;
+            UserDescription.Text = ViewProfile.FindUserDescription;
+
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -29,9 +32,10 @@ namespace BLockGame.Profile
             this.Close();
         }
 
+
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            // Відкриваємо вікно налаштувань
+            new ProfileSettingsWindow().ShowDialog();
         }
     }
 }

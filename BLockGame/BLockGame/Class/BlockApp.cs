@@ -21,13 +21,13 @@ namespace BLockGame.Class
         private TimeSpan _endTime;
         private string _day;
 
-
+        // Джерело токенів для безпечної зупинки фонового потоку
+        private CancellationTokenSource _cts;
 
         public BlockApp()
         {
             var client = new MongoClient("mongodb://localhost:27017/");
             var database = client.GetDatabase("BLockGame");
-
             _collectionGame = database.GetCollection<BsonDocument>("BlockUserGame");
         }
 
@@ -35,25 +35,48 @@ namespace BLockGame.Class
         {
             var gameBlock = _collectionGame.Find(new BsonDocument()).ToList();
 
+            // Перевіряємо, чи в базі взагалі щось є
             foreach (var item in gameBlock)
             {
-                _idProgram = item["Id_Game"].ToString();
-                _nicknameUserEmail = item["User"].ToString();
-                _startTime = TimeSpan.Parse(item["StartTime"].ToString());
-                _endTime = TimeSpan.Parse(item["EndTime"].ToString());
-                _day = item["Day"].ToString();
+                _idProgram = item.Contains("Id_Game") ? item["Id_Game"].ToString() : string.Empty;
+                _nicknameUserEmail = item.Contains("User") ? item["User"].ToString() : string.Empty;
+                _startTime = item.Contains("StartTime") ? TimeSpan.Parse(item["StartTime"].ToString()) : TimeSpan.Zero;
+                _endTime = item.Contains("EndTime") ? TimeSpan.Parse(item["EndTime"].ToString()) : TimeSpan.Zero;
+                _day = item.Contains("Day") ? item["Day"].ToString() : string.Empty;
             }
+        }
+
+        // Перевантажений метод спеціально для Головного Меню (за замовчуванням запускає режим БД)
+        public void StartMonitoring(string currentUserEmail)
+        {
+            StartMonitoring(currentUserEmail, 0, "BD");
         }
 
         public void StartMonitoring(string currentUserEmail, int numberFocus, string mode)
         {
+            // Якщо моніторинг уже запущений — спочатку зупиняємо його
+            StopMonitoring();
+
+            _cts = new CancellationTokenSource();
             LoadData();
-            Task.Run(() => MonitorGameStatus(currentUserEmail, numberFocus, mode));
+
+            CancellationToken token = _cts.Token;
+            Task.Run(() => MonitorGameStatus(currentUserEmail, numberFocus, mode, token), token);
         }
 
-        private void MonitorGameStatus(string currentUserEmail, int numberFocus, string mode)
+        public void StopMonitoring()
         {
-            while (true)
+            if (_cts != null)
+            {
+                _cts.Cancel();
+                _cts.Dispose();
+                _cts = null;
+            }
+        }
+
+        private void MonitorGameStatus(string currentUserEmail, int numberFocus, string mode, CancellationToken token)
+        {
+            while (!token.IsCancellationRequested)
             {
                 DateTime now = DateTime.Now;
                 TimeSpan currentTime = now.TimeOfDay;
@@ -61,14 +84,15 @@ namespace BLockGame.Class
 
                 if (mode == "BD")
                 {
-                    if (currentUserEmail == _nicknameUserEmail)
+                    if (!string.IsNullOrEmpty(_nicknameUserEmail) && currentUserEmail == _nicknameUserEmail)
                     {
                         bool isCorrectDay = dayOfWeekUkrainian.Equals(_day, StringComparison.OrdinalIgnoreCase);
                         bool isAllowedTime = currentTime >= _startTime && currentTime < _endTime;
 
+                        // Якщо день або час НЕ є дозволеними — блокуємо додаток
                         if (!(isCorrectDay && isAllowedTime))
                         {
-                            if (IsAppRunning(_idProgram))
+                            if (!string.IsNullOrEmpty(_idProgram) && IsAppRunning(_idProgram))
                             {
                                 CloseApp(numberFocus, mode);
                             }
@@ -80,7 +104,15 @@ namespace BLockGame.Class
                     CloseApp(numberFocus, mode);
                 }
 
-                Thread.Sleep(5000);
+                try
+                {
+                    // Очікування 5 секунд з можливістю миттєвого переривання токеном
+                    Task.Delay(5000, token).Wait(token);
+                }
+                catch (OperationCanceledException)
+                {
+                    break; // Виходимо з циклу, якщо моніторинг зупинено
+                }
             }
         }
 
@@ -88,14 +120,15 @@ namespace BLockGame.Class
         {
             foreach (var process in Process.GetProcesses())
             {
-                if (process.ProcessName.Equals(
-                    Path.GetFileNameWithoutExtension(exeName),
-                    StringComparison.OrdinalIgnoreCase))
+                try
                 {
-                    return true;
+                    if (process.ProcessName.Equals(Path.GetFileNameWithoutExtension(exeName), StringComparison.OrdinalIgnoreCase))
+                    {
+                        return true;
+                    }
                 }
+                catch { }
             }
-
             return false;
         }
 
@@ -110,21 +143,17 @@ namespace BLockGame.Class
                     switch (mode)
                     {
                         case "BD":
-                            if (process.ProcessName.Equals(
-                                Path.GetFileNameWithoutExtension(_idProgram),
-                                StringComparison.OrdinalIgnoreCase))
+                            if (process.ProcessName.Equals(Path.GetFileNameWithoutExtension(_idProgram), StringComparison.OrdinalIgnoreCase))
                             {
                                 process.Kill();
                             }
                             break;
 
                         case "NoBD":
-                            //if
                             switch (numberFocus)
                             {
                                 case 3:
                                     string[] blockedApps = { "steam", "Telegram" };
-
                                     foreach (string blockedApp in blockedApps)
                                     {
                                         if (process.ProcessName.Equals(blockedApp, StringComparison.OrdinalIgnoreCase))
@@ -137,9 +166,7 @@ namespace BLockGame.Class
                             break;
                     }
                 }
-                catch
-                {
-                }
+                catch { }
             }
         }
     }

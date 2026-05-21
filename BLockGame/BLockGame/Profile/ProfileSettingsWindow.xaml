@@ -1,0 +1,106 @@
+﻿<Window x:Class="BLockGame.Profile.ProfileSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Profile Settings" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" AllowsTransparency="True" WindowStyle="None"
+        >
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="SaveGlow" BlurRadius="15" ShadowDepth="0" Color="#3498DB" Opacity="0.3"/>
+
+        <Style x:Key="CyberTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#16181D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#2A2D35"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#3498DB"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Border CornerRadius="25" BorderBrush="#1C1F26" BorderThickness="2" Background="#0F1116" Margin="10">
+        <Grid Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.4*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="0,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                    <TextBlock Text="НАЛАШТУВАННЯ ПРОФІЛЮ" Foreground="#3498DB" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock Text="Оновіть інформацію, яку бачать інші або ви у меню" Foreground="#555E6B" FontSize="12" Margin="0,2,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1">
+                    <TextBlock Text="НІКНЕЙМ КОРИСТУВАЧА" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,6"/>
+                    <TextBox x:Name="EditNickname" Style="{StaticResource CyberTextBox}" Text="PROG_WARRIOR" MaxLength="20" Margin="0,0,0,20"/>
+
+                    <TextBlock Text="ПОТОЧНИЙ СТАТУС (ДІЯЛЬНІСТЬ)" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,6"/>
+                    <ComboBox x:Name="StatusComboBox" Background="#16181D" Foreground="White" BorderBrush="#2A2D35" Height="35" FontSize="13" VerticalContentAlignment="Center" Padding="10,0" Margin="0,0,0,20">
+                        <ComboBoxItem Content="👨‍💻 Розробник / Програміст" IsSelected="True"/>
+                        <ComboBoxItem Content="📚 Студент / Учень"/>
+                        <ComboBoxItem Content="🎮 Геймер / Кіберспортсмен"/>
+                        <ComboBoxItem Content="🎨 Дизайнер / Творець"/>
+                        <ComboBoxItem Content="💼 Фрілансер"/>
+                    </ComboBox>
+
+                    <TextBlock Text="ПРО СЕБЕ (ОПИС ПРОФІЛЮ)" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,6"/>
+                    <TextBox x:Name="EditDescription" Style="{StaticResource CyberTextBox}" Height="100" 
+                             TextWrapping="Wrap" AcceptsReturn="True" VerticalContentAlignment="Top"
+                             Text="Студент-розробник. Знищую баги, пишу чистий код на C# та оптимізую свій час за допомогою глибокого фокусу. Жодної прокрастинації."/>
+                </StackPanel>
+            </Grid>
+
+            <Rectangle Grid.Column="1" Width="1" Fill="#1C1F26" Margin="0,10"/>
+
+            <Grid Grid.Column="2" Margin="20,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="ПОПЕРЕДНІЙ ПЕРЕГЛЯД" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <Border Grid.Row="1" Background="#16181D" CornerRadius="15" Padding="20" VerticalAlignment="Top" BorderBrush="#1C1F26" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock x:Name="ViewNickName" Text="{Binding ElementName=EditNickname, Path=Text}" Foreground="White" FontSize="20" FontWeight="Black" TextTrimming="CharacterEllipsis"/>
+
+                        <TextBlock Text="{Binding ElementName=StatusComboBox, Path=SelectionBoxItem.Content}" Foreground="#3498DB" FontSize="12" Margin="0,4,0,0" FontWeight="SemiBold"/>
+
+                        <Rectangle Height="1" Fill="#2A2D35" Margin="0,12"/>
+
+                        <TextBlock x:Name="ViewNickDecription" Text="{Binding ElementName=EditDescription, Path=Text}" Foreground="#BDC3C7" FontSize="11" LineHeight="16" TextWrapping="Wrap" MaxHeight="100" TextTrimming="CharacterEllipsis"/>
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Grid.Row="2">
+                    <Button Content="ЗБЕРЕГТИ ЗМІНИ" Height="40" Background="#3498DB" Foreground="White" FontWeight="Bold" FontSize="12" Cursor="Hand" Click="SaveProfile_Click" Effect="{StaticResource SaveGlow}">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button Content="Скасувати" Background="Transparent" Foreground="#7F8C8D" BorderThickness="0" Margin="0,10,0,0" Cursor="Hand" Click="Cancel_Click"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

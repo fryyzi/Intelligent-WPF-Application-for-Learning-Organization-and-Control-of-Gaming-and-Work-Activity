@@ -83,21 +83,6 @@ namespace BLockGame.FocusFolder.Flowtime
                 _timeLeft = TimeSpan.FromMinutes(20);
         }
 
-        /*private void TimerPause()
-        {
-            TimeSpan elapsed = DateTime.Now - _StartTimer;
-            TextTime.Text = "Перерва";
-
-            if (elapsed <= TimeSpan.FromSeconds(5))
-                _timeLeft = TimeSpan.FromMinutes(5);
-            else if (elapsed <= TimeSpan.FromMinutes(50))
-                _timeLeft = TimeSpan.FromMinutes(9);
-            else if (elapsed <= TimeSpan.FromMinutes(90))
-                _timeLeft = TimeSpan.FromMinutes(10);
-            else
-                _timeLeft = TimeSpan.FromMinutes(20);
-        }*/
-
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {

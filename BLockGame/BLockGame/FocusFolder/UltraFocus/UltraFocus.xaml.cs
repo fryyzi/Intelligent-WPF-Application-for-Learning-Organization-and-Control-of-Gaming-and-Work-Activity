@@ -33,6 +33,7 @@ namespace BLockGame.FocusFolder.UltraFocus
 
             _blockApp = new BlockApp();
 
+            //BLockApp
             _blockApp.StartMonitoring(Base_User.User, 3, "NoBD");
 
             _timeLeft = new TimeSpan(0, 90, 0);
