@@ -41,7 +41,7 @@ namespace BLockGame.Class
         public static void UpdateFlowtimeWindow()
         {
             var filter = Builders<BsonDocument>.Filter.Eq("Login", Base_User.User);
-            var update = Builders<BsonDocument>.Update.Inc("FlowtimeWindow", 1);
+            var update = Builders<BsonDocument>.Update.Inc("Flowtime", 1);
             _collectionProfile.UpdateOne(filter, update);
         }
         public static void UpdateProductivity_Formula()
