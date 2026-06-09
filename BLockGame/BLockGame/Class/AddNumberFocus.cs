@@ -61,7 +61,7 @@ namespace BLockGame.Class
             {
                 FindUltraFocus = userProfile.Contains("UltraFocus") ? userProfile["UltraFocus"].ToString() : "0";
                 Pomodoro = userProfile.Contains("Pomodoro") ? userProfile["Pomodoro"].ToString() : "0";
-                FlowtimeWindow = userProfile.Contains("FlowtimeWindow") ? userProfile["FlowtimeWindow"].ToString() : "0";
+                FlowtimeWindow = userProfile.Contains("Flowtime") ? userProfile["Flowtime"].ToString() : "0";
                 Productivity_Formula = userProfile.Contains("Productivity_Formula") ? userProfile["Productivity_Formula"].ToString() : "0";
             }
             else

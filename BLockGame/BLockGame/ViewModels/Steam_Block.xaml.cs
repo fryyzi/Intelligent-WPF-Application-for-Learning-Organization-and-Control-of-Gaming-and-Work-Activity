@@ -44,8 +44,6 @@ namespace BLockGame
             _ = LoadGamesAsync();
         }
 
-        // -------------------- LOAD GAMES --------------------
-
         private async Task LoadGamesAsync()
         {
             string url = $"https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key={apiKey}&steamid={steamId}&include_appinfo=1";
@@ -71,9 +69,6 @@ namespace BLockGame
 
             ListSteamGame.ItemsSource = gameNames;
         }
-
-        // -------------------- FIXED SEARCH EXE --------------------
-
         private async Task<string> FindGameExecutableAsync(string gameName)
         {
             return await Task.Run(() =>
@@ -109,9 +104,6 @@ namespace BLockGame
                 return null;
             });
         }
-
-        // -------------------- SEARCH FILTER --------------------
-
         private void SearchGame_TextChanged(object sender, TextChangedEventArgs e)
         {
             string text = SearchGame.Text?.ToLower() ?? "";
@@ -120,9 +112,6 @@ namespace BLockGame
                 .Where(g => g.ToLower().Contains(text))
                 .ToList();
         }
-
-        // -------------------- SAVE BUTTON --------------------
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (DayComboBox.SelectedItem == null)
@@ -170,8 +159,6 @@ namespace BLockGame
                 WpfMessageBox.Show(ex.Message);
             }
         }
-
-        // -------------------- SELECT GAME --------------------
 
         private async void ListSteamGame_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {

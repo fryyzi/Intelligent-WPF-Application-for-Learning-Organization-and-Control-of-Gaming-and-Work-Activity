@@ -30,21 +30,22 @@ namespace BLockGame
         {
             LicenseTextUser = TextBoxKey.Text;
 
-            if(LicenseText == LicenseTextUser)
+            if (LicenseText == LicenseTextUser)
             {
                 UnBlock unBlock = new UnBlock();
                 unBlock.Show();
                 this.Close();
-                WPF.Show("Ключь успішло настосований!");
+                WPF.Show("Ключь успішло застосований!");
             }
-            else{
+            else
+            {
                 Main_Manu mainWindow = new Main_Manu();
                 mainWindow.Show();
                 this.Close();
                 WPF.Show("Не вірний ключь");
             }
 
-            
+
         }
     }
 }

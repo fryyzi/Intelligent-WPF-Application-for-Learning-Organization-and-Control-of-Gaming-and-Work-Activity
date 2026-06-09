@@ -21,7 +21,6 @@ namespace BLockGame.Class
         private TimeSpan _endTime;
         private string _day;
 
-        // Джерело токенів для безпечної зупинки фонового потоку
         private CancellationTokenSource _cts;
 
         public BlockApp()

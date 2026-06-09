@@ -49,7 +49,7 @@
                     <TextBox x:Name="EditNickname" Style="{StaticResource CyberTextBox}" Text="PROG_WARRIOR" MaxLength="20" Margin="0,0,0,20"/>
 
                     <TextBlock Text="ПОТОЧНИЙ СТАТУС (ДІЯЛЬНІСТЬ)" Foreground="#555E6B" FontSize="10" FontWeight="Bold" Margin="0,0,0,6"/>
-                    <ComboBox x:Name="StatusComboBox" Background="#16181D" Foreground="White" BorderBrush="#2A2D35" Height="35" FontSize="13" VerticalContentAlignment="Center" Padding="10,0" Margin="0,0,0,20">
+                    <ComboBox x:Name="StatusComboBox" Background="#16181D" Foreground="black" BorderBrush="#2A2D35" Height="35" FontSize="13" VerticalContentAlignment="Center" Padding="10,0" Margin="0,0,0,20">
                         <ComboBoxItem Content="👨‍💻 Розробник / Програміст" IsSelected="True"/>
                         <ComboBoxItem Content="📚 Студент / Учень"/>
                         <ComboBoxItem Content="🎮 Геймер / Кіберспортсмен"/>

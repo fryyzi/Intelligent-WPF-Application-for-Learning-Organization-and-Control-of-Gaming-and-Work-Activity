@@ -90,32 +90,6 @@
                             </Grid>
                         </Border>
 
-                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource GameGlow}">
-                            <Grid>
-                                <StackPanel>
-                                    <TextBlock Text="🎮 ІГРОВИЙ РЕЖИМ" Foreground="#9B59B6" FontSize="13" FontWeight="Bold"/>
-                                    <TextBlock Text="Блокування Telegram/браузера під час проходження ігор." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                                    <TextBlock x:Name="CountGameMode" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
-                                    <TextBlock Text=" разів" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-
-                        <Border Background="#1C1F26" CornerRadius="12" Padding="15" Margin="0,0,0,10" Effect="{StaticResource CustomGlow}">
-                            <Grid>
-                                <StackPanel>
-                                    <TextBlock Text="⚙ СВІЙ РЕЖИМ" Foreground="#1ABC9C" FontSize="13" FontWeight="Bold"/>
-                                    <TextBlock Text="Власні таймери та кастомні списки блокувань." Foreground="#7F8C8D" FontSize="11" Margin="0,3,0,0"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                                    <TextBlock x:Name="CountCustomMode" Text="0" Foreground="White" FontSize="20" FontWeight="Bold"/>
-                                    <TextBlock Text=" разів" Foreground="#555E6B" FontSize="11" VerticalAlignment="Bottom" Margin="2,0,0,3"/>
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-
                     </StackPanel>
                 </ScrollViewer>
             </Grid>

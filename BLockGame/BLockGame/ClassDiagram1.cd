@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BLockGame.Admin.Logi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\Logi.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Class.AddNumberFocus" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CGBIEAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAABAIAAA=</HashCode>
+      <FileName>Class\AddNumberFocus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Class.BlockApp">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAACAAIBAQAQAAAAEAAAAAAAIAAJAAAAAAQAAAAgA=</HashCode>
+      <FileName>Class\BlockApp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Class.ViewProfile" Collapsed="true">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAIIAAAAA=</HashCode>
+      <FileName>Class\ViewProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.FocusFolder.Flowtime.FlowtimeWindow" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgWABIAAAAAAAAAAAAAACAAAAAAAAQABA=</HashCode>
+      <FileName>FocusFolder\Flowtime\FlowtimeWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.FocusFolder.MainWindowFocus.All_Focus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAEAAAAAIAAAEBAAAAAAAIAAAACAAAAAAAA=</HashCode>
+      <FileName>FocusFolder\MainWindowFocus\All_Focus.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.FocusFolder.Pomodoro.pomodoro" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAABgAABAQIAgAAAAAABgAACAAAAIAgCAAAA=</HashCode>
+      <FileName>FocusFolder\Pomodoro\pomodoro.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.FocusFolder.Productivity_Formula.Productivity_Formula" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACEAAAgUARAAAAAAAAAQAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>FocusFolder\Productivity Formula\Productivity_Formula.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.FocusFolder.UltraFocus.UltraFocus" BaseTypeListCollapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACEAAEAUABAAAAAAAAAAAAAAACAAAAAAAAQAAA=</HashCode>
+      <FileName>FocusFolder\UltraFocus\UltraFocus.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Main_Manu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIBAAAAAAEAgAAAAgAAEAEEABCAAAAAUAACCAAAAAA=</HashCode>
+      <FileName>Main\Main_Manu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAABAEEAAQAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Main\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Register" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAEAAAAAAAAEAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Main\Register.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Choice_Window" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Choice_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Team_Block" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAABAEJAAAAECAAAAAAAEBAAAABCACAgCEAIBAAAA=</HashCode>
+      <FileName>ViewModels\Steam_Block.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.UnBlock" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAEAIAAAAAQEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\UnBlock.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Window_Block_Game" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAIAABAEAAEQAAAAEAAAAAAAAAAICEBEAAEAA=</HashCode>
+      <FileName>ViewModels\Window_Block_Game.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.About" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\About.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Base_User" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base_User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.License" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>License.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Model_database" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Secret" Collapsed="true">
+    <Position X="15.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Secret.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Model.LogsModel" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAEAAAAAQAIAAgAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Model\LogsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Model.ProfileModel" Collapsed="true">
+    <Position X="17.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhKAAAAACAAAAAAAIEAAAAAAAAAAAAAAAIQAAAAAAA=</HashCode>
+      <FileName>Model\ProfileModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLockGame.Profile.Profile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAQBAAAAAAAAAAAAIAAAAAIAAAAA=</HashCode>
+      <FileName>Profile\Profile.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BLockGame.Profile.ProfileSettingsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAAAAAAAAAAAUAAAAAACAAAAAAAAQAAAIAAAAA=</HashCode>
+      <FileName>Profile\ProfileSettingsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -53,7 +53,6 @@ namespace BLockGame
                 Visible = true,
                 ContextMenuStrip = new ContextMenuStrip()
             };
-
             trayIcon.ContextMenuStrip.Items.Add("Відкрити", null, OpenApp);
             trayIcon.ContextMenuStrip.Items.Add("Закрити", null, ExitApp);
 
@@ -96,7 +95,7 @@ namespace BLockGame
 
         private void ExitApp(object sender, EventArgs e)
         {
-            _blockApp?.StopMonitoring(); // Зупиняємо моніторинг перед закриттям додатка
+            _blockApp?.StopMonitoring();
             trayIcon?.Dispose();
             WpfApp.Current.Shutdown();
         }
@@ -130,10 +129,6 @@ namespace BLockGame
         private void FocusModes_Click(object sender, RoutedEventArgs e)
         {
             new FocusFolder.MainWindowFocus.All_Focus().Show();
-        }
-
-        private void Notes_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

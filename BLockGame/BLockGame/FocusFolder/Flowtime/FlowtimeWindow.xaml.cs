@@ -1,99 +1,106 @@
 ﻿using BLockGame.Class;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
+
 namespace BLockGame.FocusFolder.Flowtime
 {
-    /// <summary>
-    /// Interaction logic for FlowtimeWindow.xaml
-    /// </summary>
     public partial class FlowtimeWindow : Window
     {
-        private DispatcherTimer _timer;
-        private DateTime _StartTimer;
+        private readonly DispatcherTimer _timer;
+        private DateTime _startTimer;
         private TimeSpan _timeLeft;
         private bool _isBreakMode = false;
-
 
         public FlowtimeWindow()
         {
             InitializeComponent();
 
-            _timer = new DispatcherTimer();
-            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+
             _timer.Tick += Timer_Tick;
+
+            TimerText.Text = "00:00:00";
         }
 
-
-        private void Timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object? sender, EventArgs e)
         {
             if (!_isBreakMode)
             {
-                TimeSpan elapsed = DateTime.Now - _StartTimer;
+                TimeSpan elapsed = DateTime.Now - _startTimer;
                 TimerText.Text = elapsed.ToString(@"hh\:mm\:ss");
             }
             else
             {
                 if (_timeLeft > TimeSpan.Zero)
                 {
-                    AddNumberFocus.UpdateFlowtimeWindow();
-                    _timeLeft = _timeLeft.Subtract(TimeSpan.FromSeconds(1));
+                    _timeLeft -= TimeSpan.FromSeconds(1);
                     TimerText.Text = _timeLeft.ToString(@"hh\:mm\:ss");
                 }
                 else
                 {
                     _timer.Stop();
+
                     _isBreakMode = false;
                     TextTime.Text = "WAVE FLOW";
+
+                    TimerText.Text = "00:00:00";
                 }
             }
         }
 
-
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             _isBreakMode = false;
-            _StartTimer = DateTime.Now;
+            TextTime.Text = "Фокус";
 
-            _timer.Start();
+            _startTimer = DateTime.Now;
 
-            //використовуєтся щоб додавати до бд рахунок
-
-
-
+            if (!_timer.IsEnabled)
+                _timer.Start();
         }
 
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
-            TimeSpan elapsed = DateTime.Now - _StartTimer;
+            TimeSpan elapsed = DateTime.Now - _startTimer;
+
+            AddNumberFocus.UpdateFlowtimeWindow();
+
             _isBreakMode = true;
             TextTime.Text = "Перерва";
 
-            if (elapsed <= TimeSpan.FromSeconds(25))
-                _timeLeft = TimeSpan.FromSeconds(5);
+            if (elapsed <= TimeSpan.FromMinutes(25))
+            {
+                _timeLeft = TimeSpan.FromMinutes(5);
+            }
             else if (elapsed <= TimeSpan.FromMinutes(50))
-                _timeLeft = TimeSpan.FromMinutes(9);
+            {
+                _timeLeft = TimeSpan.FromMinutes(8);
+            }
             else if (elapsed <= TimeSpan.FromMinutes(90))
+            {
                 _timeLeft = TimeSpan.FromMinutes(10);
+            }
             else
+            {
                 _timeLeft = TimeSpan.FromMinutes(20);
-        }
+            }
 
+            TimerText.Text = _timeLeft.ToString(@"hh\:mm\:ss");
+        }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            _timer?.Stop();
+            Close();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            _timer?.Stop();
         }
     }
 }

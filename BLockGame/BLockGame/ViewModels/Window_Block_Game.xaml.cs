@@ -30,7 +30,6 @@ namespace BLockGame
         public Window_Block_Game()
         {
             InitializeComponent();
-            //var client = new MongoClient("mongodb+srv://fryyzihnk:TgBtqkuh70KbK6JX@clusteruser.rhkqo.mongodb.net/BLockGame?retryWrites=true&w=majority&appName=ClusterUser");
             var client = new MongoClient("mongodb://localhost:27017/");
             var database = client.GetDatabase("BLockGame");
             _collection = database.GetCollection<BsonDocument>("BlockUserGame");
@@ -111,7 +110,6 @@ namespace BLockGame
             StartTimeTextBox.Visibility = Visibility.Visible;
             StartLable.Visibility = Visibility.Visible;
             EndLable.Visibility = Visibility.Visible;
-            //TextTimeInfo.Visibility = Visibility.Visible;
         }
 
         private void TimeCheckBox_Unchecked_1(object sender, RoutedEventArgs e)
@@ -120,7 +118,6 @@ namespace BLockGame
             StartTimeTextBox.Visibility = Visibility.Hidden;
             StartLable.Visibility = Visibility.Hidden;
             EndLable.Visibility = Visibility.Hidden;
-            //TextTimeInfo.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
